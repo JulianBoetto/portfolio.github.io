@@ -243,7 +243,7 @@ button:hover {
     align-content: center;
 }
 
-.contato > form > label > div {
+.contato > form > label {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -254,7 +254,7 @@ button:hover {
     margin: 4px;
 }
 
-.contato > form > label > div > input {
+.contato > form > label > input {
     width: 398px;
     height: 34px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -264,7 +264,7 @@ button:hover {
     
 }
 
-.contato > form > label > div > textarea {
+.contato > form > label > textarea {
     max-width: 398px;
     max-height: 133px;
     background: rgba(255, 255, 255, 1) 0% 0% no-repeat padding-box;

@@ -49,26 +49,27 @@
                 <p>Preencha o formulário ao lado e entre em contato o mais rápido possível.</p>
                 <p>Você também pode me encontrar nas seguintes redes sociais:</p>
             </div>
-            <form>
-                <label for="">
-                    <div>
+            <form id="form">
+                    <label>
                         NOME:
-                        <input type="text" name="" id="">
-                    </div>
-                    <div>
+                        <input type="text" id="nome" placeholder="Joao Santos" required>
+                    </label>
+                    <label>
                         E-MAIL:
-                        <input type="text" name="" id="">
-                    </div>
-                    <div>
+                        <input type="text" id="email" class="email" placeholder="seuemail@domain.com">
+                    </label>
+                    <label>
                         ASSUNTO:
-                        <input type="text" name="" id="">
-                    </div>
-                    <div>
+                        <input type="text" id="assunto" placeholder="Contato"><label for="">
+                    </label>
+
+                    </label>
+                    <label for="">
                         MESSAGEM:
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </div>
-                    <button>Enviar</button>
-                </label>
+                        <textarea name="" id="" cols="30" rows="10" required></textarea>
+                    </label>
+                    <button type="submit" disabled>Enviar</button>
+                
             </form>
             
         </section>
