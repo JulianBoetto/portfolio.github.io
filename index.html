@@ -12,11 +12,11 @@
         <header>
             <img src="Imagenes/IMG_16692.jpg" alt="foto perfil">
             <ul>
-                <button>APRESENTAÇÃO</button>
-                <button>FORMAÇÃO</button>
-                <button>EXPERIÊNCIA</button>
-                <button>PROJETOS</button>
-                <button>FALE COMIGO!</button>
+                <button class="butHead">APRESENTAÇÃO</button>
+                <button class="butHead">FORMAÇÃO</button>
+                <button class="butHead">EXPERIÊNCIA</button>
+                <button class="butHead">PROJETOS</button>
+                <button class="butHead">FALE COMIGO!</button>
             </ul>
         </header>
         <div class="imgprin"></div>
@@ -39,7 +39,28 @@
             </ul>
         </section>
         <section class="projetos">
-            <h2>Projetos</h2>
+            <h2 class="titPro">Projetos</h2>
+            <div id="titRep">
+                <h2 class="titPro">Repositorios do</h2>
+                <img src="Imagenes/GitHub_Logo.png" alt="">
+            </div>
+            <div id="imgRep"> <!--ch-grid-->
+                <div class="item img"> <!--ch-item-->
+                    <div class="info"> <!--ch-info ch-img-1-->
+                        <a href="#" onclick="link1()"><h3>Blog da viagem</h3></a>
+                    </div>
+                </div>
+                <div class="item img">
+                    <div class="info">
+                        <a href="#" onclick="link2()"><h3>Exercicio 5</h3></a>
+                    </div>
+                </div>
+                <div class="item img">
+                    <div class="info">
+                        <a href="#" onclick="link3()"><h3>Exercicio 3</h3></a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="contato">
@@ -49,26 +70,27 @@
                 <p>Preencha o formulário ao lado e entre em contato o mais rápido possível.</p>
                 <p>Você também pode me encontrar nas seguintes redes sociais:</p>
             </div>
-            <form>
-                <label for="">
-                    <div>
+            <form id="form">
+                    <label>
                         NOME:
-                        <input type="text" name="" id="">
-                    </div>
-                    <div>
+                        <input type="text" id="nome" placeholder="Joao Santos" required>
+                    </label>
+                    <label>
                         E-MAIL:
-                        <input type="text" name="" id="">
-                    </div>
-                    <div>
+                        <input type="text" id="email" class="email" placeholder="seuemail@domain.com">
+                    </label>
+                    <label>
                         ASSUNTO:
-                        <input type="text" name="" id="">
-                    </div>
-                    <div>
+                        <input type="text" id="assunto" placeholder="Contato"><label for="">
+                    </label>
+
+                    </label>
+                    <label for="">
                         MESSAGEM:
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </div>
-                    <button>Enviar</button>
-                </label>
+                        <textarea name="" id="" cols="30" rows="10" required></textarea>
+                    </label>
+                    <button type="submit" disabled id="butEnviar">Enviar</button>
+                
             </form>
             
         </section>
