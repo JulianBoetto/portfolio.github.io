@@ -206,17 +206,93 @@ button:hover {
     margin-left: 7px;
 }
 
+
+/* Efeitos */
+
+
+/* #imgRep:after {
+	clear: both;
+} */
+
+
+
 #imgRep {
-    background-color: burlywood;
     display: flex;
     align-content: center;
+    width: 600px;
+    justify-content: space-between;
+    margin: 20px;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	
 }
 
-#imgRep > img {
-    display: flex;
-    justify-content: space-between;
-    background-color: cadetblue;
+.item {
+    display: inline-block;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	position: relative;
+	cursor: default;
+	box-shadow: 
+		inset 0 0 0 0 rgba(119, 119, 119, 0.4),
+		inset 0 0 0 16px rgba(255, 255, 255, 0.26),
+		0 1px 2px rgba(0,0,0,0.1);
+	transition: all 0.4s ease-in-out;
+    
 }
+
+.img { 
+	background-image: url("Imagenes/GitHub-Mark-120px-plus.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.info {
+	position: relative;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+	transform: scale(0);
+	backface-visibility: hidden;
+}
+
+.info h3 {
+    display: flex;
+	color: #fff;
+	text-transform: uppercase;
+    text-align: center;
+	position: relative;
+	letter-spacing: 2px;
+	font-size: 18px;
+	/* margin: 40px 0px; */
+	margin-top: 40px;
+	height: 60px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+
+.item:hover {
+	box-shadow: 
+		inset 0 0 0 110px rgba(0, 0, 0, 0.603),
+		inset 0 0 0 16px rgba(255,255,255,0.8),
+		0 1px 2px rgba(0,0,0,0.1);
+}
+
+.item:hover .info {
+	opacity: 1;
+	transform: scale(1);	
+}
+
+
+
 
 /* CONTATO */
 
