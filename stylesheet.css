@@ -156,37 +156,19 @@ ion-icon {
 }
 
 #titPer {
-    
-    /* left: 60%; */
     position: relative;
-    /* height: 73px; */
-    /* text-align: left; */
     font: normal normal bold 50px/80px Segoe UI;
     letter-spacing: 0px;
     color: #707070;
-    opacity: 1;
-    /* display: inline-block; */
-    
 }
 
 #h3Per {
-    /* left: 60%; */
-    
-    /* height: 46px; */
-    /* text-align: left; */
     font: italic normal 300 34px/46px Segoe UI;
     letter-spacing: 0px;
     color: #707070;
-    opacity: 1;
-    
 }
 
 #h2Per {
-    
-    /* left: 60%; */
-    
-    /* height: 46px; */
-    /* text-align: left; */
     font: normal normal bold 34px/46px Segoe UI;
     letter-spacing: 0px;
     color: #707070;
@@ -194,31 +176,23 @@ ion-icon {
 }
 
 #parPer {
-    
-    /* left: 60%;     */
-    
     text-align: center;
     font: normal normal 600 21px/34px Segoe UI;
     letter-spacing: 0px;
     color: #707070;
     opacity: 1;
-    /* max-width: 500px; */
 }
 
 
 /* FORMAÇAO */
 
 .forma {
-    position: relative;
-    height: 500px;
     background: #DEDEDE 0% 0% no-repeat padding-box;
-    opacity: 1;
-    
 }
 
-.forma > h2 {
+.forma > div > h2 {
     position: relative;
-    top: 50px;
+    
     width: 230px;
     height: 73px;
     text-align: center;
@@ -228,6 +202,24 @@ ion-icon {
     opacity: 1;
 }
 
+#imgToti {
+    width: 150px;
+}
+
+#datToti {
+    text-align: center;
+    /* font: normal normal 600 21px/34px Segoe UI; */
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+}
+
+#titToti {
+    /* font: normal normal bold 34px/46px Segoe UI; */
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+}
 
 /* PROJETOS */
 
