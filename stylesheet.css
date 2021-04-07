@@ -1,36 +1,105 @@
-* {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
     margin: 0;
     padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
+HTML5 display-role reset for older browsers
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
-/* HEADER */
 
-header {
+
+
+/* NAVBAR */
+
+.nav-link,
+.navbar-brand {
+    color: #fff;
+    cursor: pointer;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+.nav-link:hover {
+    color: rgb(0, 0, 0);
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+#navBar {
     background-color: #3A3A3A;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    
 }
 
-header > img {
+#imgNav {
     border-radius: 50%;
     top: 5px;
     left: 554px;
-    width: 58px;
-    height: 58px;
+    width: auto;
+    height: 40px;
 }
 
-header > ul {
-    display: flex;
-    justify-content: space-between;
-}
 
-.butHead {
+
+/* .butHead {
     width: 120px;
     height: 45px;
     position: relative;
@@ -54,73 +123,57 @@ header > ul {
     border-radius: 5px;
     transition-duration: 0.4s;
     background: linear-gradient(to bottom,#303030, #272727 );
-}
+} */
 
 /* TRANSICION */
 
-.imgprin {
-    position: relative;
-    height: 310px;
-    background: linear-gradient(to bottom,#3A3A3A ,#afaeae );
+.imgPrin {
+    
+    /* height: auto; */
+    background: linear-gradient(to bottom,#3A3A3A ,#DEDEDE );
 }
 
-.imgprin > img {
-    position: relative;
-    width: 100%;
-}
 
-/* IMAGEN PERFIL */
 
-.imgperfil > img {
-    position: absolute;
-    border-radius: 50%;
-    top: 200px;
-    left: 30%;
-    width: 25%;
-    height: auto;
-    border: 1px solid #707070;
-    opacity: 1;
-    background-position: top;
-}
 
 /* PERFIL */
 
-.perfil {
-    background: linear-gradient(to bottom,#afaeae,white );
+ion-icon {
+    color: #3A3A3A;
+    font-size: 50px;
+    
     position: relative;
-    width: auto;
 }
 
-.perfil > img {
+
+
+#imgPer {
     border-radius: 50%;
     width: 30px;
     height: auto;
-    display: inline-block;
+    left: 15px;
     position: relative;
-    left: 61%;
-    
 }
 
-.perfil > h1 {
+#titPer {
+    
+    /* left: 60%; */
     position: relative;
-    left: 60%;
-    max-width: 400px;
-    height: 73px;
-    text-align: left;
-    font: normal normal bold 55px/73px Segoe UI;
+    /* height: 73px; */
+    /* text-align: left; */
+    font: normal normal bold 50px/80px Segoe UI;
     letter-spacing: 0px;
     color: #707070;
     opacity: 1;
-    display: inline-block;
+    /* display: inline-block; */
     
 }
 
-.perfil > h3 {
-    position: relative;
-    left: 60%;
-    max-width: 400px;
-    height: 46px;
-    text-align: left;
+#h3Per {
+    /* left: 60%; */
+    
+    /* height: 46px; */
+    /* text-align: left; */
     font: italic normal 300 34px/46px Segoe UI;
     letter-spacing: 0px;
     color: #707070;
@@ -128,28 +181,28 @@ header > ul {
     
 }
 
-.perfil > h2 {
-    position: relative;
-    left: 60%;
-    max-width: 400px;
-    height: 46px;
-    text-align: left;
+#h2Per {
+    
+    /* left: 60%; */
+    
+    /* height: 46px; */
+    /* text-align: left; */
     font: normal normal bold 34px/46px Segoe UI;
     letter-spacing: 0px;
     color: #707070;
     opacity: 1;
 }
 
-.perfil > p {
-    position: relative;
-    left: 60%;    
-    height: 305px;
-    text-align: left;
+#parPer {
+    
+    /* left: 60%;     */
+    
+    text-align: center;
     font: normal normal 600 21px/34px Segoe UI;
     letter-spacing: 0px;
     color: #707070;
     opacity: 1;
-    max-width: 500px;
+    /* max-width: 500px; */
 }
 
 
@@ -157,9 +210,10 @@ header > ul {
 
 .forma {
     position: relative;
-    height: 100%;
+    height: 500px;
     background: #DEDEDE 0% 0% no-repeat padding-box;
     opacity: 1;
+    
 }
 
 .forma > h2 {
@@ -185,6 +239,7 @@ header > ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: linear-gradient(to bottom, #DEDEDE, black);
 }
 
 .titPro {
@@ -197,12 +252,14 @@ header > ul {
 
 #titRep {
     display: flex;
+    position: relative;
     flex-direction: row;
 }
 
 #titRep > img {
-    width: 135px;
-    height: auto;
+    position: relative;
+    width: auto;
+    height: 72px;
     margin-left: 7px;
 }
 
