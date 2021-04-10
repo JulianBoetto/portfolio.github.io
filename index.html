@@ -165,14 +165,14 @@
         <section class="container-fluid contato">
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <h2 id="contato">Contato</h2>
-                    <p>Quer entrar em contato comigo?</p>
-                    <p>Preencha o formulário ao lado e entre em contato o mais rápido possível.</p>
-                    <p>Você também pode me encontrar nas seguintes redes sociais:</p>
-                    <div class="row justify-content-center p-3">
-                        <a href="https://www.linkedin.com/in/julianmatiasboetto/" class="col-3" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-                        <a href="https://www.instagram.com/julianboetto/" class="col-3" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-                        <a href="https://github.com/JulianBoetto/" class="col-3" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                    <h2 class="titPri" id="contato">Contato</h2>
+                    <p id="titToti2">Quer entrar em contato comigo?</p>
+                    <p id="titToti2">Preencha o formulário ao lado e entre em contato o mais rápido possível.</p>
+                    <p id="titToti2">Você também pode me encontrar nas seguintes redes sociais:</p>
+                    <div class="row justify-content-center p-5">
+                        <a href="https://www.linkedin.com/in/julianmatiasboetto/" class="col-3 p-2" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        <a href="https://www.instagram.com/julianboetto/" class="col-3 p-2" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="https://github.com/JulianBoetto/" class="col-3 p-2" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
                     </div>
                 </div>
 
@@ -181,28 +181,28 @@
 
 
                 <div class="col-12 col-md-6">
-                    <form id="form" class="needs-validation">
-                        <label class="form-label">
+                    <form id="form" class="">
+                        <label class="form-label container-fluid">
                             NOME:
-                            <input type="text" id="nome" placeholder="Joao Santos" required>
+                            <input class="form-control" type="text" id="nome" placeholder="Joao Santos" required>
                         </label>
-                        <label class="form-label">
-                            E-MAIL:
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-                            <input type="text" id="email" class="email" placeholder="seuemail@domain.com" required>
+                        <label class="form-label container-fluid">
+                            EMAIL:
+                            <input type="email" id="email" class="form-control email" placeholder="seuemail@domain.com" required>
                         </label>
-                        <label class="form-label">
+                        <label class="form-label container-fluid">
                             ASSUNTO:
-                            <input type="text" id="assunto" placeholder="Contato"><label for="">
+                            <input class="form-control" type="text" id="assunto" placeholder="Contato">
                         </label>
     
                         </label>
-                        <label class="form-label">
+                        <label class="form-label container-fluid" >
                             MESSAGEM:
-                            <textarea name="" id="" cols="30" rows="10" required></textarea>
+                            <textarea class="form-control" name="" id="textArea" cols="30" rows="10" required minlength="10"></textarea>
                         </label>
-                        <button type="submit" disabled id="butEnviar">Enviar</button>
+                        <div class="row justify-content-center p-2">
+                            <button type="submit" disabled id="butEnviar">Enviar</button>
+                        </div>
                     </form>
                 </div>
             </div>
