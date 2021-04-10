@@ -9,9 +9,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 </head>
 <body>
-    <!-- <div class="KW_progressContainer">
-        <div class="KW_progressBar" style="width: 0%;"></div>
-    </div> -->
     <div class="container-fluid">
         <nav class="navbar navbar-expand-md navbar-light" id="navBar">
             <a class="navbar-brand" href="#">
@@ -23,10 +20,10 @@
             <div class="collapse navbar-collapse" id="main-navigation">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Apresentação</a>
+                    <a class="nav-link" href="#titPer">Apresentação</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Formação</a>
+                    <a class="nav-link" href="#formacao">Formação</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="#">Experiencia</a>
@@ -36,9 +33,12 @@
                             Projetos
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Projeto 1</a></li>
+                            <li><a class="dropdown-item" href="#myStore">Mystore</a></li>
                             <li><a class="dropdown-item" href="#">Projeto 2</a></li>
                         </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
                     </li>
                 </ul>
             </div> 
@@ -51,9 +51,9 @@
                     <img src="Imagenes/IMG_1669.jpg" class="img-fluid" id="fotoPer" alt="">
                 
                     <div class="row justify-content-center p-3">
-                        <a href="#" class="col-3"><ion-icon name="logo-linkedin"></ion-icon></a>
-                        <a href="#" class="col-3"><ion-icon name="logo-instagram"></ion-icon></a>
-                        <a href="#" class="col-3"><ion-icon name="logo-github"></ion-icon></a>
+                        <a href="https://www.linkedin.com/in/julianmatiasboetto/" class="col-3" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        <a href="https://www.instagram.com/julianboetto/" class="col-3" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="https://github.com/JulianBoetto/" class="col-3" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
                     </div>
                 
                 </div>
@@ -76,7 +76,7 @@
                 
         <section class="container-fluid forma p-10">
             <div class="row justify-content-center align-self-center">
-                <h2 class="col titPri">Formação</h2>
+                <h2 class="col titPri" id="formacao">Formação</h2>
             </div>
             <div class="row p-3 justify-content-center">
                 <div class="col-4 align-self-center">
@@ -97,11 +97,11 @@
             <div class="row justify-content-center align-self-center">
                 <h2 class="col titPri">Projetos</h2>
             </div>
-            <div class="container features">
+            <div class="container-fluid features">
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                        <h3 class="feature-title">Mystore</h3>
-                        <img src="Imagenes/mystore1.png" class="img-fluid">
+                        <h3 class="feature-title" id="myStore">Mystore</h3>
+                        <a href="https://angular-mmqp7z.stackblitz.io/" target="_blank" rel="noopener noreferrer"><img src="Imagenes/mystore1.png" class="img-fluid"></a>
                         <p>Um exemplo de loja virtual onde você pode ver 
                             diferentes produtos, ler sua descrição, adicionar ao carrinho
                             de compras, comprar e escolher o tipo de transporte
@@ -125,61 +125,89 @@
 
 
             <div class="container-fluid">
-                <div class="row justify-content-center align-self-center" id="titRep">
-                    <h2 class="titPro">Repositorios do</h2>
-                    <img src="Imagenes/GitHub_Logo.png" alt="Logo Github">
+                <div class="row justify-content-center" id="titRep">
+                    <h2 class="col-6 titPro">Repositorios de<img src="Imagenes/GitHub_Logo.png" class="col" id="logGit" alt="Logo Github"></h2>
                 </div>
-                <div class="container-fluid" id="imgRep">
-                    <div class="col-12 col-md-4 img" id="item"> 
-                        <div class="info"> 
-                            <a href="#" onclick="link1()"><h3>Blog da viagem</h3></a>
+                
+                
+                
+                <ul class="ch-grid">
+                    <li>
+                        <div class="ch-item img">
+                            <div class="ch-info">
+                                <h3>Blog da viagem</h3>
+                                <p>Julián <a href="#" onclick="link1()">Ver no Github</a></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-4 img" id="item">
-                        <div class="info">
-                            <a href="#" onclick="link2()"><h3>Exercicio 5</h3></a>
+                    </li>
+                    <li>
+                        <div class="ch-item img">
+                            <div class="ch-info">
+                                <h3>Exercicio 5</h3>
+                                <p>Julián <a href="#" onclick="link3()">Ver no Github</a></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-4 img" id="item">
-                        <div class="info">
-                            <a href="#" onclick="link3()"><h3>Exercicio 3</h3></a>
+                    </li>
+                    <li>
+                        <div class="ch-item img">
+                            <div class="ch-info">
+                                <h3>Exercicio 3</h3>
+                                <p>Julián <a href="#" onclick="link2()">Ver no Github</a></p>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>            
             </div>
         </section> 
 
-        <!-- <section class="contato">
-            <div>
-                <h2>Contato</h2>
-                <p>Quer entrar em contato comigo?</p>
-                <p>Preencha o formulário ao lado e entre em contato o mais rápido possível.</p>
-                <p>Você também pode me encontrar nas seguintes redes sociais:</p>
-            </div>
-            <form id="form">
-                    <label>
-                        NOME:
-                        <input type="text" id="nome" placeholder="Joao Santos" required>
-                    </label>
-                    <label>
-                        E-MAIL:
-                        <input type="text" id="email" class="email" placeholder="seuemail@domain.com">
-                    </label>
-                    <label>
-                        ASSUNTO:
-                        <input type="text" id="assunto" placeholder="Contato"><label for="">
-                    </label>
+        <!-- CONTATO E FORMULARIO -->
 
-                    </label>
-                    <label for="">
-                        MESSAGEM:
-                        <textarea name="" id="" cols="30" rows="10" required></textarea>
-                    </label>
-                    <button type="submit" disabled id="butEnviar">Enviar</button>
+        <section class="container-fluid contato">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h2 id="contato">Contato</h2>
+                    <p>Quer entrar em contato comigo?</p>
+                    <p>Preencha o formulário ao lado e entre em contato o mais rápido possível.</p>
+                    <p>Você também pode me encontrar nas seguintes redes sociais:</p>
+                    <div class="row justify-content-center p-3">
+                        <a href="https://www.linkedin.com/in/julianmatiasboetto/" class="col-3" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        <a href="https://www.instagram.com/julianboetto/" class="col-3" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="https://github.com/JulianBoetto/" class="col-3" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                    </div>
+                </div>
+
                 
-            </form>
+
+
+
+                <div class="col-12 col-md-6">
+                    <form id="form" class="needs-validation">
+                        <label class="form-label">
+                            NOME:
+                            <input type="text" id="nome" placeholder="Joao Santos" required>
+                        </label>
+                        <label class="form-label">
+                            E-MAIL:
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                            <input type="text" id="email" class="email" placeholder="seuemail@domain.com" required>
+                        </label>
+                        <label class="form-label">
+                            ASSUNTO:
+                            <input type="text" id="assunto" placeholder="Contato"><label for="">
+                        </label>
+    
+                        </label>
+                        <label class="form-label">
+                            MESSAGEM:
+                            <textarea name="" id="" cols="30" rows="10" required></textarea>
+                        </label>
+                        <button type="submit" disabled id="butEnviar">Enviar</button>
+                    </form>
+                </div>
+            </div>
             
-        </section> -->
+        </section>
     </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="script.js"></script>
