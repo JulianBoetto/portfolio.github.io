@@ -69,9 +69,13 @@ body {
 
 /* NAVBAR */
 
+#icoTog {
+    color: coral;
+}
+
 .nav-link,
 .navbar-brand {
-    color: #fff;
+    color: #7b7b7b;
     cursor: pointer;
 }
 .nav-link {
@@ -188,6 +192,7 @@ ion-icon {
 
 .forma {
     background: #DEDEDE 0% 0% no-repeat padding-box;
+    min-height: 400px;
 }
 
 .titPri {
@@ -199,7 +204,6 @@ ion-icon {
 }
 
 #titToti {
-    /* font: normal normal bold 34px/46px Segoe UI; */
     letter-spacing: 0px;
     color: #707070;
     opacity: 1;
@@ -207,22 +211,33 @@ ion-icon {
 
 #datToti {
     text-align: center;
-    /* font: normal normal 600 21px/34px Segoe UI; */
     letter-spacing: 0px;
     color: #707070;
     opacity: 1;
 }
 
+#imgToti {
+    max-width: 250px;
+}
+
+#linkToti {
+    text-align: center;
+    letter-spacing: 0px;
+    color: #707070;
+}
+
+#linkToti:hover {
+    text-align: center;
+    letter-spacing: 0px;
+    color: rgb(48, 48, 48);
+}
 
 /* PROJETOS */
 
 .projetos {
-    /* position: relative; */
+    
     background: #F2F2F2 0% 0% no-repeat padding-box;
     opacity: 1;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
     background: linear-gradient(to bottom, #DEDEDE, black);
 }
 
