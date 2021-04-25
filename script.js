@@ -4,6 +4,7 @@
 function validateEmail(e) {
     let field = e.target;
     let fieldValue = field.value;
+    // console.log(e);
 
     if (fieldValue.search("@") == -1) {
         displayError("Email não é válido", field);
@@ -20,6 +21,8 @@ function validateEmail(e) {
 function validateNotEmpty(e) {
     let field = e.target;
     let fieldValue = field.value;
+   
+
 
     if (fieldValue == "") {
         displayError("Campo não pode ser vazio".field);
@@ -46,7 +49,7 @@ function displayError(message, field) {
 function clearError(field) {
     let container = field.parentElement;
     let error = container.querySelector(".error-message");
-
+   
     if (error) {
         container.removeChild(error);
     }

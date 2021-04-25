@@ -169,23 +169,39 @@ ion-icon {
 #h3Per {
     font: italic normal 300 34px/46px Segoe UI;
     letter-spacing: 0px;
-    color: #707070;
+    color: #3a3a3a;
 }
 
 #h2Per {
     font: normal normal bold 34px/46px Segoe UI;
     letter-spacing: 0px;
-    color: #707070;
-    opacity: 1;
+    color: #3a3a3a;
+    
 }
 
 #parPer {
-    text-align: center;
-    font: normal normal 600 21px/34px Segoe UI;
+    text-align: left;
+    font: normal normal 600 24px/34px Segoe UI;
     letter-spacing: 0px;
-    color: #707070;
+    /* color: #bdbdbd; */
+    background: -webkit-linear-gradient(#3a3a3a, #707070);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
     opacity: 1;
+
 }
+
+@media(max-width:768px){
+	#parPer {
+        background: -webkit-linear-gradient(#636363, #707070);
+        -webkit-background-clip: text;
+                background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+
 
 
 /* FORMAÇAO */
@@ -216,7 +232,7 @@ ion-icon {
     opacity: 1;
 }
 
-#imgToti {
+#imgToti, #imgIpem {
     max-width: 250px;
 }
 
@@ -410,7 +426,7 @@ ion-icon {
 }
 
 #titToti2 {
-    font-size: 30px;
+    font-size: 22px;
     letter-spacing: 0px;
     color: #707070;
     opacity: 1;
