@@ -17,26 +17,27 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarScroll">
+                
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 190px;">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#titPer">Apresentação</a>
+                <li class="nav-item butHead">
+                    <a class="nav-link" aria-current="page" href="#titPer">Apresentação</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item butHead">
                     <a class="nav-link" href="#formacao">Formação</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item butHead">
                     <a class="nav-link" href="#">Experiencia</a>
-                </li>
-                <li class="nav-item dropdown">
+                </li> -->
+                <li class="nav-item dropdown butHead">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Projetos
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                         <li><a class="dropdown-item" href="#myStore">Mystore</a></li>
-                        <li><a class="dropdown-item" href="#">Projeto 2</a></li>
+                        <li><a class="dropdown-item" href="#nasa">Foto do dia</a></li>
                     </ul>
                   </li>
-                <li class="nav-item">
+                <li class="nav-item butHead">
                     <a class="nav-link" href="#contato">Contato</a>
                 </li>
                 </ul>
@@ -63,7 +64,7 @@
                     <h3 id="h3Per">Full-Stack Developer</h3>
                     <h2 id="h2Per">Olá</h2>
                     <p class="col align-self-center" id="parPer">
-                        Sou uma pessoa muito responsável, proativa e que gosta muito de aprender.
+                        Sou uma pessoa muito responsável, proativa e que gosta de aprender.
                          Tenho muita experiência na indústria trabalhando com engenheira de produção
                           e também de producto. Conheço os procesos e controles de qualidade ISO 9001,
                            também sistemas como KANBAN ou 5s.
@@ -99,7 +100,7 @@
                 <div class="col-4 align-self-center">
                     <h3 id="titToti">Tecnico modelista mecanico</h3>
                     <p id="datToti">2000/2009</p>
-                    <a id="linkToti" href="https://totidiversidade.com.br/" target="_blank"><p>IPEM n 50</p></a>
+                    <a id="linkToti" href="https://www.ipet50.edu.ar/" target="_blank"><p>IPEM n 50</p></a>
                 </div>
 
             </div>
@@ -124,13 +125,15 @@
                     </div>
                     
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                        <h3 class="feature-title">Lorem ipsum</h3>
-                        <img src="images/column-2.jpg" class="img-fluid">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+                        <h3 class="feature-title" id="giphy">Buscador de GIFs</h3>
+                        <a href="https://api-gifs-giphy.stackblitz.io" target="_blank" rel="noopener noreferrer"><img src="Imagenes/gifs.png" class="img-fluid"></a>
+                        <p>Tenta pesquisar gifs utilizando a API do GIPHY.</p>
                     </div>
                     
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                    
+                        <h3 class="feature-title" id="">Fotos do dia da NASA</h3>
+                        <a href="https://julianboetto.github.io/NASA_apos/" target="_blank" rel="noopener noreferrer"><img src="Imagenes/nasa.png" class="img-fluid"></a>
+                        <p>Uma API para pesquisar imagens da NASA do dia ou de qualquer data anterior</p>
                     </div>
                 </div>
             </div>
@@ -179,7 +182,7 @@
 
         <section class="container-fluid contato">
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 p-5">
                     <h2 class="titPri" id="contato">Contato</h2>
                     <p id="titToti2">Quer entrar em contato comigo?</p>
                     <p id="titToti2">Preencha o formulário ao lado e entre em contato o mais rápido possível.</p>
@@ -197,21 +200,21 @@
 
                 <div class="col-12 col-md-6">
                     <form id="form" class="">
-                        <label class="form-label container-fluid">
+                        <label class="form-label container-fluid labelForm">
                             NOME:
                             <input class="form-control" type="text" id="nome" placeholder="Joao Santos" required>
                         </label>
-                        <label class="form-label container-fluid">
+                        <label class="form-label container-fluid labelForm">
                             EMAIL:
                             <input type="email" id="email" class="form-control email" placeholder="seuemail@domain.com" required>
                         </label>
-                        <label class="form-label container-fluid">
+                        <label class="form-label container-fluid labelForm">
                             ASSUNTO:
                             <input class="form-control" type="text" id="assunto" placeholder="Contato">
                         </label>
     
                         </label>
-                        <label class="form-label container-fluid" >
+                        <label class="form-label container-fluid labelForm" >
                             MESSAGEM:
                             <textarea class="form-control" name="" id="textArea" cols="30" rows="10" required minlength="10"></textarea>
                         </label>

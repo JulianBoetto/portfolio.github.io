@@ -90,7 +90,8 @@ body {
 
 #navBar {
     background-color: #3A3A3A;
-    
+    height: 50px;
+    /* margin-top: 5px; */
 }
 
 #imgNav {
@@ -103,14 +104,14 @@ body {
 
 
 
-/* .butHead {
-    width: 120px;
+.butHead {
+    width: auto;
     height: 45px;
     position: relative;
     display: flex;
     align-items: center;
-    margin-left: 40px;
-    text-align: left;
+    text-align: center;
+    border-radius: 5px;
     font: normal normal bold 14px/17px Segoe UI;
     letter-spacing: 0px;
     text-transform: uppercase;
@@ -122,12 +123,11 @@ body {
 }
 
 .butHead:hover {
-    background-color: #303030;
     color: white;
     border-radius: 5px;
     transition-duration: 0.4s;
     background: linear-gradient(to bottom,#303030, #272727 );
-} */
+} 
 
 /* TRANSICION */
 
@@ -163,7 +163,7 @@ ion-icon {
     position: relative;
     font: normal normal bold 50px/80px Segoe UI;
     letter-spacing: 0px;
-    color: #707070;
+    color: #3a3a3a;
 }
 
 #h3Per {
@@ -280,16 +280,26 @@ ion-icon {
 
 /* REPOSITORIOS */
 
+
+
+
 #titRep > h2 {
     text-align: center;
     color: #707070;
 }
 
+@media(max-width:784px){
+	#titRep > h2 {
+        color: #a2a1a1;
+    }
+}
+
 #logGit {
     height: auto;
     width: 100px;
-    
 }
+
+
 
 
 /* Efeitos repositorios */
@@ -438,7 +448,7 @@ ion-icon {
     text-align: left;
     font: normal normal 300 55px/73px Segoe UI;
     letter-spacing: 0px;
-    color: rgba(255, 255, 255, 1);
+    color: rgb(182, 21, 21);
     opacity: 1;
 }
 
@@ -453,23 +463,16 @@ ion-icon {
 /* FORMULARIO */
 
 
-.contato > form > label {
+.labelForm {
     
     font-size: 13px/17px;
     font-weight: bold;
     letter-spacing: 0px;
-    color: #FFFFFF;
+    color: #707070;
     opacity: 1;
     
 }
 
-.contato > form > label > input {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #707070;
-    border-radius: 4px;
-    opacity: 1;
-    
-}
 
 #textArea {
     max-width: 700px;
@@ -477,8 +480,6 @@ ion-icon {
     border: 1px solid rgba(112, 112, 112, 1);
     border-radius: 4px;
     opacity: 1;
-    
-    
 }
 
 #butEnviar {
