@@ -188,24 +188,24 @@
 
 
                 <div class="col-12 col-md-6">
-                    <form id="form" class="needs-validation" name="contactForm">
+                    <form id="form" class="needs-validation" name="contactForm" action="https://formsubmit.co/julib_8724@hotmail.com" method="POST">
                         <label class="form-label container-fluid labelForm">
                             NOME:
-                            <input class="form-control" type="text" id="nome" placeholder="Joao Santos" required>
+                            <input class="form-control" type="text" id="nome" name="name" placeholder="Joao Santos" required>
                         </label>
                         <label class="form-label container-fluid labelForm">
                             EMAIL:
-                            <input type="email" id="email" class="form-control email" placeholder="seuemail@domain.com" required>
+                            <input type="email" id="email" class="form-control email" name="email" placeholder="seuemail@domain.com" required>
                         </label>
                         <label class="form-label container-fluid labelForm">
                             ASSUNTO:
-                            <input class="form-control" type="text" id="assunto" placeholder="Contato">
+                            <input class="form-control" type="text" id="assunto" name="subject" placeholder="Contato">
                         </label>
     
                         </label>
                         <label class="form-label container-fluid labelForm" >
                             MESSAGEM:
-                            <textarea class="form-control" name="" id="textArea" cols="30" rows="10" required minlength="10"></textarea>
+                            <textarea class="form-control" name="comments" id="textArea" cols="30" rows="10" required minlength="10"></textarea>
                         </label>
                         <div class="row justify-content-center p-2">
                             <button type="submit" id="butEnviar">Enviar</button>
