@@ -208,7 +208,7 @@ ion-icon {
 
 .forma {
     background: #DEDEDE 0% 0% no-repeat padding-box;
-    min-height: 400px;
+    /* min-height: 400px; */
 }
 
 .titPri {
