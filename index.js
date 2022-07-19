@@ -1,7 +1,7 @@
-const form = document.contactForm
+// const form = document.contactForm
 
-form.addEventListener("submit", getForm)
+// form.addEventListener("submit", getForm)
 
-function getForm() {
-    document.querySelectorAll(".form-control").forEach(form => console.log(form.value))
-}
+// function getForm() {
+//     document.querySelectorAll(".form-control").forEach(form => console.log(form.value))
+// }
