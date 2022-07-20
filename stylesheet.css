@@ -184,7 +184,7 @@ ion-icon {
     font: normal normal 600 24px/34px Segoe UI;
     letter-spacing: 0px;
     /* color: #bdbdbd; */
-    background: -webkit-linear-gradient(#3a3a3a, #707070);
+    background: -webkit-linear-gradient(#3a3a3a, #353535);
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;
