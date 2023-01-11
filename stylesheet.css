@@ -49,24 +49,6 @@ table {
 
 
 
-
-
-
-
-
-
-
-
-
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-}
-
-
-
-
 /* NAVBAR */
 
 #icoTog {
@@ -102,6 +84,12 @@ body {
     height: 40px;
 }
 
+.vl {
+    border-left: 2px solid rgb(0, 0, 0);
+    height: 25px;
+    border-radius: 1px;
+  }
+
 
 
 .butHead {
@@ -112,7 +100,7 @@ body {
     align-items: center;
     text-align: center;
     border-radius: 5px;
-    font: normal normal bold 14px/17px Segoe UI;
+    /* font: normal normal bold 14px/17px ; */
     letter-spacing: 0px;
     text-transform: uppercase;
     opacity: 1;
@@ -161,19 +149,19 @@ ion-icon {
 
 #titPer {
     position: relative;
-    font: normal normal bold 50px/80px Segoe UI;
+    font: normal normal bold 50px/80px;
     letter-spacing: 0px;
     color: #3a3a3a;
 }
 
 #h3Per {
-    font: italic normal 300 34px/46px Segoe UI;
+    font: italic normal 300 34px/46px;
     letter-spacing: 0px;
     color: #3a3a3a;
 }
 
 #h2Per {
-    font: normal normal bold 34px/46px Segoe UI;
+    font: normal normal bold 34px/46px ;
     letter-spacing: 0px;
     color: #3a3a3a;
     
@@ -181,7 +169,7 @@ ion-icon {
 
 #parPer {
     text-align: left;
-    font: normal normal 600 24px/34px Segoe UI;
+    font: normal normal 600 24px/34px ;
     letter-spacing: 0px;
     /* color: #bdbdbd; */
     background: -webkit-linear-gradient(#3a3a3a, #353535);
@@ -212,7 +200,7 @@ ion-icon {
 }
 
 .titPri {
-    font: normal normal 300 55px/73px Segoe UI;
+    font: normal normal 300 55px/73px ;
     letter-spacing: 0px;
     color: #707070;
     opacity: 1;
@@ -446,7 +434,7 @@ ion-icon {
 
 .contato > div > h2 {
     text-align: left;
-    font: normal normal 300 55px/73px Segoe UI;
+    font: normal normal 300 55px/73px ;
     letter-spacing: 0px;
     color: rgb(182, 21, 21);
     opacity: 1;
@@ -454,7 +442,7 @@ ion-icon {
 
 .contato > div > p {
     text-align: left;
-    font: normal normal normal 21px/28px Segoe UI;
+    font: normal normal normal 21px/28px ;
     letter-spacing: 0px;
     color: rgba(112, 112, 112, 1);
     opacity: 1;
