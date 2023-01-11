@@ -20,11 +20,6 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light navbar-right" id="navBar">
         <div class="container-fluid">
-            <button class="navbar-toggler navbar-right" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             <div class="flex-shrink-0 dropdown">
                 <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2"
                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,6 +43,11 @@
 
                 </ul>
             </div>
+            <button class="navbar-toggler navbar-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 190px;">
                     <li class="nav-item butHead">
@@ -70,8 +70,8 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                             <!-- <li><a class="dropdown-item" href="#myStore">Mystore</a></li> -->
-                            <li><a class="dropdown-item" href="#giphy">Buscador de GIFs</a></li>
-                            <li><a class="dropdown-item" href="#nasa">Foto do dia da Nasa</a></li>
+                            <li><a class="dropdown-item" href="#giphy">Procurador de GIFs</a></li>
+                            <li><a class="dropdown-item" href="#nasa">Foto do dia, API da Nasa</a></li>
                         </ul>
                     </li>
                     <li class="nav-item butHead">
@@ -138,14 +138,20 @@
 
     <section class="container-fluid forma">
         <div class="row justify-content-center">
-            <h2 class="col titPri" id="formacao">Formação</h2>
+            <h2 class="col titPri" id="formacao">
+                <span lang="pt-BR" class="pt-BR">Formação</span>
+                <span lang="es-AR" class="es-AR">Formación</span>
+            </h2>
         </div>
         <div class="row justify-content-center">
             <div class="col-4 align-self-center">
                 <img src="Imagenes/toti-logo.97c2d711.svg" id="imgToti" class="img-fluid" alt="logo Toti">
             </div>
             <div class="col-4 align-self-center">
-                <h3 id="titToti">Desenvolvedor web full-stack</h3>
+                <h3 id="titToti">
+                    <span lang="pt-BR" class="pt-BR">Desenvolvedor web Full-Stack</span>
+                    <span lang="es-AR" class="es-AR">Programador web Full-Stack</span>
+                </h3>
                 <p id="datToti">01/21 - 5/21</p>
                 <a id="linkToti" href="https://totidiversidade.com.br/" target="_blank">
                     <p>Toti Diversidade</p>
@@ -159,7 +165,10 @@
 
     <section class="container-fluid projetos p-3">
         <div class="row justify-content-center align-self-center">
-            <h2 class="col titPri">Projetos</h2>
+            <h2 class="col titPri">
+                <span lang="pt-BR" class="pt-BR">Projetos</span>
+                <span lang="es-AR" class="es-AR">Proyectos</span>
+            </h2>
         </div>
         <div class="container-fluid features">
             <div class="row">
@@ -177,14 +186,19 @@
                     <h3 class="feature-title" id="giphy">Buscador de GIFs</h3>
                     <a href="https://api-gifs-giphy.stackblitz.io" target="_blank" rel="noopener noreferrer"><img
                             src="Imagenes/gifs.png" class="img-fluid"></a>
-                    <p>Tenta pesquisar gifs utilizando a API do GIPHY.</p>
+                    <p lang="pt-BR" class="pt-BR">Procura gifs utilizando a API do GIPHY.</p>
+                    <p lang="es-AR" class="es-AR">Procura gifs utilizando a API do GIPHY.</p>
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-12">
-                    <h3 class="feature-title" id="nasa">Fotos do dia da NASA</h3>
+                    <h3 class="feature-title" id="nasa">
+                        <span lang="pt-BR" class="pt-BR">Foto do dia, API da NASA</span>
+                        <span lang="es-AR" class="es-AR">Foto del día, API de la NASA </span>
+                    </h3>
                     <a href="https://julianboetto.github.io/NASA_apos/" target="_blank" rel="noopener noreferrer"><img
                             src="Imagenes/nasa.png" class="img-fluid"></a>
-                    <p>Uma API para pesquisar imagens da NASA do dia ou de qualquer data anterior</p>
+                    <p lang="pt-BR" class="pt-BR">Uma API para pesquisar imagens da NASA pela data ou quantidade</p>
+                    <p lang="es-AR" class="es-AR">Una API para buscar imagenes de la NASA por fecha o cantidad</p>
                 </div>
             </div>
         </div>
@@ -234,10 +248,22 @@
     <section class="container-fluid contato">
         <div class="row">
             <div class="col-12 col-md-6 p-5">
-                <h2 class="titPri" id="contato">Contato</h2>
-                <p id="titToti2">Quer entrar em contato comigo?</p>
-                <p id="titToti2">Preencha o formulário ao lado e entre em contato o mais rápido possível.</p>
-                <p id="titToti2">Você também pode me encontrar nas seguintes redes sociais:</p>
+                <h2 class="titPri" id="contato">
+                    <span lang="pt-BR" class="pt-BR">Contato</span>
+                    <span lang="es-AR" class="es-AR">Contacto</span>
+                </h2>
+                <p lang="pt-BR" class="pt-BR" id="titToti2">
+                    Quer entrar em contato comigo?</p>
+                <p lang="es-AR" class="es-AR" id="titToti2">
+                    Quiere entrar en contacto conmigo?</p>
+                <p lang="pt-BR" class="pt-BR" id="titToti2">Preencha o formulário e entre em contato o mais
+                    rápido possível.</p>
+                <p lang="es-AR" class="es-AR" id="titToti2">Complete el formulário y entre en contacto lo más rápido
+                    posible.</p>
+                <p lang="pt-BR" class="pt-BR" id="titToti2">Você também pode me encontrar nas seguintes redes sociais:
+                </p>
+                <p lang="es-AR" class="es-AR" id="titToti2">También me podés encontrar en las siguientes redes sociales:
+                </p>
                 <div class="row justify-content-center p-5">
                     <a href="https://www.linkedin.com/in/julianmatiasboetto/" class="col-3 p-2"
                         target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
@@ -259,7 +285,8 @@
                         value="Muito obrigado por seu contato. Entrarei em contato com você em breve.">
                     <input type="hidden" name="_next" value="https://julianboetto.github.io/portfolio.github.io/">
                     <label class="form-label container-fluid labelForm">
-                        NOME:
+                        <span lang="pt-BR" class="pt-BR">NOME:</span>
+                        <span lang="es-AR" class="es-AR">NOMBRE:</span>
                         <input class="form-control" type="text" id="nome" name="name" placeholder="Joao Santos"
                             required>
                     </label>
@@ -269,13 +296,15 @@
                             placeholder="seuemail@domain.com" required>
                     </label>
                     <label class="form-label container-fluid labelForm">
-                        ASSUNTO:
+                        <span lang="pt-BR" class="pt-BR">ASSUNTO:</span>
+                        <span lang="es-AR" class="es-AR">ASUNTO:</span>
                         <input class="form-control" type="text" id="assunto" name="subject" placeholder="Contato">
                     </label>
 
                     </label>
                     <label class="form-label container-fluid labelForm">
-                        MESSAGEM:
+                        <span lang="pt-BR" class="pt-BR">MESSAGEM:</span>
+                        <span lang="es-AR" class="es-AR">MENSAJE:</span>
                         <textarea class="form-control" name="comments" id="textArea" cols="30" rows="10" required
                             minlength="10"></textarea>
                     </label>
