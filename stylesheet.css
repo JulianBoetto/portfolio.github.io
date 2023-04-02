@@ -139,7 +139,7 @@ table {
 }
 
 #dropLanguage>ion-icon {
-    height: 20px;
+    height: 25px;
 }
 
 #dropMenu {
@@ -201,6 +201,13 @@ table {
   color: white;
   border-radius: 5px;
   transition-duration: 0.4s;
+}
+
+#toggleBtn {
+    color: #bbb;
+    height: 60px;
+    border: 1.5px solid #333;
+    border-radius: 10px;
 }
 
 /* TRANSICION */
