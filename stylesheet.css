@@ -125,13 +125,34 @@ table {
 
 /* NAVBAR */
 
-#icoTog {
-  color: coral;
+#dropLanguage {
+    color: #bbb;
+    height: 60px;
+    border: 1.5px solid #333;
+    border-radius: 10px;
+}
+
+#dropLanguage:hover {
+    border: 1.5px solid #bbb;
+    background: #444;
+    transition: 0.5s;
+}
+
+#dropLanguage>ion-icon {
+    height: 20px;
+}
+
+#dropMenu {
+    background: #333;
+    border-radius: 10px;
+}
+
+.dropLanguageText {
+    color: #bbb;
 }
 
 .nav-link,
 .navbar-brand {
-  /* color: #7b7b7b; */
   cursor: pointer;
 }
 .nav-link {
@@ -147,8 +168,7 @@ table {
 
 #navBar {
   background-color: #222;
-  height: 50px;
-  /* margin-top: 5px; */
+  /* height: 50px; */
 }
 
 #imgNav {
@@ -157,12 +177,6 @@ table {
   left: 554px;
   width: auto;
   height: 40px;
-}
-
-.vl {
-  border-left: 2px solid rgb(0, 0, 0);
-  height: 25px;
-  border-radius: 1px;
 }
 
 .butHead {
@@ -181,14 +195,12 @@ table {
   background-color: #3a3a3a;
   border: none;
   color: #bbb;
-  /* color: #161616; */
 }
 
 .butHead:hover {
   color: white;
   border-radius: 5px;
   transition-duration: 0.4s;
-  /* background: linear-gradient(to bottom, #303030, #272727); */
 }
 
 /* TRANSICION */
@@ -200,16 +212,9 @@ table {
 
 /* PERFIL */
 
-ion-icon {
-  color: #3a3a3a;
-  font-size: 50px;
-
-  position: relative;
-}
-
-#imgPer {
+#imgArg {
   border-radius: 50%;
-  width: 30px;
+  width: 20px;
   height: auto;
   left: 15px;
   position: relative;
@@ -253,6 +258,12 @@ ion-icon {
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+}
+
+ion-icon {
+  color: #bbb;
+  font-size: 50px;
+  position: relative;
 }
 
 /* FORMAÇAO */
