@@ -50,4 +50,3 @@ function changePt() {
 
 buttonEs.addEventListener("click", changeEs);
 buttonPt.addEventListener("click", changePt);
-
