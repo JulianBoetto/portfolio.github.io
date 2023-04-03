@@ -7,46 +7,75 @@ const buttonEs = document.getElementById("btnEs");
 const buttonPt = document.getElementById("btnPt");
 
 switch (userLang) {
-    case "es-AR":
-        for (var i = 0; i < es_language.length; i++) {
-            es_language[i].style.display = "inline";
-            // en_language.style.display = "none";
-            pt_language[i].style.display = "none";
-        }
-        break;
+  case "es-AR":
+    for (var i = 0; i < es_language.length; i++) {
+      es_language[i].style.display = "inline";
+      // en_language.style.display = "none";
+      pt_language[i].style.display = "none";
+    }
+    break;
 
-    case "en":
-        for (var i = 0; i < es_language.length; i++) {
-            es_language[i].style.display = "none";
-            // en_language.style.display = "inline";
-            pt_language[i].style.display = "none";
-        }
-        break;
+  case "en":
+    for (var i = 0; i < es_language.length; i++) {
+      es_language[i].style.display = "none";
+      // en_language.style.display = "inline";
+      pt_language[i].style.display = "none";
+    }
+    break;
 
-    default:
-        for (var i = 0; i < es_language.length; i++) {
-            es_language[i].style.display = "none";
-            // en_language.style.display = "none";
-            pt_language[i].style.display = "inline";
-        }
-        break;
+  default:
+    for (var i = 0; i < es_language.length; i++) {
+      es_language[i].style.display = "none";
+      // en_language.style.display = "none";
+      pt_language[i].style.display = "inline";
+    }
+    break;
 }
 
 function changeEs() {
-    for (var i = 0; i < es_language.length; i++) {
-        es_language[i].style.display = "inline";
-        // en_language.style.display = "none";
-        pt_language[i].style.display = "none";
-    }
+  for (var i = 0; i < es_language.length; i++) {
+    es_language[i].style.display = "inline";
+    // en_language.style.display = "none";
+    pt_language[i].style.display = "none";
+  }
 }
 
 function changePt() {
-    for (var i = 0; i < es_language.length; i++) {
-        es_language[i].style.display = "none";
-        // en_language.style.display = "none";
-        pt_language[i].style.display = "inline";
-    }
+  for (var i = 0; i < es_language.length; i++) {
+    es_language[i].style.display = "none";
+    // en_language.style.display = "none";
+    pt_language[i].style.display = "inline";
+  }
 }
 
 buttonEs.addEventListener("click", changeEs);
 buttonPt.addEventListener("click", changePt);
+
+const btnTop = document.getElementById('btn-top');
+let scrollPos = window.pageYOffset || document.documentElement.scrollTop;
+
+function updateScrollPos() {
+  scrollPos = window.pageYOffset || document.documentElement.scrollTop;
+}
+
+function toggleBtnTop() {
+  if (scrollPos > 0) {
+    btnTop.style.display = 'block';
+  } else {
+    btnTop.style.display = 'none';
+  }
+}
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+window.addEventListener('scroll', function() {
+  updateScrollPos();
+  toggleBtnTop();
+});
+
+toggleBtnTop();
