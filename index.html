@@ -41,7 +41,6 @@
           <ul
             class="dropdown-menu dropdown-menu-lg-end text-small slide"
             id="dropMenu"
-            data-bs-auto-close="outside"
             aria-labelledby="dropLanguage"
             style="width: max-content"
           >
@@ -88,12 +87,6 @@
             class="navbar-nav navbar-dark ms-auto align-items-center justify-content-center"
           >
             <li class="nav-item headBtn">
-              <a class="nav-link" aria-current="page" href="#titPer">
-                <span lang="pt-BR" class="pt-BR">Apresentação</span>
-                <span lang="es-AR" class="es-AR">Presentación</span>
-              </a>
-            </li>
-            <li class="nav-item headBtn">
               <a class="nav-link" href="#sobre">
                 <span lang="pt-BR" class="pt-BR">Sobre mim</span>
                 <span lang="es-AR" class="es-AR">Sobre mi</span>
@@ -111,16 +104,27 @@
                 <span lang="pt-BR" class="pt-BR">Projetos</span>
                 <span lang="es-AR" class="es-AR">Proyectos</span>
               </a>
-              <ul class="dropdown-menu dropdown-menu-end" id="dropMenu">
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                id="dropMenu"
+                aria-labelledby="navbarDropdown"
+              >
                 <li>
-                  <a class="dropdown-item" href="#giphy">Procurador de GIFs</a>
+                  <a class="dropdown-item" href="#becapital">BeCapital S.A.</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#nasa"
-                    >Foto do dia, API da Nasa</a
-                  >
+                  <a class="dropdown-item" href="#qbd">Que buen dato!</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#beholder">Beholder bot</a>
                 </li>
               </ul>
+            </li>
+            <li class="nav-item headBtn">
+              <a class="nav-link" aria-current="page">
+                <span lang="pt-BR" class="pt-BR">Tecnologias</span>
+                <span lang="es-AR" class="es-AR">Tecnologías</span>
+              </a>
             </li>
             <li class="nav-item headBtn">
               <a class="nav-link" href="#contato">
@@ -186,7 +190,7 @@
       id="sobre"
     >
       <div class="col-10 col-md-6 col-xs-12 text-center">
-        <p class="text-center" id="parPer">
+        <p class="text-center mb-4" id="parPer">
           <span lang="pt-BR" class="pt-BR"
             >Sou argentino, moro no Brasil desde o ano 2020. Me formei como
             desenvolvedor web full-stack e virei de carreira na cidade do Rio de
@@ -468,12 +472,13 @@
             </a>
           </div>
         </div> -->
-        <button class="btn btn-primary">
+        <button class="btn btn-outline-light" id="btn-info">
           <span lang="pt-BR" class="pt-BR">Mais informação </span>
           <span lang="es-AR" class="es-AR">Más información </span>
         </button>
       </div>
     </section>
+
     <!-- PROJETOS -->
 
     <section class="container-fluid projetos p-3" id="projetos">
@@ -485,8 +490,8 @@
       </div>
       <div class="container-fluid features">
         <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <h3 class="feature-title" id="be">BeCapital S.A.</h3>
+          <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+            <h3 class="feature-title" id="becapital">BeCapital S.A.</h3>
             <a
               href="https://www.app.be.capital/"
               target="_blank"
@@ -500,40 +505,47 @@
               Empresa brasileña de inversiones y seguros.
             </p>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <h3 class="feature-title" id="giphy">Buscador de GIFs</h3>
+          <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+            <h3 class="feature-title" id="qbd">
+              <span lang="pt-BR" class="pt-BR">Que Buen Dato!</span>
+              <span lang="es-AR" class="es-AR">Que Buen Dato! </span>
+            </h3>
             <a
-              href="https://api-gifs-giphy.stackblitz.io"
+              href="https://www.quebuendato.com.ar"
               target="_blank"
               rel="noopener noreferrer"
-              ><img src="/public/images//gifs.png" class="img-fluid"
+              ><img
+                src="/public/images/qbd.png"
+                class="img-fluid"
+                alt="que buen dato web"
             /></a>
             <p lang="pt-BR" class="pt-BR">
-              Procura gifs utilizando a API do GIPHY.
+              Uma site para comprar e vender bens ou serviços locais.
             </p>
             <p lang="es-AR" class="es-AR">
-              Procura gifs utilizando a API do GIPHY.
+              Una pagina web para comprar y vender bienes o servicios locales.
             </p>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <h3 class="feature-title" id="nasa">
-              <span lang="pt-BR" class="pt-BR">Foto do dia, API da NASA</span>
-              <span lang="es-AR" class="es-AR"
-                >Foto del día, API de la NASA
-              </span>
+          <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+            <h3 class="feature-title" id="beholder">
+              <span lang="pt-BR" class="pt-BR">Beholder bot</span>
+              <span lang="es-AR" class="es-AR">Beholder bot </span>
             </h3>
             <a
-              href="https://julianboetto.github.io/NASA_apos/"
+              href="https://beholder.julianboetto.lat"
               target="_blank"
               rel="noopener noreferrer"
-              ><img src="/public/images/nasa.png" class="img-fluid"
+              ><img
+                src="/public/images/beholder.png"
+                class="img-fluid"
+                alt="beholder bot web"
             /></a>
             <p lang="pt-BR" class="pt-BR">
-              Uma API para pesquisar imagens da NASA pela data ou quantidade
+              Bot multi-coin para fazer trading na Binance.
             </p>
             <p lang="es-AR" class="es-AR">
-              Una API para buscar imagenes de la NASA por fecha o cantidad
+              Bot multi-coin para hacer trading en Binance.
             </p>
           </div>
         </div>
