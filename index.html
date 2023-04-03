@@ -1,323 +1,677 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="public/icons/code.ico" type="image/x-ico" />
     <title>Julián Boeto | Portfolio</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Karla"
+    />
     <style>
-        body {
-            font-family: 'Karla', serif;
-        }
+      body {
+        font-family: "Karla", serif;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-right" id="navBar">
-        <div class="container-fluid">
-            <div class="flex-shrink-0 dropdown order-lg-2">
-                <button class="btn dropdown-toggle" type="button" id="dropLanguage"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <ion-icon name="language-outline"></ion-icon>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-lg-end text-small slide" id="dropMenu" data-bs-auto-close="outside" aria-labelledby="dropLanguage"
-                    style="width: max-content;">
-                    <li>
-                        <button class="btn" id="btnEs">
-                            <img src="Imagenes/argentina.png" class="m-3" alt="Español" width="32" height="32"
-                                class="rounded-circle"><span class="dropLanguageText">Español</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="btn" id="btnPt">
-                            <img src="Imagenes/brasil.png" class="m-3" alt="Português" width="32" height="32"
-                                class="rounded-circle"><span class="dropLanguageText">Português</span>
-                        </button>
-                    </li>
-
-                </ul>
-            </div>
-            <button class="navbar-toggler navbar-right" id="toggleBtn" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <ion-icon name="menu-outline"></ion-icon>
-            </button>
-            <div class="collapse navbar-collapse text-center" id="navbarScroll">
-                <ul class="navbar-nav navbar-dark ms-auto align-items-center justify-content-center">
-                    <li class="nav-item headBtn">
-                        <a class="nav-link" aria-current="page" href="#titPer">
-                            <span lang="pt-BR" class="pt-BR">Apresentação</span>
-                            <span lang="es-AR" class="es-AR">Presentación</span>
-                        </a>
-                    </li>
-                    <li class="nav-item headBtn">
-                        <a class="nav-link" href="#formacao">
-                            <span lang="pt-BR" class="pt-BR">Formação</span>
-                            <span lang="es-AR" class="es-AR">Formación</span>
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown headBtn">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span lang="pt-BR" class="pt-BR">Projetos</span>
-                            <span lang="es-AR" class="es-AR">Proyectos</span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" id="dropMenu">                          
-                            <li><a class="dropdown-item" href="#giphy">Procurador de GIFs</a></li>
-                            <li><a class="dropdown-item" href="#nasa">Foto do dia, API da Nasa</a></li>
-                        </ul>
-                    </li>                 
-                    <li class="nav-item headBtn">
-                        <a class="nav-link" href="#contato">
-                            <span lang="pt-BR" class="pt-BR">Contato</span>
-                            <span lang="es-AR" class="es-AR">Contacto</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container-fluid">
+        <div class="flex-shrink-0 dropdown order-lg-2">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            id="dropLanguage"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <ion-icon name="language-outline"></ion-icon>
+          </button>
+          <ul
+            class="dropdown-menu dropdown-menu-lg-end text-small slide"
+            id="dropMenu"
+            data-bs-auto-close="outside"
+            aria-labelledby="dropLanguage"
+            style="width: max-content"
+          >
+            <li>
+              <button class="btn" id="btnEs">
+                <img
+                  src="/public/images/argentina.png"
+                  class="m-3"
+                  alt="Español"
+                  width="32"
+                  height="32"
+                  class="rounded-circle"
+                /><span class="dropLanguageText">Español</span>
+              </button>
+            </li>
+            <li>
+              <button class="btn" id="btnPt">
+                <img
+                  src="/public/images/brasil.png"
+                  class="m-3"
+                  alt="Português"
+                  width="32"
+                  height="32"
+                  class="rounded-circle"
+                /><span class="dropLanguageText">Português</span>
+              </button>
+            </li>
+          </ul>
         </div>
-    </nav>
-
-<!-- PERFIL -->
-
-    <div class="container-fluid perfil">
-        <div class="row align-self-center imgperfil p-3">
-            <div class="col-12 col-md-6 align-items-center">
-                <h1 id="titPer">Julián Boetto<img src="Imagenes/download.jpeg" id="imgArg" alt=""></h1>
-                <h3 id="h3Per">
-                    <span lang="pt-BR" class="pt-BR">Desenvolvedor web Full-Stack</span>
-                    <span lang="es-AR" class="es-AR">Programador web Full-Stack</span>
-                </h3>
-                <h2 id="h2Per">
-                    <span lang="pt-BR" class="pt-BR">Olá</span>
-                    <span lang="es-AR" class="es-AR">Hola</span>
-                </h2>
-                <p class="col align-self-center" id="parPer">
-                    <span lang="pt-BR" class="pt-BR">Sou argentino, moro no Brasil desde o ano 2020. Me formei como
-                        desenvolvedor web full-stack e virei
-                        de carreira na cidade do Rio de Janeiro. Hoje estou continuamente estudando e me capacitando
-                        para
-                        melhorar e conhecer as novas ferramentas do mercado de TI. Sou um apaxionado pela tecnologia e
-                        acredito que tudo pode ser solucionado ou melhorado. Minha area preferida do desenvolvimento web
-                        é o
-                        back-end.
-                    </span>
-                    <span lang="es-AR" class="es-AR">Soy argentino, vivo en Brasil desde el año 2020. Estudié
-                        programación web y me cambié de carrera profesional en Rio de Janeiro.
-                        Hoy estoy continuamente estudiando y capacitandome para mejorar y conocer las nuevas
-                        herramientas del mercado de TI. Soy un apasionado
-                        por la tecnologia y creo en que todo puede ser solucionado o mejorado. Mi stack preferido es el
-                        back-end.
-                    </span>
-                </p>
-            </div>
-            <div class="col-12 col-md-6 img-fluid">
-                <div class="row justify-content-center p-3">
-                    <a href="https://www.linkedin.com/in/julianmatiasboetto/" class="col-3" target="_blank"><ion-icon
-                            name="logo-linkedin"></ion-icon></a>
-                    <a href="https://github.com/JulianBoetto/" class="col-3" target="_blank"><ion-icon
-                            name="logo-github"></ion-icon></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- FORMAÇAO -->
-
-    <section class="container-fluid forma">
-        <div class="row justify-content-center">
-            <h2 class="col titPri" id="formacao">
-                <span lang="pt-BR" class="pt-BR">Formação</span>
-                <span lang="es-AR" class="es-AR">Formación</span>
-            </h2>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-4 align-self-center">
-                <img src="Imagenes/toti-logo.97c2d711.svg" id="imgToti" class="img-fluid" alt="logo Toti">
-            </div>
-            <div class="col-4 align-self-center">
-                <h3 id="titToti">
-                    <span lang="pt-BR" class="pt-BR">Desenvolvedor web Full-Stack</span>
-                    <span lang="es-AR" class="es-AR">Programador web Full-Stack</span>
-                </h3>
-                <p id="datToti">01/21 - 5/21</p>
-                <a id="linkToti" href="https://totidiversidade.com.br/" target="_blank">
-                    <p>Toti Diversidade</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROJETOS -->
-
-
-    <section class="container-fluid projetos p-3">
-        <div class="row justify-content-center align-self-center">
-            <h2 class="col titPri">
+        <button
+          class="navbar-toggler navbar-right"
+          id="toggleBtn"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarScroll">
+          <ul
+            class="navbar-nav navbar-dark ms-auto align-items-center justify-content-center"
+          >
+            <li class="nav-item headBtn">
+              <a class="nav-link" aria-current="page" href="#titPer">
+                <span lang="pt-BR" class="pt-BR">Apresentação</span>
+                <span lang="es-AR" class="es-AR">Presentación</span>
+              </a>
+            </li>
+            <li class="nav-item headBtn">
+              <a class="nav-link" href="#sobre">
+                <span lang="pt-BR" class="pt-BR">Sobre mim</span>
+                <span lang="es-AR" class="es-AR">Sobre mi</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown headBtn">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 <span lang="pt-BR" class="pt-BR">Projetos</span>
                 <span lang="es-AR" class="es-AR">Proyectos</span>
-            </h2>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" id="dropMenu">
+                <li>
+                  <a class="dropdown-item" href="#giphy">Procurador de GIFs</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#nasa"
+                    >Foto do dia, API da Nasa</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item headBtn">
+              <a class="nav-link" href="#contato">
+                <span lang="pt-BR" class="pt-BR">Contato</span>
+                <span lang="es-AR" class="es-AR">Contacto</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="container-fluid features">
-            <div class="row">
-                <!-- <div class="col-lg-4 col-md-4 col-sm-12">
-                    <h3 class="feature-title" id="myStore">Mystore</h3>
-                    <a href="https://angular-mmqp7z.stackblitz.io/" target="_blank" rel="noopener noreferrer"><img
-                            src="Imagenes/mystore1.png" class="img-fluid"></a>
-                    <p>Um exemplo de loja virtual onde você pode ver
-                        diferentes produtos, ler sua descrição, adicionar ao carrinho
-                        de compras, comprar e escolher o tipo de transporte
-                    </p>
-                </div> -->
+      </div>
+    </nav>
 
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <h3 class="feature-title" id="giphy">Buscador de GIFs</h3>
-                    <a href="https://api-gifs-giphy.stackblitz.io" target="_blank" rel="noopener noreferrer"><img
-                            src="Imagenes/gifs.png" class="img-fluid"></a>
-                    <p lang="pt-BR" class="pt-BR">Procura gifs utilizando a API do GIPHY.</p>
-                    <p lang="es-AR" class="es-AR">Procura gifs utilizando a API do GIPHY.</p>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <h3 class="feature-title" id="nasa">
-                        <span lang="pt-BR" class="pt-BR">Foto do dia, API da NASA</span>
-                        <span lang="es-AR" class="es-AR">Foto del día, API de la NASA </span>
-                    </h3>
-                    <a href="https://julianboetto.github.io/NASA_apos/" target="_blank" rel="noopener noreferrer"><img
-                            src="Imagenes/nasa.png" class="img-fluid"></a>
-                    <p lang="pt-BR" class="pt-BR">Uma API para pesquisar imagens da NASA pela data ou quantidade</p>
-                    <p lang="es-AR" class="es-AR">Una API para buscar imagenes de la NASA por fecha o cantidad</p>
-                </div>
-            </div>
+    <!-- PERFIL -->
+    <section
+      class="container-fluid perfil d-flex justify-content-center align-items-center"
+      id="perfil"
+    >
+      <div class="col-10 col-md-6 col-xs-12 text-center">
+        <h1 id="titPer">
+          <span lang="pt-BR" class="pt-BR">Olá!</span>
+          <span lang="es-AR" class="es-AR">Hola!</span>
+        </h1>
+        <h2 id="h2Per">
+          <span lang="pt-BR" class="pt-BR"
+            >sou <strong id="nombre">Julián Boetto</strong></span
+          >
+          <span lang="es-AR" class="es-AR"
+            >soy <strong id="nombre">Julián Boetto</strong></span
+          >
+        </h2>
+        <h3 id="h3Per">
+          <span lang="pt-BR" class="pt-BR">Desenvolvedor web Full-Stack</span>
+          <span lang="es-AR" class="es-AR">Programador web Full-Stack</span>
+        </h3>
+        <div class="row justify-content-center p-3">
+          <a
+            href="https://www.linkedin.com/in/julianmatiasboetto/"
+            class="col-3"
+            target="_blank"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+          <a
+            href="https://github.com/JulianBoetto/"
+            class="col-3"
+            target="_blank"
+            ><ion-icon name="logo-github"></ion-icon
+          ></a>
+          <button
+            class="btn animated-button1"
+            id="btn-next"
+            onclick="scrollToNextSection()"
+          >
+            <ion-icon name="chevron-down-circle-outline"></ion-icon>
+          </button>
         </div>
+      </div>
+    </section>
 
+    <!-- SOBRE MIM -->
 
-        <!-- REPOSITORIOS -->
+    <section
+      class="container-fluid perfil d-flex justify-content-center align-items-center"
+      id="sobre"
+    >
+      <div class="col-10 col-md-6 col-xs-12 text-center">
+        <p class="text-center" id="parPer">
+          <span lang="pt-BR" class="pt-BR"
+            >Sou argentino, moro no Brasil desde o ano 2020. Me formei como
+            desenvolvedor web full-stack e virei de carreira na cidade do Rio de
+            Janeiro. Hoje estou continuamente estudando e me capacitando para
+            melhorar e conhecer as novas ferramentas do mercado de TI.
+          </span>
+          <span lang="es-AR" class="es-AR"
+            >Soy argentino, vivo en Brasil desde el año 2020. Estudié
+            programación web y me cambié de carrera profesional en Rio de
+            Janeiro. Hoy estoy continuamente estudiando y capacitandome para
+            mejorar y conocer las nuevas herramientas del mercado de TI.
+          </span>
+        </p>
+        <!-- <div class="mb-3" id="my-carousel">
+          <div class="carousel-images">
+            <a
+              class="carousel-image"
+              href="https://www.typescriptlang.org/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+                alt="typescript"
+                width="40"
+                height="40"
+              />
+            </a>
 
+            <a
+              class="carousel-image"
+              href="https://aws.amazon.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                alt="aws"
+                width="40"
+                height="40"
+              />
+            </a>
+            <a
+              class="carousel-image"
+              href="https://git-scm.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+                alt="git"
+                width="40"
+                height="40"
+              />
+            </a>
+            <a
+              class="carousel-image"
+              href="https://www.gatsbyjs.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://www.vectorlogo.zone/logos/gatsbyjs/gatsbyjs-icon.svg"
+                alt="gatsby"
+                width="40"
+                height="40"
+              />
+            </a>
+            <a
+              class="carousel-image"
+              href="https://www.docker.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg"
+                alt="docker"
+                width="40"
+                height="40"
+              />
+            </a>
+            <a
+              class="carousel-image"
+              href="https://getbootstrap.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
+                alt="bootstrap"
+                width="40"
+                height="40"
+              />
+            </a>
+            <a
+              class="carousel-image"
+              href="https://azure.microsoft.com/en-in/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg"
+                alt="azure"
+                width="40"
+                height="40"
+              />
+            </a>
+            <a
+              class="carousel-image"
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                alt="javascript"
+                width="40"
+                height="40"
+              />
+            </a>
+            <a
+              class="carousel-image"
+              href="https://angular.io"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://angular.io/assets/images/logos/angular/angular.svg"
+                alt="angular"
+                width="40"
+                height="40"
+              />
+            </a>
+            <a
+              class="carousel-image"
+              href="https://redis.io"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg"
+                alt="redis"
+                width="40"
+                height="40"
+              />
+            </a>
+            <a
+              class="carousel-image"
+              href="https://reactjs.org/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+                alt="react"
+                width="40"
+                height="40"
+              />
+            </a>
+            <a
+              class="carousel-image"
+              href="https://postman.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+                alt="postman"
+                width="40"
+                height="40"
+              />
+            </a>
+            <a
+              class="carousel-image"
+              href="https://www.postgresql.org"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
+                alt="postgresql"
+                width="40"
+                height="40"
+              />
+            </a>
+            <a
+              class="carousel-image"
+              href="https://nodejs.org"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+                alt="nodejs"
+                width="40"
+                height="40"
+              />
+            </a>
+            <a
+              class="carousel-image"
+              href="https://nestjs.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-plain.svg"
+                alt="nestjs"
+                width="40"
+                height="40"
+              />
+            </a>
+            <a
+              class="carousel-image"
+              href="https://www.mysql.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+                alt="mysql"
+                width="40"
+                height="40"
+              />
+            </a>
+            <a
+              class="carousel-image"
+              href="https://www.mongodb.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                class="rounded"
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
+                alt="mongodb"
+                width="40"
+                height="40"
+              />
+            </a>
+            <a
+              class="carousel-image"
+              href="https://www.linux.org/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                class="rounded"
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
+                alt="linux"
+                width="40"
+                height="40"
+              />
+            </a>
+            <a
+              class="carousel-image"
+              href="https://jestjs.io"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                class="rounded"
+                src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg"
+                alt="jest"
+                width="40"
+                height="40"
+              />
+            </a>
+            <a
+              class="carousel-image"
+              href="https://www.typescriptlang.org/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+                alt="typescript"
+                width="40"
+                height="40"
+              />
+            </a>
+          </div>
+        </div> -->
+        <button class="btn btn-primary">
+          <span lang="pt-BR" class="pt-BR">Mais informação </span>
+          <span lang="es-AR" class="es-AR">Más información </span>
+        </button>
+      </div>
+    </section>
+    <!-- PROJETOS -->
 
-        <!-- <div class="container-fluid">
-                <div class="row justify-content-center" id="titRep">
-                    <h2 class="col-6 titPro">Repositorios de<img src="Imagenes/GitHub_Logo.png" class="col" id="logGit" alt="Logo Github"></h2>
-                </div>
-                
-                
-                
-                <ul class="ch-grid">
-                    <li>
-                        <div class="ch-item img">
-                            <div class="ch-info">
-                                <h3>Blog da viagem</h3>
-                                <p>Julián <a href="#" onclick="link1()">Ver no Github</a></p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="ch-item img">
-                            <div class="ch-info">
-                                <h3>Exercicio 5</h3>
-                                <p>Julián <a href="#" onclick="link3()">Ver no Github</a></p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="ch-item img">
-                            <div class="ch-info">
-                                <h3>Exercicio 3</h3>
-                                <p>Julián <a href="#" onclick="link2()">Ver no Github</a></p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>            
-            </div> -->
+    <section class="container-fluid projetos p-3" id="projetos">
+      <div class="row justify-content-center align-self-center">
+        <h2 class="col titPri">
+          <span lang="pt-BR" class="pt-BR">Projetos</span>
+          <span lang="es-AR" class="es-AR">Proyectos</span>
+        </h2>
+      </div>
+      <div class="container-fluid features">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <h3 class="feature-title" id="be">BeCapital S.A.</h3>
+            <a
+              href="https://www.app.be.capital/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="/public/images/Becapital.png" class="img-fluid"
+            /></a>
+            <p lang="pt-BR" class="pt-BR">
+              Empresa brasileira de investimentos e seguros.
+            </p>
+            <p lang="es-AR" class="es-AR">
+              Empresa brasileña de inversiones y seguros.
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <h3 class="feature-title" id="giphy">Buscador de GIFs</h3>
+            <a
+              href="https://api-gifs-giphy.stackblitz.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="/public/images//gifs.png" class="img-fluid"
+            /></a>
+            <p lang="pt-BR" class="pt-BR">
+              Procura gifs utilizando a API do GIPHY.
+            </p>
+            <p lang="es-AR" class="es-AR">
+              Procura gifs utilizando a API do GIPHY.
+            </p>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <h3 class="feature-title" id="nasa">
+              <span lang="pt-BR" class="pt-BR">Foto do dia, API da NASA</span>
+              <span lang="es-AR" class="es-AR"
+                >Foto del día, API de la NASA
+              </span>
+            </h3>
+            <a
+              href="https://julianboetto.github.io/NASA_apos/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="/public/images/nasa.png" class="img-fluid"
+            /></a>
+            <p lang="pt-BR" class="pt-BR">
+              Uma API para pesquisar imagens da NASA pela data ou quantidade
+            </p>
+            <p lang="es-AR" class="es-AR">
+              Una API para buscar imagenes de la NASA por fecha o cantidad
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- CONTATO E FORMULARIO -->
 
     <section class="container-fluid contato">
-        <div class="row">
-            <div class="col-12 col-md-6 p-5">
-                <h2 class="titPri" id="contato">
-                    <span lang="pt-BR" class="pt-BR">Contato</span>
-                    <span lang="es-AR" class="es-AR">Contacto</span>
-                </h2>
-                <p lang="pt-BR" class="pt-BR" id="titToti2">
-                    Quer entrar em contato comigo?</p>
-                <p lang="es-AR" class="es-AR" id="titToti2">
-                    Quiere entrar en contacto conmigo?</p>
-                <p lang="pt-BR" class="pt-BR" id="titToti2">Preencha o formulário e entre em contato o mais
-                    rápido possível.</p>
-                <p lang="es-AR" class="es-AR" id="titToti2">Complete el formulário y entre en contacto lo más rápido
-                    posible.</p>
-                <p lang="pt-BR" class="pt-BR" id="titToti2">Você também pode me encontrar nas seguintes redes sociais:
-                </p>
-                <p lang="es-AR" class="es-AR" id="titToti2">También me podés encontrar en las siguientes redes sociales:
-                </p>
-                <div class="row justify-content-center p-5">
-                    <a href="https://www.linkedin.com/in/julianmatiasboetto/" class="col-3 p-2"
-                        target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-                    <!-- <a href="https://www.instagram.com/julianboetto/" class="col-3 p-2" target="_blank"><ion-icon
+      <div class="row">
+        <div class="col-12 col-md-6 p-5">
+          <h2 class="titPri" id="contato">
+            <span lang="pt-BR" class="pt-BR">Contato</span>
+            <span lang="es-AR" class="es-AR">Contacto</span>
+          </h2>
+          <p lang="pt-BR" class="pt-BR" id="titToti2">
+            Quer entrar em contato comigo?
+          </p>
+          <p lang="es-AR" class="es-AR" id="titToti2">
+            Quiere entrar en contacto conmigo?
+          </p>
+          <p lang="pt-BR" class="pt-BR" id="titToti2">
+            Preencha o formulário e entre em contato o mais rápido possível.
+          </p>
+          <p lang="es-AR" class="es-AR" id="titToti2">
+            Complete el formulário y entre en contacto lo más rápido posible.
+          </p>
+          <p lang="pt-BR" class="pt-BR" id="titToti2">
+            Você também pode me encontrar nas seguintes redes sociais:
+          </p>
+          <p lang="es-AR" class="es-AR" id="titToti2">
+            También me podés encontrar en las siguientes redes sociales:
+          </p>
+          <div class="row justify-content-center p-5">
+            <a
+              href="https://www.linkedin.com/in/julianmatiasboetto/"
+              class="col-3 p-2"
+              target="_blank"
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+            <!-- <a href="https://www.instagram.com/julianboetto/" class="col-3 p-2" target="_blank"><ion-icon
                             name="logo-instagram"></ion-icon></a> -->
-                    <a href="https://github.com/JulianBoetto/" class="col-3 p-2" target="_blank"><ion-icon
-                            name="logo-github"></ion-icon></a>
-                </div>
-            </div>
-
-
-
-
-
-            <div class="col-12 col-md-6">
-                <form id="form" class="needs-validation" name="contactForm"
-                    action="https://formsubmit.co/b291ed042a9f9a60213a005cc09f17aa" method="POST">
-                    <input type="hidden" name="_autoresponse"
-                        value="Muito obrigado por seu contato. Entrarei em contato com você em breve.">
-                    <input type="hidden" name="_next" value="https://julianboetto.github.io/portfolio.github.io/">
-                    <label class="form-label container-fluid labelForm">
-                        <span lang="pt-BR" class="pt-BR">NOME:</span>
-                        <span lang="es-AR" class="es-AR">NOMBRE:</span>
-                        <input class="form-control" type="text" id="nome" name="name" placeholder="Joao Santos"
-                            required>
-                    </label>
-                    <label class="form-label container-fluid labelForm">
-                        EMAIL:
-                        <input type="email" id="email" class="form-control email" name="email"
-                            placeholder="seuemail@domain.com" required>
-                    </label>
-                    <label class="form-label container-fluid labelForm">
-                        <span lang="pt-BR" class="pt-BR">ASSUNTO:</span>
-                        <span lang="es-AR" class="es-AR">ASUNTO:</span>
-                        <input class="form-control" type="text" id="assunto" name="subject" placeholder="Contato">
-                    </label>
-
-                    </label>
-                    <label class="form-label container-fluid labelForm">
-                        <span lang="pt-BR" class="pt-BR">MESSAGEM:</span>
-                        <span lang="es-AR" class="es-AR">MENSAJE:</span>
-                        <textarea class="form-control" name="comments" id="textArea" cols="30" rows="10" required
-                            minlength="10"></textarea>
-                    </label>
-                    <div class="row justify-content-center p-2">
-                        <button type="submit" id="butEnviar">Enviar</button>
-                    </div>
-                </form>
-            </div>
+            <a
+              href="https://github.com/JulianBoetto/"
+              class="col-3 p-2"
+              target="_blank"
+              ><ion-icon name="logo-github"></ion-icon
+            ></a>
+          </div>
         </div>
+
+        <div class="col-12 col-md-6">
+          <form
+            id="form"
+            class="needs-validation"
+            name="contactForm"
+            action="https://formsubmit.co/b291ed042a9f9a60213a005cc09f17aa"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_autoresponse"
+              value="Muito obrigado por seu contato. Entrarei em contato com você em breve."
+            />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://julianboetto.github.io/portfolio.github.io/"
+            />
+            <label class="form-label container-fluid labelForm">
+              <span lang="pt-BR" class="pt-BR">NOME:</span>
+              <span lang="es-AR" class="es-AR">NOMBRE:</span>
+              <input
+                class="form-control"
+                type="text"
+                id="nome"
+                name="name"
+                placeholder="Joao Santos"
+                required
+              />
+            </label>
+            <label class="form-label container-fluid labelForm">
+              EMAIL:
+              <input
+                type="email"
+                id="email"
+                class="form-control email"
+                name="email"
+                placeholder="seuemail@domain.com"
+                required
+              />
+            </label>
+            <label class="form-label container-fluid labelForm">
+              <span lang="pt-BR" class="pt-BR">ASSUNTO:</span>
+              <span lang="es-AR" class="es-AR">ASUNTO:</span>
+              <input
+                class="form-control"
+                type="text"
+                id="assunto"
+                name="subject"
+                placeholder="Contato"
+              />
+            </label>
+
+            <label class="form-label container-fluid labelForm">
+              <span lang="pt-BR" class="pt-BR">MESSAGEM:</span>
+              <span lang="es-AR" class="es-AR">MENSAJE:</span>
+              <textarea
+                class="form-control"
+                name="comments"
+                id="textArea"
+                cols="30"
+                rows="10"
+                required
+                minlength="10"
+              ></textarea>
+            </label>
+            <div class="row justify-content-center p-2">
+              <button type="submit" id="butEnviar">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
 
-    <a href="#" class="btn" id="btn-top" onclick="scrollToTop()" >
-        <ion-icon name="chevron-up-circle-outline"></ion-icon>
+    <a href="#" class="btn" id="btn-top" onclick="scrollToTop()">
+      <ion-icon name="chevron-up-circle-outline"></ion-icon>
     </a>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
     <script src="index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

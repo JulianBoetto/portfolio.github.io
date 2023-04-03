@@ -51,31 +51,52 @@ function changePt() {
 buttonEs.addEventListener("click", changeEs);
 buttonPt.addEventListener("click", changePt);
 
-const btnTop = document.getElementById('btn-top');
+// Volver arriba
+const btnTop = document.getElementById("btn-top");
+const btnNextSection = document.getElementById("btn-next");
 let scrollPos = window.pageYOffset || document.documentElement.scrollTop;
-
 function updateScrollPos() {
   scrollPos = window.pageYOffset || document.documentElement.scrollTop;
 }
 
 function toggleBtnTop() {
   if (scrollPos > 0) {
-    btnTop.style.display = 'block';
+    btnTop.style.display = "block";
+    btnNextSection.style.display = "none";
+  } else if (scrollPos === 0) {
+    btnNextSection.style.display = "block";
+    btnTop.style.display = "none";
   } else {
-    btnTop.style.display = 'none';
+    btnTop.style.display = "none";
   }
 }
 
 function scrollToTop() {
   window.scrollTo({
     top: 0,
-    behavior: 'smooth'
+    behavior: "smooth",
   });
 }
 
-window.addEventListener('scroll', function() {
+window.addEventListener("scroll", function () {
   updateScrollPos();
   toggleBtnTop();
 });
 
 toggleBtnTop();
+
+// Navegar a la seccion siguiente
+function scrollToNextSection() {
+  var currentSection =
+    document.querySelector(":target") || document.querySelector("section");
+const nextSeccion = currentSection.nextElementSibling;
+nextSeccion.scrollIntoView();
+const seccionTop = nextSeccion.getBoundingClientRect().top + window.pageYOffset;
+const windowHeight = window.innerHeight;
+const seccionHeight = nextSeccion.offsetHeight;
+const seccionOffset = (windowHeight - seccionHeight) / 2;
+window.scrollTo({
+  top: seccionTop - seccionOffset,
+  behavior: 'smooth'
+});
+}
