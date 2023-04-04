@@ -242,25 +242,44 @@ ion-icon {
 
 .projetos {
   background: #222;
-  max-height: 100vh;
+  min-height: 100vh;
+  height: auto;
 }
 
 .card {
-  color: var(--texto-primario);
-  font-size: 1.25rem;
+  color: var(--texto-primario); 
+  display: block;
 }
 
-@media (min-width: 768px) {
-  .headBtn {
-    margin-right: 20px;
+@media (max-width: 767px) {
+  .projetos {
+
+  }
+  .card {
+    width: 100%; /* Ajusta el ancho de la tarjeta al 100% del contenedor */
+    align-items: flex-center; /* Alinea los elementos a la izquierda */
+    /* max-height: 20vh; */
+  }
+
+  .card h5 {
+    font-size: 1em; /* Disminuye el tamaño de fuente del título */
+  }
+
+  .card p {
+    font-size: 0.9em; /* Disminuye el tamaño de fuente del contenido */
+    text-align: left; /* Alinea el contenido a la izquierda */
+  }
+
+  .button {
+    margin-top: 20px; /* Agrega un margen superior para separar el botón del contenido */
   }
 }
-
-
 /* CONTATO */
 
 .contato {
   background-color: #222;
+  min-height: 100vh;
+  height: auto;
 }
 
 #titToti2 {
