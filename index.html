@@ -25,166 +25,171 @@
   </head>
 
   <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-right" id="navBar">
-      <div class="container-fluid">
-        <div class="flex-shrink-0 dropdown order-lg-2">
+    <section id="perfil">
+      <!-- NAVBAR -->
+      <nav
+        class="navbar navbar-expand-lg navbar-right navbar-light navbar-transparent"
+        id="navBar"
+      >
+        <div class="container-fluid">
+          <div class="flex-shrink-0 dropdown order-lg-2">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              id="dropLanguage"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <ion-icon name="language-outline"></ion-icon>
+            </button>
+            <ul
+              class="dropdown-menu dropdown-menu-lg-end text-small slide"
+              id="dropMenu"
+              aria-labelledby="dropLanguage"
+              style="width: max-content"
+            >
+              <li>
+                <button class="btn" id="btnEs">
+                  <img
+                    src="/public/images/argentina.png"
+                    class="m-3"
+                    alt="Español"
+                    width="32"
+                    height="32"
+                    class="rounded-circle"
+                  /><span class="dropLanguageText">Español</span>
+                </button>
+              </li>
+              <li>
+                <button class="btn" id="btnPt">
+                  <img
+                    src="/public/images/brasil.png"
+                    class="m-3"
+                    alt="Português"
+                    width="32"
+                    height="32"
+                    class="rounded-circle"
+                  /><span class="dropLanguageText">Português</span>
+                </button>
+              </li>
+            </ul>
+          </div>
           <button
-            class="btn dropdown-toggle"
+            class="navbar-toggler navbar-right"
+            id="toggleBtn"
             type="button"
-            id="dropLanguage"
-            data-bs-toggle="dropdown"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
             aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            <ion-icon name="language-outline"></ion-icon>
+            <ion-icon name="menu-outline"></ion-icon>
           </button>
-          <ul
-            class="dropdown-menu dropdown-menu-lg-end text-small slide"
-            id="dropMenu"
-            aria-labelledby="dropLanguage"
-            style="width: max-content"
-          >
-            <li>
-              <button class="btn" id="btnEs">
-                <img
-                  src="/public/images/argentina.png"
-                  class="m-3"
-                  alt="Español"
-                  width="32"
-                  height="32"
-                  class="rounded-circle"
-                /><span class="dropLanguageText">Español</span>
-              </button>
-            </li>
-            <li>
-              <button class="btn" id="btnPt">
-                <img
-                  src="/public/images/brasil.png"
-                  class="m-3"
-                  alt="Português"
-                  width="32"
-                  height="32"
-                  class="rounded-circle"
-                /><span class="dropLanguageText">Português</span>
-              </button>
-            </li>
-          </ul>
+          <div class="collapse navbar-collapse text-center" id="navbarScroll">
+            <ul
+              class="navbar-nav navbar-dark ms-auto align-items-center justify-content-center"
+            >
+              <li class="nav-item headBtn">
+                <a class="nav-link" href="#sobre">
+                  <span lang="pt-BR" class="pt-BR">Sobre mim</span>
+                  <span lang="es-AR" class="es-AR">Sobre mi</span>
+                </a>
+              </li>
+              <li class="nav-item dropdown headBtn">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span lang="pt-BR" class="pt-BR">Projetos</span>
+                  <span lang="es-AR" class="es-AR">Proyectos</span>
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  id="dropMenu"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#becapital"
+                      >BeCapital S.A.</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#qbd">Que buen dato!</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#beholder">Beholder bot</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item headBtn">
+          <a class="nav-link" aria-current="page">
+            <span lang="pt-BR" class="pt-BR">Tecnologias</span>
+            <span lang="es-AR" class="es-AR">Tecnologías</span>
+          </a>
+        </li> -->
+              <li class="nav-item headBtn">
+                <a class="nav-link" href="#contato">
+                  <span lang="pt-BR" class="pt-BR">Contato</span>
+                  <span lang="es-AR" class="es-AR">Contacto</span>
+                </a>
+              </li>
+              <!-- <li class="nav-item headBtn">
+          <a class="nav-link" href="">
+            <span lang="pt-BR" class="pt-BR">Meu CV</span>
+            <span lang="es-AR" class="es-AR">Mi CV</span>
+          </a>
+        </li> -->
+            </ul>
+          </div>
         </div>
-        <button
-          class="navbar-toggler navbar-right"
-          id="toggleBtn"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <ion-icon name="menu-outline"></ion-icon>
-        </button>
-        <div class="collapse navbar-collapse text-center" id="navbarScroll">
-          <ul
-            class="navbar-nav navbar-dark ms-auto align-items-center justify-content-center"
-          >
-            <li class="nav-item headBtn">
-              <a class="nav-link" href="#sobre">
-                <span lang="pt-BR" class="pt-BR">Sobre mim</span>
-                <span lang="es-AR" class="es-AR">Sobre mi</span>
-              </a>
-            </li>
-            <li class="nav-item dropdown headBtn">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <span lang="pt-BR" class="pt-BR">Projetos</span>
-                <span lang="es-AR" class="es-AR">Proyectos</span>
-              </a>
-              <ul
-                class="dropdown-menu dropdown-menu-end"
-                id="dropMenu"
-                aria-labelledby="navbarDropdown"
-              >
-                <li>
-                  <a class="dropdown-item" href="#becapital">BeCapital S.A.</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#qbd">Que buen dato!</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#beholder">Beholder bot</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item headBtn">
-              <a class="nav-link" aria-current="page">
-                <span lang="pt-BR" class="pt-BR">Tecnologias</span>
-                <span lang="es-AR" class="es-AR">Tecnologías</span>
-              </a>
-            </li>
-            <li class="nav-item headBtn">
-              <a class="nav-link" href="#contato">
-                <span lang="pt-BR" class="pt-BR">Contato</span>
-                <span lang="es-AR" class="es-AR">Contacto</span>
-              </a>
-            </li>
-            <!-- <li class="nav-item headBtn">
-              <a class="nav-link" href="">
-                <span lang="pt-BR" class="pt-BR">Meu CV</span>
-                <span lang="es-AR" class="es-AR">Mi CV</span>
-              </a>
-            </li> -->
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- PERFIL -->
-    <section
-      class="container-fluid perfil d-flex justify-content-center align-items-center"
-      id="perfil"
-    >
-      <div class="col-10 col-md-6 col-xs-12 text-center shadow">
-        <h1 id="titPer">
-          <span lang="pt-BR" class="pt-BR">Olá!</span>
-          <span lang="es-AR" class="es-AR">Hola!</span>
-        </h1>
-        <h2 id="h2Per">
-          <span lang="pt-BR" class="pt-BR"
-            >sou <strong id="nombre">Julián Boetto</strong></span
-          >
-          <span lang="es-AR" class="es-AR"
-            >soy <strong id="nombre">Julián Boetto</strong></span
-          >
-        </h2>
-        <h3 id="h3Per">
-          <span lang="pt-BR" class="pt-BR">Desenvolvedor web Full-Stack</span>
-          <span lang="es-AR" class="es-AR">Programador web Full-Stack</span>
-        </h3>
-        <div class="row justify-content-center p-3">
-          <a
-            href="https://www.linkedin.com/in/julianmatiasboetto/"
-            class="col-3"
-            target="_blank"
-            ><ion-icon name="logo-linkedin"></ion-icon
-          ></a>
-          <a
-            href="https://github.com/JulianBoetto/"
-            class="col-3"
-            target="_blank"
-            ><ion-icon name="logo-github"></ion-icon
-          ></a>
-          <button
-            class="btn animated-button1"
-            id="btn-next"
-            onclick="scrollToNextSection()"
-          >
-            <ion-icon name="chevron-down-circle-outline"></ion-icon>
-          </button>
+      </nav>
+      <div
+        class="container-fluid d-flex justify-content-center align-items-center perfil-container"
+      >
+        <!-- PERFIL -->
+        <div class="col-10 col-md-6 col-xs-12 text-center">
+          <h1 id="titPer">
+            <span lang="pt-BR" class="pt-BR">Olá!</span>
+            <span lang="es-AR" class="es-AR">Hola!</span>
+          </h1>
+          <h2 id="h2Per">
+            <span lang="pt-BR" class="pt-BR"
+              >sou <strong id="nombre">Julián Boetto</strong></span
+            >
+            <span lang="es-AR" class="es-AR"
+              >soy <strong id="nombre">Julián Boetto</strong></span
+            >
+          </h2>
+          <h3 id="h3Per">
+            <span lang="pt-BR" class="pt-BR">Desenvolvedor web Full-Stack</span>
+            <span lang="es-AR" class="es-AR">Programador web Full-Stack</span>
+          </h3>
+          <div class="row justify-content-center p-3">
+            <a
+              href="https://www.linkedin.com/in/julianmatiasboetto/"
+              class="col-3"
+              target="_blank"
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+            <a
+              href="https://github.com/JulianBoetto/"
+              class="col-3"
+              target="_blank"
+              ><ion-icon name="logo-github"></ion-icon
+            ></a>
+            <button
+              class="btn animated-button1"
+              id="btn-next"
+              onclick="scrollToNextSection()"
+            >
+              <ion-icon name="chevron-down-circle-outline"></ion-icon>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -478,10 +483,14 @@
             </a>
           </div>
         </div> -->
-        <button class="btn btn-outline-light" id="btn-info" onclick="scrollToNextSection()">
+        <!-- <button
+          class="btn btn-outline-light"
+          id="btn-info"
+          onclick="scrollToNextSection()"
+        >
           <span lang="pt-BR" class="pt-BR">Mais informação </span>
           <span lang="es-AR" class="es-AR">Más información </span>
-        </button>
+        </button> -->
       </div>
     </section>
 
@@ -608,9 +617,9 @@
 
     <!-- CONTATO E FORMULARIO -->
 
-    <section class="container-fluid contato">
-      <div class="row">
-        <div class="col-12 col-md-6 p-5">
+    <section class="container-fluid d-flex justify-content-center align-items-center contato">
+      <div class="row col-10 d-flex justify-content-center align-items-center contato">
+        <div class="col col-md-5">
           <h2 class="titPri" id="contato">
             <span lang="pt-BR" class="pt-BR">Contato</span>
             <span lang="es-AR" class="es-AR">Contacto</span>
@@ -649,7 +658,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-md-6">
+        <div class="col-10 col-md-5">
           <form
             id="form"
             class="needs-validation"
@@ -675,7 +684,7 @@
                 type="text"
                 id="nome"
                 name="name"
-                placeholder="Joao Santos"
+                placeholder="Nome completo"
                 required
               />
             </label>

@@ -74,8 +74,12 @@ body {
   }
 }
 
-#navBar {
-  background-color: #222;
+
+.navbar-transparent {
+  background-color: transparent !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: none !important;
   min-height: 70px;
 }
 
@@ -122,12 +126,17 @@ body {
   100% {background-position:right}
 }
 
-.perfil {
+#perfil {
   background: #222;
   height: 100vh;
 }
 
-.perfil:hover {
+.perfil-container {
+  height: calc(100vh - 70px);
+  margin-top: -70px;
+}
+
+#perfil:hover {
   background:linear-gradient(90deg,#222,#333,#444) left/400% 100%;
   animation:f 2s infinite alternate linear;
 }
@@ -178,7 +187,6 @@ ion-icon {
 }
 
 #parPer {
-  /* color: var(--texto-primario); */
   color: var(--texto-primario);
   font-size: 1.5rem;
   font-weight: 400;
@@ -234,7 +242,7 @@ ion-icon {
 }
 
 .card {
-  color: #bbb;
+  color: var(--texto-primario);
   font-size: 1.25rem;
 }
 
@@ -243,13 +251,13 @@ ion-icon {
 
 .contato {
   background-color: #222;
-  min-height: 80vh;
+  min-height: 100vh;
 }
 
 #titToti2 {
   font-size: 22px;
   letter-spacing: 0px;
-  color: #707070;
+  color: var(--texto-primario);
   opacity: 1;
 }
 
@@ -257,15 +265,13 @@ ion-icon {
   text-align: left;
   font: normal normal 300 55px/73px;
   letter-spacing: 0px;
-  color: rgb(182, 21, 21);
   opacity: 1;
 }
 
 .contato > div > p {
   text-align: left;
-  font: normal normal normal 21px/28px;
-  letter-spacing: 0px;
-  color: rgba(112, 112, 112, 1);
+  font-size: 21px;
+  color: var(--texto-primario);
   opacity: 1;
 }
 
@@ -275,7 +281,7 @@ ion-icon {
   font-size: 13px/17px;
   font-weight: bold;
   letter-spacing: 0px;
-  color: #707070;
+  color: var(--texto-primario);
   opacity: 1;
 }
 
@@ -294,14 +300,12 @@ ion-icon {
   background: #585858 0% 0% no-repeat padding-box;
   border-radius: 5px;
   opacity: 1;
-  color: white;
-
+  color: var(--texto-primario);
   border: none;
   text-align: center;
   font-size: 12px/16px;
   font-weight: bold;
   letter-spacing: 0px;
-  color: #ffffff7a;
   text-transform: uppercase;
   opacity: 1;
 }
