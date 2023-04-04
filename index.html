@@ -185,9 +185,23 @@
             <button
               class="btn animated-button1"
               id="btn-next"
-              onclick="scrollToNextSection()"
             >
-              <ion-icon name="chevron-down-circle-outline"></ion-icon>
+              <svg
+                aria-hidden="true"
+                fill="none"
+                stroke="currentColor"
+                color="#bbb"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                height="60px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
             </button>
           </div>
         </div>
@@ -496,7 +510,7 @@
 
     <!-- PROJETOS -->
 
-    <section class="container-fluid projetos" id="projetos">
+    <section class="container-fluid d-flex align-items-center projetos" id="projetos">
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div
@@ -617,9 +631,13 @@
 
     <!-- CONTATO E FORMULARIO -->
 
-    <section class="container-fluid d-flex justify-content-center align-items-center contato">
-      <div class="row col-10 d-flex justify-content-center align-items-center contato">
-        <div class="col col-md-5">
+    <section
+      class="container-fluid d-flex justify-content-center align-items-center contato" id="contato"
+    >
+      <div
+        class="row col-10 d-flex justify-content-center align-items-center contato"
+      >
+        <div class="col col-md-5 text-center">
           <h2 class="titPri" id="contato">
             <span lang="pt-BR" class="pt-BR">Contato</span>
             <span lang="es-AR" class="es-AR">Contacto</span>
@@ -658,10 +676,10 @@
           </div>
         </div>
 
-        <div class="col-10 col-md-5">
+        <div class="col-10 col-md-5 mx-auto">
           <form
             id="form"
-            class="needs-validation"
+            class="needs-validation bg-ligth"
             name="contactForm"
             action="https://formsubmit.co/b291ed042a9f9a60213a005cc09f17aa"
             method="POST"
@@ -680,7 +698,7 @@
               <span lang="pt-BR" class="pt-BR">NOME:</span>
               <span lang="es-AR" class="es-AR">NOMBRE:</span>
               <input
-                class="form-control"
+                class="form-control rounded-3"
                 type="text"
                 id="nome"
                 name="name"
@@ -693,7 +711,7 @@
               <input
                 type="email"
                 id="email"
-                class="form-control email"
+                class="form-control email rounded-3"
                 name="email"
                 placeholder="seuemail@domain.com"
                 required
@@ -703,7 +721,7 @@
               <span lang="pt-BR" class="pt-BR">ASSUNTO:</span>
               <span lang="es-AR" class="es-AR">ASUNTO:</span>
               <input
-                class="form-control"
+                class="form-control rounded-3"
                 type="text"
                 id="assunto"
                 name="subject"
@@ -711,11 +729,11 @@
               />
             </label>
 
-            <label class="form-label container-fluid labelForm">
+            <label class="form-label container-fluid labelForm mb-3">
               <span lang="pt-BR" class="pt-BR">MESSAGEM:</span>
               <span lang="es-AR" class="es-AR">MENSAJE:</span>
               <textarea
-                class="form-control"
+                class="form-control rounded-3"
                 name="comments"
                 id="textArea"
                 cols="30"
@@ -724,16 +742,33 @@
                 minlength="10"
               ></textarea>
             </label>
-            <div class="row justify-content-center p-2">
-              <button type="submit" id="butEnviar">Enviar</button>
+            <div class="text-center">
+              <button class="btn btn-outline-light" id="btn-info" type="submit">
+                Enviar
+              </button>
             </div>
           </form>
         </div>
       </div>
     </section>
 
-    <a href="#" class="btn" id="btn-top" onclick="scrollToTop()">
-      <ion-icon name="chevron-up-circle-outline"></ion-icon>
+    <a href="#" id="btn-top" onclick="scrollToTop()">
+      <svg
+        aria-hidden="true"
+        fill="none"
+        color="#bbb"
+        height="50px"
+        stroke="currentColor"
+        stroke-width="1.5"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </svg>
     </a>
 
     <script
