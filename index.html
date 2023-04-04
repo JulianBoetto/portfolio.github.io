@@ -132,6 +132,12 @@
                 <span lang="es-AR" class="es-AR">Contacto</span>
               </a>
             </li>
+            <!-- <li class="nav-item headBtn">
+              <a class="nav-link" href="">
+                <span lang="pt-BR" class="pt-BR">Meu CV</span>
+                <span lang="es-AR" class="es-AR">Mi CV</span>
+              </a>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -142,7 +148,7 @@
       class="container-fluid perfil d-flex justify-content-center align-items-center"
       id="perfil"
     >
-      <div class="col-10 col-md-6 col-xs-12 text-center">
+      <div class="col-10 col-md-6 col-xs-12 text-center shadow">
         <h1 id="titPer">
           <span lang="pt-BR" class="pt-BR">Olá!</span>
           <span lang="es-AR" class="es-AR">Hola!</span>
@@ -472,7 +478,7 @@
             </a>
           </div>
         </div> -->
-        <button class="btn btn-outline-light" id="btn-info">
+        <button class="btn btn-outline-light" id="btn-info" onclick="scrollToNextSection()">
           <span lang="pt-BR" class="pt-BR">Mais informação </span>
           <span lang="es-AR" class="es-AR">Más información </span>
         </button>
@@ -481,72 +487,120 @@
 
     <!-- PROJETOS -->
 
-    <section class="container-fluid projetos p-3" id="projetos">
-      <div class="row justify-content-center align-self-center">
-        <h2 class="col titPri">
-          <span lang="pt-BR" class="pt-BR">Projetos</span>
-          <span lang="es-AR" class="es-AR">Proyectos</span>
-        </h2>
-      </div>
-      <div class="container-fluid features">
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
-            <h3 class="feature-title" id="becapital">BeCapital S.A.</h3>
-            <a
-              href="https://www.app.be.capital/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img src="/public/images/Becapital.png" class="img-fluid"
-            /></a>
-            <p lang="pt-BR" class="pt-BR">
-              Empresa brasileira de investimentos e seguros.
-            </p>
-            <p lang="es-AR" class="es-AR">
-              Empresa brasileña de inversiones y seguros.
-            </p>
+    <section class="container-fluid projetos" id="projetos">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div
+            class="card h-100 p-3 bg-transparent border border-dark-subtle border rounded-4"
+          >
+            <img src="/public/images/Becapital.png" class="img-fluid rounded" />
+            <div class="card-body">
+              <h5 class="feature-title" id="becapital">
+                Becapital S.A.
+                <a
+                  href="https://www.app.be.capital/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ion-icon size="small" name="open-outline"></ion-icon>
+                </a>
+              </h5>
+              <p lang="pt-BR" class="pt-BR card-text">
+                Empresa brasileira de investimentos e seguros.
+              </p>
+              <p lang="es-AR" class="es-AR card-text">
+                Empresa brasileña de inversiones y seguros.
+              </p>
+            </div>
+            <!-- <div class="card-footer">
+              <a
+                class="carousel-image"
+                href="https://www.typescriptlang.org/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+                  alt="typescript"
+                  width="40"
+                  height="40"
+                />
+              </a>
+            </div> -->
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
-            <h3 class="feature-title" id="qbd">
-              <span lang="pt-BR" class="pt-BR">Que Buen Dato!</span>
-              <span lang="es-AR" class="es-AR">Que Buen Dato! </span>
-            </h3>
-            <a
-              href="https://www.quebuendato.com.ar"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img
-                src="/public/images/qbd.png"
-                class="img-fluid"
-                alt="que buen dato web"
-            /></a>
-            <p lang="pt-BR" class="pt-BR">
-              Uma site para comprar e vender bens ou serviços locais.
-            </p>
-            <p lang="es-AR" class="es-AR">
-              Una pagina web para comprar y vender bienes o servicios locales.
-            </p>
+        </div>
+        <div class="col">
+          <div
+            class="card h-100 p-3 bg-transparent border border-dark-subtle border rounded-4"
+          >
+            <img
+              src="/public/images/qbd.png"
+              class="img-fluid rounded"
+              alt="que buen dato web"
+            />
+            <div class="card-body">
+              <h5 class="card-title" id="qbd">
+                Que Buen Dato!
+                <a
+                  href="https://www.quebuendato.com.ar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ion-icon size="small" name="open-outline"></ion-icon>
+                </a>
+              </h5>
+              <p lang="pt-BR" class="pt-BR card-text">
+                Uma site para comprar e vender bens ou serviços locais.
+              </p>
+              <p lang="es-AR" class="es-AR card-text">
+                Una pagina web para comprar y vender bienes o servicios locales.
+              </p>
+            </div>
+            <!-- <div class="card-footer"></div> -->
           </div>
-
-          <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
-            <h3 class="feature-title" id="beholder">
-              <span lang="pt-BR" class="pt-BR">Beholder bot</span>
-              <span lang="es-AR" class="es-AR">Beholder bot </span>
-            </h3>
-            <a
-              href="https://beholder.julianboetto.lat"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img
-                src="/public/images/beholder.png"
-                class="img-fluid"
-                alt="beholder bot web"
-            /></a>
-            <p lang="pt-BR" class="pt-BR">
-              Bot multi-coin para fazer trading na Binance.
-            </p>
-            <p lang="es-AR" class="es-AR">
-              Bot multi-coin para hacer trading en Binance.
-            </p>
+        </div>
+        <div class="col">
+          <div
+            class="card h-100 p-3 bg-transparent border border-dark-subtle border rounded-4"
+          >
+            <img
+              src="/public/images/beholder.png"
+              class="img-fluid rounded"
+              alt="beholder bot web"
+            />
+            <div class="card-body">
+              <h5 class="card-title" id="beholder">
+                Beholder bot
+                <a
+                  href="https://beholder.julianboetto.lat"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ion-icon size="small" name="open-outline"></ion-icon>
+                </a>
+              </h5>
+              <p lang="pt-BR" class="pt-BR card-text">
+                Bot multi-coin para fazer trading na Binance.
+              </p>
+              <p lang="es-AR" class="es-AR card-text">
+                Bot multi-coin para hacer trading en Binance.
+              </p>
+            </div>
+            <!-- <div class="card-footer">
+              <a
+                class="carousel-image"
+                href="https://aws.amazon.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                  alt="aws"
+                  width="40"
+                  height="40"
+                />
+              </a>
+            </div> -->
           </div>
         </div>
       </div>
@@ -586,8 +640,6 @@
               target="_blank"
               ><ion-icon name="logo-linkedin"></ion-icon
             ></a>
-            <!-- <a href="https://www.instagram.com/julianboetto/" class="col-3 p-2" target="_blank"><ion-icon
-                            name="logo-instagram"></ion-icon></a> -->
             <a
               href="https://github.com/JulianBoetto/"
               class="col-3 p-2"

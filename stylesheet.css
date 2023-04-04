@@ -6,6 +6,7 @@ body {
   --texto-primario: #bbb;
 }
 
+
 /* NAVBAR */
 
 #dropLanguage {
@@ -116,9 +117,25 @@ body {
 
 /* PERFIL */
 
+/* EFECTO BACKGROUND */
+@keyframes f {
+  100% {background-position:right}
+}
+
 .perfil {
-  height: calc(100vh - 70px);
   background: #222;
+  height: 100vh;
+}
+
+.perfil:hover {
+  background:linear-gradient(90deg,#222,#333,#444) left/400% 100%;
+  animation:f 2s infinite alternate linear;
+}
+
+@media (min-width: 720px) {
+  .gradient {
+    --size: 500px;
+  }
 }
 
 #imgArg {
@@ -212,41 +229,13 @@ ion-icon {
 /* PROJETOS */
 
 .projetos {
-  background: #f2f2f2 0% 0% no-repeat padding-box;
-  opacity: 1;
-  background: linear-gradient(to bottom, #dedede, #222);
+  background: #222;
+  height: 100vh;
 }
 
-.features {
-  margin: 4em auto;
-  padding: 1em;
-  position: relative;
-}
-.feature-title {
-  color: #333;
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-.features img {
-  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-  margin-bottom: 16px;
-}
-
-/* REPOSITORIOS */
-
-#titRep > h2 {
-  text-align: center;
-  color: #707070;
-}
-
-@media (max-width: 784px) {
-  #titRep > h2 {
-    color: #a2a1a1;
-  }
+.card {
+  color: #bbb;
+  font-size: 1.25rem;
 }
 
 
@@ -254,6 +243,7 @@ ion-icon {
 
 .contato {
   background-color: #222;
+  min-height: 80vh;
 }
 
 #titToti2 {
