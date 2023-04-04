@@ -98,37 +98,26 @@ function scrollToTop() {
 toggleBtnTop();
 
 // Navegar a la seccion siguiente
-// function scrollToNextSection() {
-//   var currentSection =
-//     document.querySelector(":target") || document.querySelector("section");
-//     const nextSeccion = currentSection.nextElementSibling;
-//     console.log(currentSection, nextSeccion)
-// nextSeccion.scrollIntoView();
-// const seccionTop = nextSeccion.getBoundingClientRect().top + window.pageYOffset;
-// const windowHeight = window.innerHeight;
-// const seccionHeight = nextSeccion.offsetHeight;
-// const seccionOffset = (windowHeight - seccionHeight) / 2;
-// window.scrollTo({
-//   top: seccionTop - seccionOffset,
-//   behavior: 'smooth'
-// });
-// }
+function scrollToNextSection() {
+  currentScrollPosition = window.pageYOffset;
+  let targetSection = null;
 
+  sections.forEach((section) => {
+    if (section.offsetTop > currentScrollPosition && !targetSection) {
+      targetSection = section;
+    }
+  });
 
-const nextButton = document.getElementById("btn-next");
-
-window.addEventListener("scroll", () => {
-  const { top } = sections[0].getBoundingClientRect();
-  if (top <= 0) {
-    sections[0].classList.add("fixed");
-  } else {
-    sections[0].classList.remove("fixed");
+  if (!targetSection) {
+    targetSection = sections[sections.length - 1];
   }
+
+  targetSection.scrollIntoView({ behavior: 'smooth' });
+}
+
+
+const nextSectionBtn = document.getElementById('btn-next');
+
+nextSectionBtn.addEventListener('click', () => {
+  scrollToNextSection()
 });
-
-nextButton.addEventListener("click", () => {
-  sections[index].scrollIntoView({ behavior: "smooth" });
-  index++
-});
-
-
