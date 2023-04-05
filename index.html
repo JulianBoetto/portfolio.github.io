@@ -17,11 +17,6 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Karla"
     />
-    <style>
-      body {
-        font-family: "Karla", serif;
-      }
-    </style>
   </head>
 
   <body>
@@ -131,10 +126,10 @@
           </div>
         </div>
       </nav>
+      <!-- PERFIL -->
       <div
         class="container-fluid d-flex justify-content-center align-items-center perfil-container"
       >
-        <!-- PERFIL -->
         <div class="col-10 col-md-6 col-xs-12 text-center">
           <h1 id="titPer">
             <span lang="pt-BR" class="pt-BR">Olá!</span>
@@ -155,21 +150,27 @@
             <span lang="es-AR" class="es-AR">Programador web Full-Stack</span>
           </h3>
           <div class="row justify-content-center p-3">
-            <a
-              href="https://www.linkedin.com/in/julianmatiasboetto/"
-              class="col-3"
-              target="_blank"
-            >
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-            <a
-              href="https://github.com/JulianBoetto/"
-              class="col-3"
-              target="_blank"
-            >
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-            <button class="btn animated-button1" id="btn-next">
+            <div class="col icon-effect">
+              <a
+                href="https://www.linkedin.com/in/julianmatiasboetto/"
+                class="col-3"
+                target="_blank"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </div>
+            <div class="col icon-effect">
+              <a
+                href="https://github.com/JulianBoetto/"
+                class="col-3"
+                target="_blank"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center align-items-center">
+            <button class="btn btn-next btn-effect">
               <svg
                 aria-hidden="true"
                 fill="none"
@@ -201,9 +202,9 @@
       <div
         class="row row-cols-1 row-cols-lg-2 d-flex justify-content-center align-items-center"
       >
-        <div class="col text-center">
+        <div class="col text-center mb-3 mb-lg-0">
           <div
-            class="card bg-transparent border border-dark-subtle border rounded-4 p-4 mb-3 mt-3"
+            class="card bg-transparent border border-dark-subtle border rounded-4 p-4"
           >
             <p class="text-center d-flex align-items-center py-3" id="parPer">
               <span lang="pt-BR" class="pt-BR">
@@ -222,24 +223,18 @@
                 escribir código, también toco la guitarra eléctrica.
               </span>
             </p>
-            <!-- <button
-              class="btn btn-outline-light"
-              id="btn-info"
-              onclick="scrollToNextSection()"
-            >
-              <span lang="pt-BR" class="pt-BR">Mais informação</span>
-              <span lang="es-AR" class="es-AR">Más información</span>
-            </button> -->
-            <a
-              class="nav-link"
-              id="btn-info"
-              rel="noreferrer"
-              target="_blank"
-              href="/resume/JulianBoettoCV - PT.pdf"
-            >
-              <span lang="pt-BR" class="pt-BR">Meu CV</span>
-              <span lang="es-AR" class="es-AR">Mi CV</span>
-            </a>
+            <div class="mb-3 text-center">
+              <a
+                class="btn"
+                id="btn-info"
+                rel="noreferrer"
+                target="_blank"
+                href="/resume/JulianBoettoCV - PT.pdf"
+              >
+                <span lang="pt-BR" class="pt-BR">Baixar CV</span>
+                <span lang="es-AR" class="es-AR">Descargar CV</span>
+              </a>
+            </div>
           </div>
         </div>
         <div class="col text-center" id="cardTec">
@@ -616,6 +611,26 @@
             </div>
           </div>
         </div>
+        <div class="row d-flex justify-content-center" id="row-btn-next">
+          <button class="btn btn-next btn-effect">
+            <svg
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              color="#bbb"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              height="60px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
 
@@ -678,7 +693,6 @@
                 Una pagina web para comprar y vender bienes o servicios locales.
               </p>
             </div>
-            <!-- <div class="card-footer"></div> -->
           </div>
         </div>
         <div class="col">
@@ -708,22 +722,27 @@
                 Bot multi-coin para hacer trading en Binance.
               </p>
             </div>
-            <!-- <div class="card-footer">
-              <a
-                class="carousel-image"
-                href="https://aws.amazon.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-                  alt="aws"
-                  width="40"
-                  height="40"
-                />
-              </a>
-            </div> -->
           </div>
+        </div>
+        <div class="row">
+          <button class="btn btn-next btn-effect">
+            <svg
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              color="#bbb"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              height="60px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
         </div>
       </div>
     </section>
@@ -760,7 +779,7 @@
           <p lang="es-AR" class="es-AR" id="titToti2">
             También me podés encontrar en las siguientes redes sociales:
           </p>
-          <div class="row justify-content-center p-5">
+          <div class="row justify-content-center p-5 icon-effect">
             <a
               href="https://www.linkedin.com/in/julianmatiasboetto/"
               class="col-3 p-2"
@@ -864,25 +883,6 @@
       </div>
     </section>
 
-    <a href="#" id="btn-top" onclick="scrollToTop()">
-      <svg
-        aria-hidden="true"
-        fill="none"
-        color="#bbb"
-        height="50px"
-        stroke="currentColor"
-        stroke-width="1.5"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        ></path>
-      </svg>
-    </a>
-
     <!-- FOOTER -->
 
     <div class="container-fluid py-3" id="footer">
@@ -921,6 +921,26 @@
         </div>
       </footer>
     </div>
+
+    <!-- BOTON UP -->
+    <a class="btn-effect" href="#" id="btn-top" onclick="scrollToTop()">
+      <svg
+        aria-hidden="true"
+        fill="none"
+        color="#bbb"
+        height="50px"
+        stroke="currentColor"
+        stroke-width="1.5"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </svg>
+    </a>
 
     <script
       type="module"
