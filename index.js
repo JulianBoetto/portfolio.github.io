@@ -5,13 +5,10 @@ const userLang = navigator.language || navigator.userLanguage;
 
 const buttonEs = document.getElementById("btnEs");
 const buttonPt = document.getElementById("btnPt");
-
 const btnTop = document.getElementById("btn-top");
-const btnNextSection = document.getElementById("btn-next");
+const nextButtons = document.querySelectorAll(".btn-effect");
 
-const windowHeight = window.innerHeight;
-const windowCenter = windowHeight / 2;
-let currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+let currentScrollPosition = window.pageYOffset;
 const sections = document.querySelectorAll('section');
 
 
@@ -60,32 +57,6 @@ function changePt() {
 buttonEs.addEventListener("click", changeEs);
 buttonPt.addEventListener("click", changePt);
 
-// Volver arriba
-function updateScrollPos() {
-  currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-}
-
-function toggleBtnTop() {
-  if (currentScrollPosition > 0) {
-    btnTop.style.display = "block";
-    if (currentScrollPosition > (windowHeight / 1.07) && currentScrollPosition < (windowHeight * 1.07 )) {
-      btnNextSection.style.display = "block";
-    } else {
-      btnNextSection.style.display = "none";
-    }
-  } else if (currentScrollPosition === 0) {
-    btnNextSection.style.display = "block";
-    btnTop.style.display = "none";
-  } else {
-    btnTop.style.display = "none";
-  }
-}
-
-window.addEventListener("scroll", function () {
-  updateScrollPos();
-  toggleBtnTop();
-});
-
 let index = 1;
 function scrollToTop() {
   index = 1;
@@ -94,8 +65,6 @@ function scrollToTop() {
     behavior: "smooth",
   });
 }
-
-toggleBtnTop();
 
 // Navegar a la seccion siguiente
 function scrollToNextSection() {
@@ -116,8 +85,6 @@ function scrollToNextSection() {
 }
 
 
-const nextSectionBtn = document.getElementById('btn-next');
-
-nextSectionBtn.addEventListener('click', () => {
+nextButtons.forEach((button) => button.addEventListener('click', () => {
   scrollToNextSection()
-});
+}));
