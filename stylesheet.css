@@ -192,7 +192,38 @@ ion-icon {
 }
 
 #parPer {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 767px) {
+  #cardTec {
+    margin-bottom: 200px;
+  }
+
+  #parPer {
+    font-size: 1rem;
+  }
+}
+
+#cardLigth,
+#cardLigth2 {
+  background: white;
+}
+
+#cardLigth a img:hover {
+    transition: transform 0.3s ease-in-out;
+}
+
+#cardLigth a:hover img {
+  transform: scale(1.4);
+}
+
+#cardLigth2 a img:hover {
+  transition: transform 0.3s ease-in-out;
+}
+
+#cardLigth2 a:hover img {
+transform: scale(1.4);
 }
 
 #btn-info {
@@ -309,7 +340,7 @@ box-shadow: 10px 10px 73px 0px rgba(0, 255, 125, 0.5);
 
 .footerBtn a {
   color: var(--texto-primario);
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: none;
 }
 

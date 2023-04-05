@@ -116,12 +116,17 @@
                   <span lang="es-AR" class="es-AR">Contacto</span>
                 </a>
               </li>
-              <!-- <li class="nav-item headBtn">
-          <a class="nav-link" href="">
-            <span lang="pt-BR" class="pt-BR">Meu CV</span>
-            <span lang="es-AR" class="es-AR">Mi CV</span>
-          </a>
-        </li> -->
+              <li class="nav-item headBtn">
+                <a
+                  class="nav-link"
+                  rel="noreferrer"
+                  target="_blank"
+                  href="/resume/JulianBoettoCV - PT.pdf"
+                >
+                  <span lang="pt-BR" class="pt-BR">Meu CV</span>
+                  <span lang="es-AR" class="es-AR">Mi CV</span>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -194,7 +199,7 @@
       id="sobre"
     >
       <div
-        class="row row-cols-1 row-cols-md-2 d-flex justify-content-center align-items-center"
+        class="row row-cols-1 row-cols-lg-2 d-flex justify-content-center align-items-center"
       >
         <div class="col text-center">
           <div
@@ -225,20 +230,32 @@
               <span lang="pt-BR" class="pt-BR">Mais informação</span>
               <span lang="es-AR" class="es-AR">Más información</span>
             </button> -->
+            <a
+              class="nav-link"
+              id="btn-info"
+              rel="noreferrer"
+              target="_blank"
+              href="/resume/JulianBoettoCV - PT.pdf"
+            >
+              <span lang="pt-BR" class="pt-BR">Meu CV</span>
+              <span lang="es-AR" class="es-AR">Mi CV</span>
+            </a>
           </div>
         </div>
-        <div class="col text-center">
+        <div class="col text-center" id="cardTec">
           <div
             class="card bg-transparent border border-dark-subtle border rounded-4"
           >
             <div class="card-body">
               <!-- BACKEND -->
               <div
-                class="col bg-transparent border border-dark-subtle border rounded-3 mb-3 py-3"
+                class="col border border-dark-subtle rounded-3 mb-3 px-2"
+                id="cardLigth"
               >
-                <div class="row">
-                  <div class="col">
+                <div class="row gx-3">
+                  <div class="col py-3">
                     <a
+                      title="Typescript"
                       href="https://www.typescriptlang.org/"
                       target="_blank"
                       rel="noreferrer"
@@ -251,8 +268,9 @@
                       />
                     </a>
                   </div>
-                  <div class="col">
+                  <div class="col py-3">
                     <a
+                      title="Javascript"
                       href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                       target="_blank"
                       rel="noreferrer"
@@ -265,8 +283,9 @@
                       />
                     </a>
                   </div>
-                  <div class="col">
+                  <div class="col py-3">
                     <a
+                      title="NodeJS"
                       href="https://nodejs.org"
                       target="_blank"
                       rel="noreferrer"
@@ -279,8 +298,9 @@
                       />
                     </a>
                   </div>
-                  <div class="col">
+                  <div class="col py-3">
                     <a
+                      title="NestJS"
                       href="https://nestjs.com/"
                       target="_blank"
                       rel="noreferrer"
@@ -293,16 +313,33 @@
                       />
                     </a>
                   </div>
+                  <div class="col py-3">
+                    <a
+                      title="ExpressJS"
+                      href="https://nestjs.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
+                        alt="express"
+                        width="40"
+                        height="40"
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
 
               <!-- BANCO DE DATOS -->
               <div
-                class="col bg-transparent border border-dark-subtle border rounded-3 mb-3 py-3"
+                class="col border border-dark-subtle rounded-3 mb-3 px-2"
+                id="cardLigth"
               >
-                <div class="row">
-                  <div class="col">
+                <div class="row gx-3">
+                  <div class="col py-3">
                     <a
+                      title="MySQL"
                       href="https://www.mysql.com/"
                       target="_blank"
                       rel="noreferrer"
@@ -315,8 +352,9 @@
                       />
                     </a>
                   </div>
-                  <div class="col">
+                  <div class="col py-3">
                     <a
+                      title="MongoDB"
                       href="https://www.mongodb.com/"
                       target="_blank"
                       rel="noreferrer"
@@ -330,8 +368,9 @@
                       />
                     </a>
                   </div>
-                  <div class="col">
+                  <div class="col py-3">
                     <a
+                      title="Postgres"
                       href="https://www.postgresql.org"
                       target="_blank"
                       rel="noreferrer"
@@ -344,11 +383,31 @@
                       />
                     </a>
                   </div>
-                  <div class="col">
-                    <a href="https://redis.io" target="_blank" rel="noreferrer">
+                  <div class="col py-3">
+                    <a
+                      title="Redis"
+                      href="https://redis.io"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <img
                         src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg"
                         alt="redis"
+                        width="40"
+                        height="40"
+                      />
+                    </a>
+                  </div>
+                  <div class="col py-3">
+                    <a
+                      title="SQLite"
+                      href="https://www.sqlite.org/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg"
+                        alt="sqlite"
                         width="40"
                         height="40"
                       />
@@ -358,11 +417,13 @@
               </div>
               <!-- FRONT -->
               <div
-                class="col bg-transparent border border-dark-subtle border rounded-3 mb-3 py-3"
+                class="col border border-dark-subtle rounded-3 mb-3 px-2"
+                id="cardLigth"
               >
-                <div class="row">
-                  <div class="col">
+                <div class="row gx-3">
+                  <div class="col py-3">
                     <a
+                      title="Angular"
                       href="https://angular.io"
                       target="_blank"
                       rel="noreferrer"
@@ -375,8 +436,9 @@
                       />
                     </a>
                   </div>
-                  <div class="col">
+                  <div class="col py-3">
                     <a
+                      title="Bootstrap"
                       href="https://getbootstrap.com"
                       target="_blank"
                       rel="noreferrer"
@@ -389,8 +451,9 @@
                       />
                     </a>
                   </div>
-                  <div class="col">
+                  <div class="col py-3">
                     <a
+                      title="ReactJS"
                       href="https://reactjs.org/"
                       target="_blank"
                       rel="noreferrer"
@@ -403,8 +466,9 @@
                       />
                     </a>
                   </div>
-                  <div class="col">
+                  <div class="col py-3">
                     <a
+                      title="GatsbyJS"
                       href="https://www.gatsbyjs.com/"
                       target="_blank"
                       rel="noreferrer"
@@ -417,15 +481,32 @@
                       />
                     </a>
                   </div>
+                  <div class="col py-3">
+                    <a
+                      title="NextJS"
+                      href="https://nextjs.org/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg"
+                        alt="nextjs"
+                        width="40"
+                        height="40"
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
               <!-- OTHERS -->
               <div
-                class="col bg-transparent border border-dark-subtle border rounded-3 py-3"
+                class="col border border-dark-subtle rounded-3 px-2"
+                id="cardLigth2"
               >
-                <div class="row">
-                  <div class="col">
+                <div class="row gx-3">
+                  <div class="col py-3">
                     <a
+                      title="AWS"
                       href="https://aws.amazon.com"
                       target="_blank"
                       rel="noreferrer"
@@ -438,8 +519,24 @@
                       />
                     </a>
                   </div>
-                  <div class="col">
+                  <div class="col py-3">
                     <a
+                      title="Azure"
+                      href="https://portal.azure.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg"
+                        alt="azure"
+                        width="40"
+                        height="40"
+                      />
+                    </a>
+                  </div>
+                  <div class="col py-3">
+                    <a
+                      title="Docker"
                       href="https://www.docker.com/"
                       target="_blank"
                       rel="noreferrer"
@@ -452,8 +549,9 @@
                       />
                     </a>
                   </div>
-                  <div class="col">
+                  <div class="col py-3">
                     <a
+                      title="Git"
                       href="https://git-scm.com/"
                       target="_blank"
                       rel="noreferrer"
@@ -466,8 +564,9 @@
                       />
                     </a>
                   </div>
-                  <div class="col">
+                  <div class="col py-3">
                     <a
+                      title="Postman"
                       href="https://postman.com"
                       target="_blank"
                       rel="noreferrer"
@@ -480,8 +579,9 @@
                       />
                     </a>
                   </div>
-                  <div class="col">
+                  <div class="col py-3">
                     <a
+                      title="Linux"
                       href="https://www.linux.org/"
                       target="_blank"
                       rel="noreferrer"
@@ -495,8 +595,9 @@
                       />
                     </a>
                   </div>
-                  <div class="col">
+                  <div class="col py-3">
                     <a
+                      title="JestJS"
                       href="https://jestjs.io"
                       target="_blank"
                       rel="noreferrer"
@@ -787,19 +888,19 @@
     <div class="container-fluid py-3" id="footer">
       <footer>
         <div class="row d-flex justify-content-center align-items-center">
-          <div class="col-3 col-md-2 footerBtn text-center">
-            <a href="#inicio">
+          <div class="col-4 col-md-2 footerBtn text-center">
+            <a href="#perfil">
               <span lang="pt-BR" class="pt-BR">Inicio</span>
               <span lang="es-AR" class="es-AR">Inicio</span>
             </a>
           </div>
-          <div class="col-3 col-md-2 footerBtn text-center">
+          <div class="col-4 col-md-2 footerBtn text-center">
             <a href="#sobre">
               <span lang="pt-BR" class="pt-BR">Sobre mim</span>
               <span lang="es-AR" class="es-AR">Sobre mi</span>
             </a>
           </div>
-          <div class="col-3 col-md-2 footerBtn text-center">
+          <div class="col-4 col-md-2 footerBtn text-center">
             <a href="#projetos">
               <span lang="pt-BR" class="pt-BR">Projetos</span>
               <span lang="es-AR" class="es-AR">Proyectos</span>
@@ -809,10 +910,12 @@
         <div class="row d-flex justify-content-center align-items-center">
           <div class="lineSeparator"></div>
         </div>
-        <div class="row">
-          <div class="col">
-            <p class="text-center text-body-secondary">
-              &copy; 2023 Julián Boetto
+        <div class="row m-0">
+          <div
+            class="col d-flex justify-content-center align-items-center mt-3"
+          >
+            <p class="text-center text-body-secondary m-0">
+              &copy; 2023 | Julián Boetto
             </p>
           </div>
         </div>
