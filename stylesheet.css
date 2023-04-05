@@ -11,10 +11,6 @@ section {
   position: relative;
 }
 
-.btn-effect {
-  background: gray;
-}
-
 .btn-effect svg:hover {
   transition: transform 0.3s ease-in-out;
 }
@@ -124,7 +120,7 @@ transform: scale(1.2);
 
 .btn-next {
   position: absolute; 
-  width: 70px;
+  width: 100px;
   bottom: 50px;
   border: none;
   color: var(---text-primario);
@@ -133,6 +129,12 @@ transform: scale(1.2);
   transition: opacity 0.3s ease-in-out;
   z-index: 1;
 } 
+
+@media (max-width: 576px) {
+  .btn-next {
+    bottom: 30px;
+  }
+}
 
 /* PERFIL */
 
