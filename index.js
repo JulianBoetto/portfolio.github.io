@@ -6,7 +6,7 @@ const userLang = navigator.language || navigator.userLanguage;
 const buttonEs = document.getElementById("btnEs");
 const buttonPt = document.getElementById("btnPt");
 const btnTop = document.getElementById("btn-top");
-const nextButtons = document.querySelectorAll(".btn-next");
+const nextButtons = document.querySelectorAll(".btn-effect");
 
 let currentScrollPosition = window.pageYOffset;
 const sections = document.querySelectorAll('section');

@@ -128,7 +128,6 @@ transform: scale(1.2);
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
   z-index: 1;
-  background: red;
 } 
 
 /* PERFIL */
@@ -142,6 +141,21 @@ transform: scale(1.2);
   background:linear-gradient(90deg,#222,#333,#206E36) left/400%;
   animation:f 3s infinite alternate linear;
   position: relative;
+}
+
+@media screen and (orientation: landscape) {
+  /* Estilos para dispositivos en posición horizontal (paisaje) */
+  .btn-next {
+      bottom: 10px;
+  }
+
+  .perfil-container {
+    padding-top: 70px;
+  }
+
+  #titPer {
+    z-index: 1;
+  }
 }
 
 
@@ -197,6 +211,7 @@ ion-icon {
 /* SOBRE */
 
 #row-btn-next {
+  max-width: 120px;
   min-height: 150px;
 }
 
@@ -207,6 +222,7 @@ ion-icon {
   position: relative;
 }
 
+
 #parPer {
   font-size: 1.8rem;
 }
@@ -215,11 +231,18 @@ ion-icon {
   #cardTec {
     margin-bottom: 200px;
   }
-
+  
   #parPer {
     font-size: 1rem;
   }
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #parPer {
+    font-size: 1.4rem;
+  }
+}
+
 
 #cardLigth,
 #cardLigth2 {
