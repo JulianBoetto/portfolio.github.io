@@ -11,6 +11,10 @@ section {
   position: relative;
 }
 
+.btn-effect {
+  background: gray;
+}
+
 .btn-effect svg:hover {
   transition: transform 0.3s ease-in-out;
 }
@@ -211,14 +215,15 @@ ion-icon {
 /* SOBRE */
 
 #row-btn-next {
-  max-width: 120px;
-  min-height: 150px;
+  /* max-width: 120px; */
+  min-height: 100px;
+  background: black;
 }
 
 #sobre {
   background: #222;
-  min-height: 100vh;
-  height: auto;
+  height: 100vh;
+  /* height: auto; */
   position: relative;
 }
 
@@ -227,15 +232,7 @@ ion-icon {
   font-size: 1.8rem;
 }
 
-@media (max-width: 767px) {
-  #cardTec {
-    margin-bottom: 200px;
-  }
-  
-  #parPer {
-    font-size: 1rem;
-  }
-}
+
 
 @media (min-width: 768px) and (max-width: 991px) {
   #parPer {
@@ -247,6 +244,18 @@ ion-icon {
 #cardLigth,
 #cardLigth2 {
   background: white;
+}
+
+@media (max-width: 767px) {
+  #cardLigth img,
+  #cardLigth2 img {
+    height: auto;
+    width: 30px;
+  }
+  
+  #parPer {
+    font-size: 1rem;
+  }
 }
 
 #cardLigth a img:hover {
