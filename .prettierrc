@@ -19,5 +19,14 @@
   "useTabs": false,
   "vueIndentScriptAndStyle": false,
   "filepath": "/home/julian/Julian/portfolio.github.io/index.html",
-  "parser": "html"
-}
+  "parser": "html",
+    "overrides": [
+      {
+        "files": "*.html",
+        "options": {
+          "htmlWhitespaceSensitivity": "ignore"
+        }
+      }
+    ]
+  }
+  
