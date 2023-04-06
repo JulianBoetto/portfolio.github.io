@@ -65,7 +65,6 @@ function scrollToTop() {
 
 // Navegar a la seccion siguiente
 function scrollToNextSection() {
-  currentScrollPosition = window.pageYOffset;
   let targetSection = null;
 
   sections.forEach((section) => {
@@ -81,8 +80,9 @@ function scrollToNextSection() {
   targetSection.scrollIntoView({ behavior: 'smooth' });
 }
 
-
+btnTop.style.display = "none";
 window.addEventListener("scroll", function() {
+  currentScrollPosition = window.pageYOffset;
   if (currentScrollPosition === 0) {
     btnTop.style.display = "none";
   } else {

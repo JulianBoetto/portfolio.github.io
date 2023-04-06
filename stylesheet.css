@@ -11,15 +11,6 @@ section {
   position: relative;
 }
 
-section:nth-child(n+2) #btn-top {
-  display: block;
-}
-
-section:first-child #btn-top {
-  display: none;
-}
-
-
 .btn-effect svg:hover {
   transition: transform 0.3s ease-in-out;
 }
@@ -27,6 +18,19 @@ section:first-child #btn-top {
 .btn-effect:hover svg {
 transform: scale(1.2);
 }
+
+ion-icon {
+  color: var(--texto-primario);
+  font-size: 3rem;
+}
+
+
+@media (max-width: 768px) {
+  ion-icon {
+    font-size: 2rem;
+  }
+}
+
 
 /* NAVBAR */
 
@@ -132,7 +136,7 @@ transform: scale(1.2);
 
 @media (max-width: 576px) {
   .btn-next {
-    bottom: 30px;
+    bottom: 70px;
   }
 }
 
@@ -146,12 +150,10 @@ transform: scale(1.2);
 #perfil {
   background:linear-gradient(90deg,#222,#333,#206E36) left/400%;
   animation:f 3s infinite alternate linear;
-  height: auto;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 @media screen and (orientation: landscape) {
-  /* Estilos para dispositivos en posición horizontal (paisaje) */
   .btn-next {
       bottom: 10px;
   }
@@ -209,10 +211,18 @@ transform: scale(1.2);
   text-shadow: 2px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-ion-icon {
-  color: var(--texto-primario);
-  font-size: 50px;
-  position: relative;
+@media (max-width: 720px) {
+  #h2Per {
+    font-size: 1.4rem;
+  }
+
+  #nombre {
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+  #h3Per {
+    font-size: 1.4rem;
+  }
 }
 
 /* SOBRE */
