@@ -81,8 +81,8 @@ function scrollToNextSection() {
   targetSection.scrollIntoView({ behavior: 'smooth' });
 }
 
+
 window.addEventListener("scroll", function() {
-  currentScrollPosition = window.pageYOffset;  
   if (currentScrollPosition === 0) {
     btnTop.style.display = "none";
   } else {
