@@ -9,8 +9,8 @@ const btnTop = document.getElementById("btn-top");
 const nextButtons = document.querySelectorAll(".btn-effect");
 
 let currentScrollPosition = window.pageYOffset;
+const windowHeight = window.innerHeight;
 const sections = document.querySelectorAll('section');
-
 
 switch (userLang) {
   case "es-AR":
@@ -54,16 +54,13 @@ function changePt() {
   }
 }
 
-buttonEs.addEventListener("click", changeEs);
-buttonPt.addEventListener("click", changePt);
-
 let index = 1;
 function scrollToTop() {
-  index = 1;
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
+    index = 1;
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
 }
 
 // Navegar a la seccion siguiente
@@ -84,7 +81,17 @@ function scrollToNextSection() {
   targetSection.scrollIntoView({ behavior: 'smooth' });
 }
 
+window.addEventListener("scroll", function() {
+  currentScrollPosition = window.pageYOffset;  
+  if (currentScrollPosition === 0) {
+    btnTop.style.display = "none";
+  } else {
+    btnTop.style.display = "block";
+  }
+});
 
+buttonEs.addEventListener("click", changeEs);
+buttonPt.addEventListener("click", changePt);
 nextButtons.forEach((button) => button.addEventListener('click', () => {
   scrollToNextSection()
 }));

@@ -12,6 +12,15 @@ section {
   position: relative;
 }
 
+section:nth-child(n+2) #btn-top {
+  display: block;
+}
+
+section:first-child #btn-top {
+  display: none;
+}
+
+
 .btn-effect svg:hover {
   transition: transform 0.3s ease-in-out;
 }
