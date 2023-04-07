@@ -3,6 +3,8 @@ const es_language = document.getElementsByClassName("es-AR");
 const pt_language = document.getElementsByClassName("pt-BR");
 const userLang = navigator.language || navigator.userLanguage;
 
+const regex = /^pt/;
+
 const buttonEs = document.getElementById("btnEs");
 const buttonPt = document.getElementById("btnPt");
 const btnTop = document.getElementById("btn-top");
@@ -80,14 +82,23 @@ function scrollToNextSection() {
   targetSection.scrollIntoView({ behavior: 'smooth' });
 }
 
-btnTop.style.display = "none";
-window.addEventListener("scroll", function() {
-  currentScrollPosition = window.pageYOffset;
+function showBtnTop() {
   if (currentScrollPosition === 0) {
     btnTop.style.display = "none";
   } else {
     btnTop.style.display = "block";
   }
+}
+
+btnTop.style.display = "none";
+window.addEventListener("scroll", function() {
+  currentScrollPosition = window.pageYOffset;
+  showBtnTop();
+});
+
+window.addEventListener('resize', function() {
+  currentScrollPosition = window.pageYOffset;
+  showBtnTop();
 });
 
 buttonEs.addEventListener("click", changeEs);
