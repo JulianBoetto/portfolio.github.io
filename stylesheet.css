@@ -41,8 +41,9 @@ ion-icon {
 
 #dropLanguage, #toggleBtn {
   color: var(--text-light);
-  height: 50px;
+  height: auto;
   border: 1px solid var(--text-light);
+  align-items: flex-center;
   border-radius: 10px;
 }
 
@@ -127,38 +128,25 @@ ion-icon {
 
 /* BOTON PARA LA SECCION SIGUIENTE */
 
-.btn-next {
-  position: absolute; 
-  width: 100px;
+#btn-next-perfil {
+  position: absolute;
   bottom: 50px;
-  border: none;
+  padding: 0;
   color: var(---text-primario);
-  font-size: 18px;
-  cursor: pointer;
   transition: opacity 0.3s ease-in-out;
-  z-index: 1;
 } 
+
+#btn-next {
+  padding: 0;
+}
+
+#btn-next svg, #btn-next-perfil svg {
+  height: 3.5rem;
+  color: var(--text-light)
+}
 
 @media (max-width: 576px) {
   .btn-next {
-    bottom: 70px;
-  }
-}
-
-.btn-next2 {
-  position: absolute; 
-  width: 100px;
-  bottom: 50px;
-  border: none;
-  color: var(---text-primario);
-  font-size: 18px;
-  cursor: pointer;
-  transition: opacity 0.3s ease-in-out;
-  z-index: 1;
-} 
-
-@media (max-width: 576px) {
-  .btn-next2 {
     bottom: 70px;
   }
 }

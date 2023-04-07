@@ -56,30 +56,28 @@ function changePt() {
   }
 }
 
-let index = 1;
 function scrollToTop() {
-    index = 1;
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+  sections[0].scrollIntoView({ behavior: 'smooth' });
+  currentScrollPosition = 0;
 }
 
 // Navegar a la seccion siguiente
 function scrollToNextSection() {
   let targetSection = null;
-
-  sections.forEach((section) => {
-    if (section.offsetTop > currentScrollPosition && !targetSection) {
-      targetSection = section;
+  
+  sections.forEach((section, index) => {
+    const sectionTop = section.getBoundingClientRect().top + currentScrollPosition;
+    if (currentScrollPosition <= sectionTop && !targetSection) {
+      targetSection = sections[index + 1];
     }
   });
 
   if (!targetSection) {
     targetSection = sections[sections.length - 1];
   }
-
+  
   targetSection.scrollIntoView({ behavior: 'smooth' });
+  currentScrollPosition = targetSection.offsetTop;
 }
 
 function showBtnTop() {
