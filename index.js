@@ -3,14 +3,16 @@ const es_language = document.getElementsByClassName("es-AR");
 const pt_language = document.getElementsByClassName("pt-BR");
 const userLang = navigator.language || navigator.userLanguage;
 
+const regex = /^pt/;
+
 const buttonEs = document.getElementById("btnEs");
 const buttonPt = document.getElementById("btnPt");
 const btnTop = document.getElementById("btn-top");
 const nextButtons = document.querySelectorAll(".btn-effect");
 
 let currentScrollPosition = window.pageYOffset;
+const windowHeight = window.innerHeight;
 const sections = document.querySelectorAll('section');
-
 
 switch (userLang) {
   case "es-AR":
@@ -54,21 +56,17 @@ function changePt() {
   }
 }
 
-buttonEs.addEventListener("click", changeEs);
-buttonPt.addEventListener("click", changePt);
-
 let index = 1;
 function scrollToTop() {
-  index = 1;
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
+    index = 1;
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
 }
 
 // Navegar a la seccion siguiente
 function scrollToNextSection() {
-  currentScrollPosition = window.pageYOffset;
   let targetSection = null;
 
   sections.forEach((section) => {
@@ -84,7 +82,27 @@ function scrollToNextSection() {
   targetSection.scrollIntoView({ behavior: 'smooth' });
 }
 
+function showBtnTop() {
+  if (currentScrollPosition === 0) {
+    btnTop.style.display = "none";
+  } else {
+    btnTop.style.display = "block";
+  }
+}
 
+btnTop.style.display = "none";
+window.addEventListener("scroll", function() {
+  currentScrollPosition = window.pageYOffset;
+  showBtnTop();
+});
+
+window.addEventListener('resize', function() {
+  currentScrollPosition = window.pageYOffset;
+  showBtnTop();
+});
+
+buttonEs.addEventListener("click", changeEs);
+buttonPt.addEventListener("click", changePt);
 nextButtons.forEach((button) => button.addEventListener('click', () => {
   scrollToNextSection()
 }));
