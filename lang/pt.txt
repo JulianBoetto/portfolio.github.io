@@ -14,5 +14,13 @@ profile.h3=Desenvolvedor Full-Stack
 about.me=Sou da Argentina e atualmente trabalho e moro no Brasil. Me formei como desenvolvedor web full-stack e mudei de carreira na cidade do Rio de Janeiro. Tenho mais de 2 anos de experiência trabalhando nas áreas de Fintech, e-commerce e trading. Além da minha paixão por escrever código, também toco a guitarra elétrica.
 about.resume=Baixar CV
 
-#
+# CONTACT
+contact.1=Quer entrar em contato comigo?
+contact.2=Preencha o formulário e entre em contato o mais rápido possível.
+contact.3=Você também pode me encontrar aqui:
 
+# FORM (uppercase & ":")
+form.name=NOME:
+form.subject=ASSUNTO:
+form.msg=MESSAGEM:
+form.btn.send=ENVIAR

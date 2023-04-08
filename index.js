@@ -3,6 +3,8 @@ const imgsLang = document.querySelectorAll(".imgLang");
 const userLang = navigator.language || navigator.userLanguage;
 const regexPt = /^pt/;
 const regexEs = /^es/;
+const waLink = document.getElementById('whatsapp-link');
+const cvLinks = document.querySelectorAll('.cvLink');
 const btnTop = document.getElementById("btn-top");
 const nextButtons = document.querySelectorAll(".btn-effect");
 
@@ -10,15 +12,38 @@ let currentScrollPosition = window.pageYOffset;
 const windowHeight = window.innerHeight;
 const sections = document.querySelectorAll('section');
 
+const waUrls = {
+  'es': 'https://wa.me/543564643959',
+  'en': 'https://wa.me/543564643959',
+  'pt': 'https://wa.me/5522992157580'
+};
+
+const cvUrls = {
+  'es': '/resume/JulianBoettoCV - ES.pdf',
+  'pt': '/resume/JulianBoettoCV - PT.pdf',
+  'en': '/resume/JulianBoettoCV - EN.pdf'
+}
+
 changeLang(userLang);
 function changeLang(userLang) {
+  let lang;
   if(regexEs.test(userLang)) {
+    lang = "es";
     loadLanguage("es");
+    waLink.setAttribute('href', waUrls.es);
   } else if (regexPt.test(userLang)) {
+    lang = "pt";
     loadLanguage("pt");    
+    waLink.setAttribute('href', waUrls.pt);
   } else {
+    lang = "en";
     loadLanguage("en");
+    waLink.setAttribute('href', waUrls.en);
   }
+
+  cvLinks.forEach((cv) => {
+    cv.setAttribute('href', cvUrls[lang]);
+  })
 
   imgsLang.forEach((btn, index) => {
     if(btn.id === userLang) {

@@ -50,7 +50,7 @@
               id="en-US"
               src="images/eeuu.png"
               alt="EEUU"
-              style="border-radius: 50%; height: 30px"
+              style="border-radius: 50%; height: 30px; width: 30px;"
             />
           </button>
           <ul
@@ -116,10 +116,9 @@
               </li>
               <li>
                 <a
-                  class="dropdown-item"
+                  class="dropdown-item cvLink"
                   rel="noreferrer"
                   target="_blank"
-                  href="/resume/JulianBoettoCV - PT.pdf"
                 >
                   <span
                     data-i18n="navbar.item.4"
@@ -158,12 +157,7 @@
                   </a>
                 </li>
                 <li class="nav-item headBtn">
-                  <a
-                    class="nav-link"
-                    rel="noreferrer"
-                    target="_blank"
-                    href="/resume/JulianBoettoCV - PT.pdf"
-                  >
+                  <a class="nav-link cvLink" type="button" rel="noreferrer" target="_blank">
                     <span
                       data-i18n="navbar.item.4"
                       class="dropLanguageText"
@@ -206,11 +200,7 @@
             >
               <ion-icon name="logo-github"></ion-icon>
             </a>
-            <a
-              href="https://wa.me/5522992157580"
-              class="col-2 p-2"
-              target="_blank"
-            >
+            <a href="#" class="col-3 p-2" id="whatsapp-link" target="_blank">
               <ion-icon name="logo-whatsapp"></ion-icon>
             </a>
             <a href="mailto:julib_8724@hotmail.com" class="col-2 p-2">
@@ -264,11 +254,10 @@
               </p>
               <div class="mb-0 mb-lg-3 text-center">
                 <a
-                  class="btn"
+                  class="btn cvLink"
                   id="btn-info"
                   rel="noreferrer"
                   target="_blank"
-                  href="/resume/JulianBoettoCV - PT.pdf"
                 >
                   <span data-i18n="about.resume"></span>
                 </a>
@@ -1131,28 +1120,9 @@
       >
         <div class="row d-flex justify-content-center align-items-center">
           <div class="col-12 col-md-5 text-center mx-auto">
-            <!-- <h2>
-              <span lang="pt-BR" class="pt-BR">Contato</span>
-              <span lang="es-AR" class="es-AR">Contacto</span>
-            </h2> -->
-            <p lang="pt-BR" class="pt-BR" id="titToti2">
-              Quer entrar em contato comigo?
-            </p>
-            <p lang="es-AR" class="es-AR" id="titToti2">
-              Quiere entrar en contacto conmigo?
-            </p>
-            <p lang="pt-BR" class="pt-BR" id="titToti2">
-              Preencha o formulário e entre em contato o mais rápido possível.
-            </p>
-            <p lang="es-AR" class="es-AR" id="titToti2">
-              Complete el formulário y entre en contacto lo más rápido posible.
-            </p>
-            <p lang="pt-BR" class="pt-BR" id="titToti2">
-              Você também pode me encontrar aqui:
-            </p>
-            <p lang="es-AR" class="es-AR" id="titToti2">
-              También me podés encontrar aquí:
-            </p>
+            <p data-i18n="contact.1" id="titToti2"></p>
+            <p data-i18n="contact.2" id="titToti2"></p>
+            <p data-i18n="contact.3" id="titToti2"></p>
             <div class="row justify-content-center mb-3 p-2 p-sm-3 icon-effect">
               <a
                 href="https://www.linkedin.com/in/julianmatiasboetto/"
@@ -1168,11 +1138,7 @@
               >
                 <ion-icon name="logo-github"></ion-icon>
               </a>
-              <a
-                href="https://wa.me/5522992157580"
-                class="col-3 p-2"
-                target="_blank"
-              >
+              <a href="#" class="col-3 p-2" id="whatsapp-link" target="_blank">
                 <ion-icon name="logo-whatsapp"></ion-icon>
               </a>
               <a href="mailto:julib_8724@hotmail.com" class="col-3 p-2">
@@ -1197,11 +1163,10 @@
               <input
                 type="hidden"
                 name="_next"
-                value="https://julianboetto.github.io/portfolio.github.io/"
+                value="https://julianboetto.lat/"
               />
               <label class="form-label container-fluid labelForm">
-                <span lang="pt-BR" class="pt-BR">NOME:</span>
-                <span lang="es-AR" class="es-AR">NOMBRE:</span>
+                <span data-i18n="form.name"></span>
                 <input
                   class="form-control rounded-3"
                   type="text"
@@ -1212,7 +1177,7 @@
                 />
               </label>
               <label class="form-label container-fluid labelForm">
-                EMAIL:
+                E-MAIL:
                 <input
                   type="email"
                   id="email"
@@ -1223,8 +1188,7 @@
                 />
               </label>
               <label class="form-label container-fluid labelForm">
-                <span lang="pt-BR" class="pt-BR">ASSUNTO:</span>
-                <span lang="es-AR" class="es-AR">ASUNTO:</span>
+                <span data-i18n="form.subject"></span>
                 <input
                   class="form-control rounded-3"
                   type="text"
@@ -1235,8 +1199,7 @@
               </label>
 
               <label class="form-label container-fluid labelForm mb-3">
-                <span lang="pt-BR" class="pt-BR">MESSAGEM:</span>
-                <span lang="es-AR" class="es-AR">MENSAJE:</span>
+                <span data-i18n="form.msg"></span>
                 <textarea
                   class="form-control rounded-3"
                   name="comments"
@@ -1253,7 +1216,7 @@
                   id="btn-info"
                   type="submit"
                 >
-                  Enviar
+                  <span data-i18n="form.btn.send"></span>
                 </button>
               </div>
             </form>
