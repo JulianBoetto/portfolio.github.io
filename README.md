@@ -1,20 +1,25 @@
 <h2 align="center">
-  Portfolio - v1.0<br/>
-  <a href="https://julianboetto.lat/" target="_blank">Julián Boetto</a>
+  Portfolio - v2.0<br/>
+  <a href="https://julianboetto.lat/" target="_blank">Julián Boetto</a><br/>
 </h2>
+<h5 align='center'>- english version -</h5>
+<h6 align="center">
+  <a href="./lang/es/README.md">Español</a> |
+  <a href="./lang/pt/README.md">Português</a>
+</h6>
 
 <div align="center">
-  <img alt="Demo Portfolio" src="./images/portfolio.png" />
+  <img alt="Demo Portfolio" src="./images/portfolio.png" >
 </div>
-
 
 ## Built With
 
 This project was built using these technologies.
 
 - CSS3
-- HTML
+- HTML5
 - Javascript
+- Ion-icons
 
 Without frameworks.
 
@@ -22,12 +27,12 @@ Without frameworks.
 
 **📖 One Page Layout**
 
-**🇦🇷 🇧🇷 two-language website**
+**🇦🇷 🇧🇷 🇺🇸 multi-language website**
 
-**🎨 Styled with Bootstrap and Css**
+**🎨 Styled with Bootstrap v5.3 and Css**
 
 **📱 Fully Responsive**
 
-<a href="https://21a47fackuwdbi7kr2k6dxtei-spotify.vercel.app/api/song/?opened">
-  <img src="https://21a47fackuwdbi7kr2k6dxtei-spotify.vercel.app/api/song" width="341" height="571" alt="Now Playing">
-</a>
+<h6 align="center">
+  2023 | Julián Boetto
+</h6>

@@ -7,6 +7,7 @@ const waLink = document.getElementById('whatsapp-link');
 const cvLinks = document.querySelectorAll('.cvLink');
 const btnTop = document.getElementById("btn-top");
 const nextButtons = document.querySelectorAll(".btn-effect");
+const formInputs = document.querySelectorAll(".formIn");
 
 let currentScrollPosition = window.pageYOffset;
 const windowHeight = window.innerHeight;
@@ -22,23 +23,37 @@ const cvUrls = {
   'es': '/resume/JulianBoettoCV - ES.pdf',
   'pt': '/resume/JulianBoettoCV - PT.pdf',
   'en': '/resume/JulianBoettoCV - EN.pdf'
-}
+};
+
+const formPlaceHolderValues = {
+  'es': {
+    'fullname': 'Nombre completo',
+    'subject': 'Contacto'
+  },
+  'pt': {
+    'fullname': 'Nome completo',
+    'subject': 'Contato'
+  },
+  'en': {
+    'fullname': 'Full name',
+    'subject': 'Contact'
+}};
 
 changeLang(userLang);
 function changeLang(userLang) {
   let lang;
   if(regexEs.test(userLang)) {
     lang = "es";
-    loadLanguage("es");
-    waLink.setAttribute('href', waUrls.es);
+    loadLanguage(lang);
+    waLink.setAttribute('href', waUrls[lang]);
   } else if (regexPt.test(userLang)) {
     lang = "pt";
-    loadLanguage("pt");    
-    waLink.setAttribute('href', waUrls.pt);
+    loadLanguage(lang);    
+    waLink.setAttribute('href', waUrls[lang]);
   } else {
     lang = "en";
-    loadLanguage("en");
-    waLink.setAttribute('href', waUrls.en);
+    loadLanguage(lang);
+    waLink.setAttribute('href', waUrls[lang]);
   }
 
   cvLinks.forEach((cv) => {
@@ -51,6 +66,11 @@ function changeLang(userLang) {
     } else {
       imgsLang[index].style.display = "none";
     }
+  })
+  
+  formInputs.forEach((formInput, index) => {    
+    formInput.setAttribute('placeholder', formPlaceHolderValues[lang][formInput.attributes['id'].value])
+    // console.log(formInput.attributes['id'].value, formPlaceHolderValues[lang][formInput.attributes['id'].value])
   })
 }
 

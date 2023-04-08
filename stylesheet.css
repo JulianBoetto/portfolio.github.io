@@ -398,7 +398,7 @@ transform: scale(1.4);
   position: relative;
 }
 
-#textArea {
+#comments {
   /* background: var(--text-light); */
   border: 1.5px solid var(--background-dark-1);
   border-radius: 4px;
