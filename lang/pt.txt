@@ -14,6 +14,18 @@ profile.h3=Desenvolvedor Full-Stack
 about.me=Sou da Argentina e atualmente trabalho e moro no Brasil. Me formei como desenvolvedor web full-stack e mudei de carreira na cidade do Rio de Janeiro. Tenho mais de 2 anos de experiência trabalhando nas áreas de Fintech, e-commerce e trading. Além da minha paixão por escrever código, também toco a guitarra elétrica.
 about.resume=Baixar CV
 
+# PROJECTS
+project.name.1=Becapital S.A.
+project.description.1=Empresa brasileira de investimentos e seguros.
+
+project.btn.tech=
+
+project.name.2=Que Buen Dato!
+project.description.2=Um site para comprar e vender bens ou serviços locais.
+
+project.name.3=Beholder bot
+project.description.3=Bot multi-coin para fazer trading na Binance.
+
 # CONTACT
 contact.1=Quer entrar em contato comigo?
 contact.2=Preencha o formulário e entre em contato o mais rápido possível.

@@ -1,0 +1,39 @@
+NAVBAR
+
+navbar.item.1=About me
+navbar.item.2=Projects
+navbar.item.3=Contact
+navbar.item.4=My CV
+PROFILE
+
+profile.h1=Hello!
+profile.h2=I'm
+profile.name=Julián Boetto
+profile.h3=Full-Stack Developer
+ABOUT ME
+
+about.me=I'm from Argentina and currently working and living in Brazil. I graduated as a full-stack web developer and career-changed in Rio de Janeiro. I have over 2 years of experience working in the fintech, e-commerce, and trading industries. Aside from my passion for coding, I also play the electric guitar.
+about.resume=Download CV
+PROJECTS
+
+project.name.1=Becapital S.A.
+project.description.1=Brazilian investment and insurance company.
+
+project.btn.tech=
+
+project.name.2=Que Buen Dato!
+project.description.2=A website to buy and sell local goods or services.
+
+project.name.3=Beholder bot
+project.description.3=Multi-coin bot for trading on Binance.
+CONTACT
+
+contact.1=Want to get in touch with me?
+contact.2=Fill out the form and get in touch as soon as possible.
+contact.3=You can also find me here:
+FORM (uppercase & ":")
+
+form.name=NAME:
+form.subject=SUBJECT:
+form.msg=MESSAGE:
+form.btn.send=SEND
