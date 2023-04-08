@@ -1,0 +1,12 @@
+# NAVBAR
+navbar.item.1=Sobre mi
+navbar.item.2=Proyectos
+navbar.item.3=Contacto
+navbar.item.4=Mi CV
+
+# PROFILE
+profile.h1=Hola!
+profile.h2=soy 
+profile.name=Julián Boetto
+profile.h3=Programador Full-Stack
+

@@ -158,7 +158,7 @@ ion-icon {
   100% {background-position:right}
 }
 
-#perfil {
+#profile {
   background:linear-gradient(90deg,var(--background-dark),var(--background-dark-1),#206E36) left/400%;
   animation:f 3s infinite alternate linear;
   height: 100vh;
@@ -169,13 +169,12 @@ ion-icon {
       bottom: 10px;
   }
 
-  .perfil-container {
+  .container-profile {
     padding-top: 70px;
   }
 }
 
-
-.perfil-container {
+.container-profile {
   height: calc(100vh - 70px);
   margin-top: -70px;
   max-width: var(--max-width);
@@ -212,7 +211,7 @@ transform: scale(1.2);
   color: var(--text-light);
 }
 
-#nombre {
+#name {
   font-weight: 600;
   color: var(--text-light);
   text-shadow: 2px 10px 10px rgba(0, 0, 0, 0.5);
@@ -223,7 +222,7 @@ transform: scale(1.2);
     font-size: 1.4rem;
   }
 
-  #nombre {
+  #name {
     font-weight: 500;
     font-size: 1.8rem;
   }

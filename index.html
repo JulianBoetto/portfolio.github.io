@@ -20,7 +20,7 @@
   </head>
 
   <body>
-    <section id="perfil">
+    <section id="profile">
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-lg" id="navBar">
         <div class="container-fluid">
@@ -31,8 +31,27 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            <img class="es-AR" src="images/argentina.jpeg" alt="Argentina" style="border-radius: 50%; height: 30px;" id="flag">
-            <img class="pt-BR" src="images/brasil.png" alt="Brasil" style="height: 30px;"  id="flag">
+            <img
+              class="imgLang"
+              id="es-AR"
+              src="images/argentina.jpeg"
+              alt="Argentina"
+              style="border-radius: 50%; height: 30px;"
+            />
+            <img
+              class="imgLang"
+              id="pt-BR"
+              src="images/brasil.png"
+              alt="Brasil"
+              style="height: 30px;"
+            />
+            <img
+              class="imgLang"
+              id="en-US"
+              src="images/eeuu.png"
+              alt="EEUU"
+              style="border-radius: 50%; height: 30px;"
+            />
           </button>
           <ul
             class="dropdown-menu dropdown-menu-lg-start"
@@ -40,13 +59,18 @@
             aria-labelledby="dropLanguage"
           >
             <li>
-              <a class="dropdown-item" href="#" id="btnEs">
+              <a class="dropdown-item btnLanguage" href="#" value="es-AR">
                 <span class="dropLanguageText">Español (Arg)</span>
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="#" id="btnPt">
+              <a class="dropdown-item btnLanguage" href="#" value="pt-BR">
                 <span class="dropLanguageText">Português (Bra)</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item btnLanguage" href="#" value="en-US">
+                <span class="dropLanguageText">English (US)</span>
               </a>
             </li>
           </ul>
@@ -68,32 +92,26 @@
             >
               <li>
                 <a class="dropdown-item" href="#sobre">
-                  <span lang="pt-BR" class="pt-BR dropLanguageText">
-                    Sobre mim
-                  </span>
-                  <span lang="es-AR" class="es-AR dropLanguageText">
-                    Sobre mi
-                  </span>
+                  <span
+                    data-i18n="navbar.item.1"
+                    class="dropLanguageText"
+                  ></span>
                 </a>
               </li>
               <li>
                 <a class="dropdown-item" href="#projetos">
-                  <span lang="pt-BR" class="pt-BR dropLanguageText">
-                    Projetos
-                  </span>
-                  <span lang="es-AR" class="es-AR dropLanguageText">
-                    Proyectos
-                  </span>
+                  <span
+                    data-i18n="navbar.item.2"
+                    class="dropLanguageText"
+                  ></span>
                 </a>
               </li>
               <li>
                 <a class="dropdown-item" href="#contato">
-                  <span lang="pt-BR" class="pt-BR dropLanguageText">
-                    Contato
-                  </span>
-                  <span lang="es-AR" class="es-AR dropLanguageText">
-                    Contacto
-                  </span>
+                  <span
+                    data-i18n="navbar.item.3"
+                    class="dropLanguageText"
+                  ></span>
                 </a>
               </li>
               <li>
@@ -103,10 +121,10 @@
                   target="_blank"
                   href="/resume/JulianBoettoCV - PT.pdf"
                 >
-                  <span lang="pt-BR" class="pt-BR dropLanguageText">
-                    Meu CV
-                  </span>
-                  <span lang="es-AR" class="es-AR dropLanguageText">Mi CV</span>
+                  <span
+                    data-i18n="navbar.item.4"
+                    class="dropLanguageText"
+                  ></span>
                 </a>
               </li>
             </ul>
@@ -117,32 +135,26 @@
               >
                 <li class="nav-item headBtn">
                   <a class="nav-link" href="#sobre">
-                    <span lang="pt-BR" class="pt-BR dropLanguageText">
-                      Sobre mim
-                    </span>
-                    <span lang="es-AR" class="es-AR dropLanguageText">
-                      Sobre mi
-                    </span>
+                    <span
+                      data-i18n="navbar.item.1"
+                      class="dropLanguageText"
+                    ></span>
                   </a>
                 </li>
                 <li class="nav-item headBtn">
                   <a class="nav-link" href="#projetos">
-                    <span lang="pt-BR" class="pt-BR dropLanguageText">
-                      Projetos
-                    </span>
-                    <span lang="es-AR" class="es-AR dropLanguageText">
-                      Proyectos
-                    </span>
+                    <span
+                      data-i18n="navbar.item.2"
+                      class="dropLanguageText"
+                    ></span>
                   </a>
                 </li>
                 <li class="nav-item headBtn">
                   <a class="nav-link" href="#contato">
-                    <span lang="pt-BR" class="pt-BR dropLanguageText">
-                      Contato
-                    </span>
-                    <span lang="es-AR" class="es-AR dropLanguageText">
-                      Contacto
-                    </span>
+                    <span
+                      data-i18n="navbar.item.3"
+                      class="dropLanguageText"
+                    ></span>
                   </a>
                 </li>
                 <li class="nav-item headBtn">
@@ -152,12 +164,10 @@
                     target="_blank"
                     href="/resume/JulianBoettoCV - PT.pdf"
                   >
-                    <span lang="pt-BR" class="pt-BR dropLanguageText">
-                      Meu CV
-                    </span>
-                    <span lang="es-AR" class="es-AR dropLanguageText">
-                      Mi CV
-                    </span>
+                    <span
+                      data-i18n="navbar.item.4"
+                      class="dropLanguageText"
+                    ></span>
                   </a>
                 </li>
               </ul>
@@ -165,28 +175,21 @@
           </div>
         </div>
       </nav>
-      <!-- PERFIL -->
+      <!-- PROFILE -->
       <div
-        class="container-fluid d-flex justify-content-center align-items-center perfil-container"
+        class="container-fluid d-flex justify-content-center align-items-center container-profile"
       >
         <div class="col-10 col-md-6 col-xs-12 text-center">
           <h1 id="titPer">
-            <span lang="pt-BR" class="pt-BR">Olá!</span>
-            <span lang="es-AR" class="es-AR">Hola!</span>
+            <span data-i18n="profile.h1"></span>
           </h1>
           <h2 id="h2Per">
-            <span lang="pt-BR" class="pt-BR">
-              sou
-              <strong id="nombre">Julián Boetto</strong>
-            </span>
-            <span lang="es-AR" class="es-AR">
-              soy
-              <strong id="nombre">Julián Boetto</strong>
+            <span data-i18n="profile.h2;profile.name">
+              <strong id="name"></strong>
             </span>
           </h2>
           <h3 id="h3Per">
-            <span lang="pt-BR" class="pt-BR">Desenvolvedor Full-Stack</span>
-            <span lang="es-AR" class="es-AR">Programador Full-Stack</span>
+            <span data-i18n="profile.h3"></span>
           </h3>
           <div class="row justify-content-center icon-effect">
             <a
@@ -214,18 +217,17 @@
               <ion-icon name="mail-outline"></ion-icon>
             </a>
           </div>
-          
+
           <!-- BTN NEXT SECTION -->
 
           <div class="col d-flex justify-content-center align-items-center">
-            <button class="btn btn-effect"  id="btn-next-perfil">
+            <button class="btn btn-effect" id="btn-next-perfil">
               <svg
                 aria-hidden="true"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
                 viewBox="0 0 24 24"
-                
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -690,7 +692,7 @@
             </div>
           </div>
           <div class="col-sm-12 align-self-start text-center">
-            <button class="btn btn-effect"  id="btn-next">
+            <button class="btn btn-effect" id="btn-next">
               <svg
                 aria-hidden="true"
                 fill="none"
