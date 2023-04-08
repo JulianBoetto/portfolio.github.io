@@ -10,3 +10,8 @@ profile.h2=soy
 profile.name=Julián Boetto
 profile.h3=Programador Full-Stack
 
+# ABOUT Me
+about.me=Soy de Argentina, actualmente trabajo y vivo en Brasil. Estudié programación web full-stack y cambié de carrera profesional en Rio de Janeiro. Tengo más de 2 años de experiencia trabajando en el area Fintech, e-commerce y trading. Además de mi pasión por escribir código, también toco la guitarra eléctrica. 
+about.resume=Descargar CV
+
+#
