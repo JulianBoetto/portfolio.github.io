@@ -9,7 +9,7 @@ body {
   --background-dark-2: #444;
   --shadow-green: rgba(0, 255, 125, 0.5);
   --footer-alt: 100px;
-  --max-width: 1000px;
+  --max-width: 1200px;
 }
 
 section {
@@ -248,7 +248,7 @@ transform: scale(1.2);
 }
 
 #sobre .container-fluid {
-  max-width: 1080px;
+  max-width: var(--max-width);
 }
 
 
@@ -322,7 +322,7 @@ transform: scale(1.4);
 }
 
 #projetos .container-fluid {
-  max-width: 1080px;
+  max-width: var(--max-width);
 }
 
 .card {

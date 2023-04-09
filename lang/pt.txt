@@ -1,37 +1,46 @@
-# NAVBAR
+## NAVBAR
 navbar.item.1=Sobre mim
 navbar.item.2=Projetos
 navbar.item.3=Contato
 navbar.item.4=Meu CV
 
-# PROFILE
+## PROFILE
 profile.h1=Olá!
 profile.h2=sou 
 profile.name=Julián Boetto
 profile.h3=Desenvolvedor Full-Stack
 
-# ABOUT ME
+## ABOUT ME
 about.me=Sou da Argentina e atualmente trabalho e moro no Brasil. Me formei como desenvolvedor web full-stack e mudei de carreira na cidade do Rio de Janeiro. Tenho mais de 2 anos de experiência trabalhando nas áreas de Fintech, e-commerce e trading. Além da minha paixão por escrever código, também toco a guitarra elétrica.
 about.resume=Baixar CV
 
-# PROJECTS
+## PROJECTS
+
+# project 1
 project.name.1=Becapital S.A.
 project.description.1=Empresa brasileira de investimentos e seguros.
 
-project.btn.tech=
-
+# project 2
 project.name.2=Que Buen Dato!
 project.description.2=Um site para comprar e vender bens ou serviços locais.
 
+project.card.2.description.btn.1=Mais detalhes
+project.card.2.description.text.1=O primeiro trabalho que realizei foi adaptar o front-end, back-end e banco de dados para começar a oferecer um novo produto que não havia sido pensado no momento em que o site foi planejado. Esse novo produto tinha novas regras de negócio e, para isso, foi preciso controlar todas as regras já implementadas. No processo, muitas refatorações foram feitas, aproveitando para deixar o código muito mais escalável. Outros trabalhos realizados incluíram mudar um serviço de criação de PDF para microserviço, adicionar a criação de planilhas Excel, melhorar o desempenho em consultas ao banco de dados enviando as informações previamente processadas no back-end, e criar testes unitários e documentação com Swagger, entre outros não menos relevantes. O último trabalho realizado foi mudar novamente para um serviço de cloud, mas com toda a documentação e os testes, foi muito simples e rápido.
+project.card.2.description.btn.2=Desafios
+project.card.2.description.text.2=No primeiro trabalho que realizei, não tinha experiência trabalhando com ReactJS, até então só tinha trabalhado com Typescript no framework Angular. Tive que processar em pouco tempo um front-end em produção com Redux e muitas bibliotecas que nunca tinha utilizado. Para resolver isso, utilizei a ferramenta de inspeção no navegador e comecei a procurar padrões de código, palavras-chave, além da documentação oficial e muito material em inglês na web. Logo depois, já conseguia não só entregar as demandas dentro do prazo, como também melhorar o front-end. Outro desafio foi criar o primeiro microserviço, encontrando a melhor opção tanto nas tecnologias implementadas quanto no custo para mantê-lo disponível o tempo todo.
+project.card.2.description.btn.3=Resultados
+project.card.2.description.text.3=corregir en portugues brasil: Hoje o site é completamente responsivo, escalavel, com menos librarias para manter, con versoes atualizadas dos pacotes e mais importante, tem documentacao para os proximos devs.
+
+# project 3
 project.name.3=Beholder bot
 project.description.3=Bot multi-coin para fazer trading na Binance.
 
-# CONTACT
+## CONTACT
 contact.1=Quer entrar em contato comigo?
 contact.2=Preencha o formulário e entre em contato o mais rápido possível.
 contact.3=Você também pode me encontrar aqui:
 
-# FORM (uppercase & ":")
+## FORM (uppercase & ":")
 form.name=NOME:
 form.subject=ASSUNTO:
 form.msg=MESSAGEM:
