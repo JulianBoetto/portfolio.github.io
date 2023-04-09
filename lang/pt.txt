@@ -18,22 +18,39 @@ about.resume=Baixar CV
 
 # project 1
 project.name.1=Becapital S.A.
+project.status.1=Finalizado
 project.description.1=Empresa brasileira de investimentos e seguros.
+project.card.1.description.btn.1=Mais detalhes
+project.card.1.description.text.1=O primeiro trabalho que realizei consistiu em adaptar o front-end, back-end e banco de dados para começar a oferecer um novo produto que não havia sido considerado no momento em que o site foi planejado. Esse novo produto possuía novas regras de negócio e, para isso, foi necessário controlar todas as regras já implementadas. No processo, muitas refatorações foram realizadas, com o objetivo de deixar o código mais escalável. Outros trabalhos realizados incluíram a mudança de um serviço de criação de PDF para microserviço, a adição da criação de planilhas Excel, a melhoria do desempenho em consultas ao banco de dados, enviando informações previamente processadas no back-end, além da criação de testes unitários e documentação com Swagger, entre outras tarefas igualmente relevantes. Por fim, o último trabalho realizado foi a mudança novamente para um serviço em nuvem, mas com toda a documentação e testes, a mudança foi rápida e simples.
+project.card.1.description.btn.2=Desafios
+project.card.1.description.text.2=No primeiro trabalho que realizei, não tinha experiência trabalhando com ReactJS, até então só tinha trabalhado com Typescript no framework Angular. Tive que processar em pouco tempo um front-end em produção com Redux e muitas bibliotecas que nunca tinha utilizado. Para resolver isso, utilizei a ferramenta de inspeção no navegador e comecei a procurar padrões de código, palavras-chave, além da documentação oficial e muito material em inglês na web. Logo depois, já conseguia não só entregar as demandas dentro do prazo, como também melhorar o front-end. Outro desafio foi criar o primeiro microserviço, encontrando a melhor opção tanto nas tecnologias implementadas quanto no custo para mantê-lo disponível o tempo todo.
+project.card.1.description.btn.3=Resultados
+project.card.1.description.text.3=Hoje o site é completamente responsivo, escalável, com menos bibliotecas para manter, com versões atualizadas dos pacotes e, mais importante, tem documentação para as próximas pessoas desenvolvedoras.
+project.card.1.description.btn.4=Tecnologias
 
 # project 2
 project.name.2=Que Buen Dato!
+project.status.2=Atualmente
 project.description.2=Um site para comprar e vender bens ou serviços locais.
 project.card.2.description.btn.1=Mais detalhes
-project.card.2.description.text.1=O primeiro trabalho que realizei foi adaptar o front-end, back-end e banco de dados para começar a oferecer um novo produto que não havia sido pensado no momento em que o site foi planejado. Esse novo produto tinha novas regras de negócio e, para isso, foi preciso controlar todas as regras já implementadas. No processo, muitas refatorações foram feitas, aproveitando para deixar o código muito mais escalável. Outros trabalhos realizados incluíram mudar um serviço de criação de PDF para microserviço, adicionar a criação de planilhas Excel, melhorar o desempenho em consultas ao banco de dados enviando as informações previamente processadas no back-end, e criar testes unitários e documentação com Swagger, entre outros não menos relevantes. O último trabalho realizado foi mudar novamente para um serviço de cloud, mas com toda a documentação e os testes, foi muito simples e rápido.
+project.card.2.description.text.1=
 project.card.2.description.btn.2=Desafios
-project.card.2.description.text.2=No primeiro trabalho que realizei, não tinha experiência trabalhando com ReactJS, até então só tinha trabalhado com Typescript no framework Angular. Tive que processar em pouco tempo um front-end em produção com Redux e muitas bibliotecas que nunca tinha utilizado. Para resolver isso, utilizei a ferramenta de inspeção no navegador e comecei a procurar padrões de código, palavras-chave, além da documentação oficial e muito material em inglês na web. Logo depois, já conseguia não só entregar as demandas dentro do prazo, como também melhorar o front-end. Outro desafio foi criar o primeiro microserviço, encontrando a melhor opção tanto nas tecnologias implementadas quanto no custo para mantê-lo disponível o tempo todo.
+project.card.2.description.text.2=
 project.card.2.description.btn.3=Resultados
-project.card.2.description.text.3=Hoje o site é completamente responsivo, escalavel, com menos librarias para manter, con versoes atualizadas dos pacotes e mais importante, tem documentacao para os proximos devs.
+project.card.2.description.text.3=
 project.card.2.description.btn.4=Tecnologias
 
 # project 3
 project.name.3=Beholder bot
+project.status.3=Atualmente
 project.description.3=Bot multi-coin para fazer trading na Binance.
+project.card.3.description.btn.1=Mais detalhes
+project.card.3.description.text.1=
+project.card.3.description.btn.2=Desafios
+project.card.3.description.text.2=
+project.card.3.description.btn.3=Resultados
+project.card.3.description.text.3=
+project.card.3.description.btn.4=Tecnologias
 
 ## CONTACT
 contact.1=Quer entrar em contato comigo?
