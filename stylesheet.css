@@ -36,6 +36,46 @@ ion-icon {
   }
 }
 
+/* PROJECTS ACCORDION */
+.accordion-button {
+  background-color: var(--background-dark) !important;
+}
+
+.accordion-button span {
+  color: var(--text-light);
+}
+
+.accordion-item {
+  --bs-accordion-border-color: var(--text-light);
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--text-light);
+  background-color: var(--background-dark) !important;
+}
+
+.accordion-button:link, .accordion-button:visited, .accordion-button:hover, .accordion-button:active  {
+  background-color: var(--background-dark-1) !important;
+    text-decoration: none !important;
+    border: hidden !important;
+    -webkit-box-shadow: 0px !important;
+    -moz-box-shadow: 0px !important;
+    box-shadow: 0px !important;      
+}
+
+.accordion-button:focus {
+  z-index: 1;
+  color: var(--background-dark);
+  background-color: #444 !important;
+  outline: var(--text-light);
+  -webkit-box-shadow: 0 0 0 .15rem var(--text-light) !important;
+  -moz-box-shadow: 0 0 0 .15rem var(--text-light) !important;
+  box-shadow: 0 0 0 .15rem var(--text-light) !important;
+}
+
+.accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
 
 /* NAVBAR */
 
@@ -68,7 +108,7 @@ ion-icon {
   text-transform: uppercase;
 }
 
-.dropLanguageText:active,  {
+.dropLanguageText:active {
   color: var(--background-dark-1);
 }
 
@@ -132,7 +172,7 @@ ion-icon {
   position: absolute;
   bottom: 50px;
   padding: 0;
-  color: var(---text-primario);
+  color: var(--text-light);
   transition: opacity 0.3s ease-in-out;
 } 
 
@@ -140,7 +180,7 @@ ion-icon {
   padding: 0;
 }
 
-#btn-next svg, #btn-next-perfil svg {
+#btn-next svg,#btn-next-perfil svg {
   height: 3.5rem;
   color: var(--text-light)
 }

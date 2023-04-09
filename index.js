@@ -8,6 +8,7 @@ const cvLinks = document.querySelectorAll('.cvLink');
 const btnTop = document.getElementById("btn-top");
 const nextButtons = document.querySelectorAll(".btn-effect");
 const formInputs = document.querySelectorAll(".formIn");
+const accordions = document.querySelectorAll(".accordion");
 
 let currentScrollPosition = window.pageYOffset;
 const windowHeight = window.innerHeight;
@@ -167,3 +168,20 @@ function updateText(translations) {
     }
   }
 }
+
+accordions.forEach((accordion) => {
+  accordion.addEventListener('shown.bs.collapse', function (event) {
+    event.target.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center',
+      inline: 'center'
+    });
+  });
+
+  accordion.addEventListener('click', function(event) {
+    var currentlyActive = accordion.querySelector('.show');
+    if (currentlyActive && currentlyActive !== event.target) {
+      currentlyActive.classList.remove('show');
+    }
+  });
+});
