@@ -45,11 +45,11 @@ project.name.3=Beholder bot
 project.status.3=Atualmente
 project.description.3=Bot multi-coin para fazer trading na Binance.
 project.card.3.description.btn.1=Mais detalhes
-project.card.3.description.text.1=
+project.card.3.description.text.1=O Beholder é um projeto pessoal desenvolvido no ano passado, baseado no projeto do Luiz Tools. Ele é um bot que automatiza processos na compra e venda de criptomoedas através da Binance Exchange. Por exemplo, ele possui mais de 60 indicadores técnicos que monitoram cada criptomoeda a cada segundo e podem comprar, vender ou enviar notificações via Telegram quando a condição é verdadeira. Além disso, possui várias funcionalidades automatizadas, como a estratégia Grid, Trailing stop ou agendamento de resgates. O projeto original foi criado com NodeJS e ReactJS, mas agora estou trabalhando com TDD no NestJS desde o início. Atualmente, possui documentação com Swagger e testes end-to-end.
 project.card.3.description.btn.2=Desafios
-project.card.3.description.text.2=
+project.card.3.description.text.2=O maior desafio ainda é me adaptar a trabalhar com TDD desde o início. Eu já tinha feito testes unitários e de integração com Jest e Supertest, mas se você começa o projeto pensando nos testes, as chances de erros no momento de editar trechos de código diminuem drasticamente. E a tranquilidade de ter um código, não importando quão grande ele seja, com cada função testada sendo ejecutada conforme o esperado, não tem palavras.
 project.card.3.description.btn.3=Resultados
-project.card.3.description.text.3=
+project.card.3.description.text.3=Atualmente, o bot possui funções prontas, documentadas e com testes end-to-end (Jest). Como se trata de um projeto pessoal, levará mais tempo do que se eu pudesse me dedicar em tempo integral. No entanto, ele é atualmente o meu principal hobby. Estou muito satisfeito com o resultado dos testes e da arquitetura do NestJS, tornando o bot facilmente mantido e escalável com novas funcionalidades, sem precisar se preocupar com as já existentes. Além disso, para os testes end-to-end, criei um ambiente teste com Docker para simular o cenário mais real possível de um CRUD completo para cada recurso com o banco de dados.
 project.card.3.description.btn.4=Tecnologias
 
 ## CONTACT
