@@ -1,0 +1,69 @@
+## NAVBAR
+
+navbar.item.1=About me
+navbar.item.2=Projects
+navbar.item.3=Contact
+navbar.item.4=My CV
+
+## PROFILE
+
+profile.h1=Hello!
+profile.h2=I'm
+profile.name=Julián Boetto
+profile.h3=Full-Stack Developer
+
+## ABOUT ME
+
+about.me=I'm from Argentina and currently working and living in Brazil. I graduated as a full-stack web developer and career-changed in Rio de Janeiro. I have over 2 years of experience working in the fintech, e-commerce, and trading industries. Aside from my passion for coding, I also play the electric guitar.
+about.resume=Download CV
+
+## PROJECTS
+
+# Project 1
+project.name.1=Becapital S.A.
+project.status.1=Completed
+project.description.1=Brazilian investment and insurance company.
+project.card.1.description.btn.1=More details
+project.card.1.description.text.1=My first job at Becapital S.A. consisted of adapting the front-end, back-end, and database to start offering a new product that had not been considered when the site was initially planned. This new product had new business rules, and therefore, it was necessary to control all the rules already implemented. In the process, many refactorings were carried out with the aim of making the code more scalable. Other work carried out included changing a PDF creation service to a microservice, adding Excel spreadsheet creation, improving database query performance by sending previously processed information on the back-end, as well as creating unit tests and documentation with Swagger, among other equally relevant tasks. Finally, the last work carried out was the migration back to a cloud service, but with all the documentation and tests, the migration was quick and simple.
+project.card.1.description.btn.2=Challenges
+project.card.1.description.text.2=In the first job I did, I had no experience working with ReactJS, until then I had only worked with Typescript in the Angular framework. I had to quickly process a production front-end with Redux and many libraries that I had never used. To solve this, I used the browser inspection tool and started looking for code patterns, keywords, as well as official documentation and a lot of material in English on the web. Soon after, I was able to not only deliver demands within the deadline but also improve the front-end. Another challenge was creating the first microservice, finding the best option in both implemented technologies and the cost to keep it available all the time.
+project.card.1.description.btn.3=Results
+project.card.1.description.text.3=Today, the site is fully responsive, scalable, with fewer libraries to maintain, with updated versions of packages, and, most importantly, has documentation for future developers.
+project.card.1.description.btn.4=Technologies
+
+# Project 2
+project.description.2=A website to buy and sell local goods or services.
+project.status.2=Ongoing
+project.card.2.description.btn.1=More details
+project.card.2.description.text.1=My first freelance job is on "Que Buen Dato!", a marketplace that connects buyers and sellers in their local region. The site already had a similar structure developed in Python with Django. I used the original structures and everything that I found interesting, but created a new modern and fully responsive layout for mobile devices using NextJS. Currently, I'm in the first stage where the front-end already has the main screens of the public profile. On the back-end, I'm using NestJS with Typescript and MongoDB. The idea is to design the back-end for the next stages, creating microservices with each new implementation.
+project.card.2.description.btn.2=Challenges
+project.card.2.description.text.2=The main challenge was starting to have so many responsibilities together. As a developer who worked for a company, I didn't always have to talk to a client, sometimes there were other people doing it, for example. Now I'm directly linked to the client, and not only do I have to respect the planning and be productive, but I also have to plan and improve processes on my own.
+project.card.2.description.btn.3=Results
+project.card.2.description.text.3=As a result, this project helps me a lot to have a different perspective, as a leader, as a manager, and as the main responsible for making each delivery better than the previous one.
+project.card.2.description.btn.4=Technologies
+
+# Prject 3
+project.name.3=Beholder bot
+project.status.3=Ongoing
+project.description.3=Multi-coin bot for trading on Binance.
+project.card.3.description.btn.1=More details
+project.card.3.description.text.1=Beholder is a personal project developed last year, based on Luiz Tools' project. It's a bot that automates processes in buying and selling cryptocurrencies through the Binance Exchange. For example, it has more than 60 technical indicators that monitor each cryptocurrency every second and can buy, sell, or send notifications via Telegram when the condition is true. Additionally, it has various automated functionalities, such as the Grid strategy, Trailing stop, or scheduling redemptions. The original project was created with NodeJS and ReactJS, but now I'm working with TDD in NestJS from the beginning. Currently, it has Swagger documentation and end-to-end tests.
+project.card.3.description.btn.2=Challenges
+project.card.3.description.text.2=The biggest challenge was adapting to working with TDD from the beginning. I had already done unit and integration tests with Jest and Supertest, but if you start the project thinking about tests, the chances of errors when editing code snippets decrease dramatically. And the peace of mind of having code, no matter how large it is, with each tested function being executed as expected, has no words.
+project.card.3.description.btn.3=Results
+project.card.3.description.text.3=Currently, the bot has ready-to-use functions, documented, and with end-to-end tests (Jest). Since it's a personal project, it will take more time than if I could dedicate myself full-time. However, it's currently my main hobby. I'm very pleased with the results of the tests and the NestJS architecture, making the bot easily maintainable and scalable with new functionalities, without having to worry about the ones already in place. Additionally, for end-to-end tests, I created a test environment with Docker to simulate the most realistic scenario possible of a complete CRUD for each resource with the database.
+project.card.3.description.btn.4=Technologies
+
+
+## CONTACT
+
+contact.1=Want to get in touch with me?
+contact.2=Fill out the form and get in touch as soon as possible.
+contact.3=You can also find me here:
+
+## FORM (uppercase & ":")
+
+form.name=NAME:
+form.subject=SUBJECT:
+form.msg=MESSAGE:
+form.btn.send=SEND
