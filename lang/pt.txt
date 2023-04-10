@@ -11,7 +11,7 @@ profile.name=Julián Boetto
 profile.h3=Desenvolvedor Full-Stack
 
 ## ABOUT ME
-about.me=Sou da Argentina e atualmente trabalho e moro no Brasil. Me formei como desenvolvedor web full-stack e mudei de carreira na cidade do Rio de Janeiro. Tenho mais de 2 anos de experiência trabalhando nas áreas de Fintech, e-commerce e trading. Além da minha paixão por escrever código, também toco a guitarra elétrica.
+about.me=Sou da Argentina e atualmente trabalho e moro no Brasil. Me formei como desenvolvedor web full-stack e mudei de carreira na cidade do Rio de Janeiro. Tenho mais de 2 anos de experiência trabalhando nas áreas de Fintech, e-commerce e trading. Além da minha paixão por escrever código, também toco guitarra elétrica.
 about.resume=Baixar CV
 
 ## PROJECTS
