@@ -21,7 +21,7 @@ about.resume=Download CV
 
 # Project 1
 project.name.1=Becapital S.A.
-project.status.1=Completed
+project.status.1=Ongoing
 project.description.1=Brazilian investment and insurance company.
 project.card.1.description.btn.1=More details
 project.card.1.description.text.1=My first job at Becapital S.A. consisted of adapting the front-end, back-end, and database to start offering a new product that had not been considered when the site was initially planned. This new product had new business rules, and therefore, it was necessary to control all the rules already implemented. In the process, many refactorings were carried out with the aim of making the code more scalable. Other work carried out included changing a PDF creation service to a microservice, adding Excel spreadsheet creation, improving database query performance by sending previously processed information on the back-end, as well as creating unit tests and documentation with Swagger, among other equally relevant tasks. Finally, the last work carried out was the migration back to a cloud service, but with all the documentation and tests, the migration was quick and simple.
@@ -33,7 +33,7 @@ project.card.1.description.btn.4=Technologies
 
 # Project 2
 project.description.2=A website to buy and sell local goods or services.
-project.status.2=Ongoing
+project.status.2=Completed
 project.card.2.description.btn.1=More details
 project.card.2.description.text.1=My first freelance job is on "Que Buen Dato!", a marketplace that connects buyers and sellers in their local region. The site already had a similar structure developed in Python with Django. I used the original structures and everything that I found interesting, but created a new modern and fully responsive layout for mobile devices using NextJS. Currently, I'm in the first stage where the front-end already has the main screens of the public profile. On the back-end, I'm using NestJS with Typescript and MongoDB. The idea is to design the back-end for the next stages, creating microservices with each new implementation.
 project.card.2.description.btn.2=Challenges

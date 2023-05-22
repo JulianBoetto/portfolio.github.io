@@ -18,7 +18,7 @@ about.resume=Baixar CV
 
 # project 1
 project.name.1=Becapital S.A.
-project.status.1=Finalizado
+project.status.1=Actualmente
 project.description.1=Empresa brasileira de investimentos e seguros.
 project.card.1.description.btn.1=Mais detalhes
 project.card.1.description.text.1=O primeiro trabalho que realizei consistiu em adaptar o front-end, back-end e banco de dados para começar a oferecer um novo produto que não havia sido considerado no momento em que o site foi planejado. Esse novo produto possuía novas regras de negócio e, para isso, foi necessário controlar todas as regras já implementadas. No processo, muitas refatorações foram realizadas, com o objetivo de deixar o código mais escalável. Outros trabalhos realizados incluíram a mudança de um serviço de criação de PDF para microserviço, a adição da criação de planilhas Excel, a melhoria do desempenho em consultas ao banco de dados, enviando informações previamente processadas no back-end, além da criação de testes unitários e documentação com Swagger, entre outras tarefas igualmente relevantes. Por fim, o último trabalho realizado foi a mudança novamente para um serviço em nuvem, mas com toda a documentação e testes, a mudança foi rápida e simples.
@@ -30,7 +30,7 @@ project.card.1.description.btn.4=Tecnologias
 
 # project 2
 project.name.2=Que Buen Dato!
-project.status.2=Atualmente
+project.status.2=Finalizado
 project.description.2=Um site para comprar e vender bens ou serviços locais.
 project.card.2.description.btn.1=Mais detalhes
 project.card.2.description.text.1=Meu primeiro trabalho como freelancer é no "Que Buen Dato!", um marketplace que conecta compradores e vendedores na região em que estão localizados. O site já possuía uma estrutura semelhante desenvolvida em Python com Django. Utilizei as estruturas originais e tudo o que achei interessante, mas criei um novo layout moderno e completamente responsivo para dispositivos móveis usando o NextJS. Atualmente, estou na primeira etapa, onde o front-end já possui as principais telas do perfil público. No back-end, estou utilizando o NestJS com Typescript e o MongoDB. A ideia é projetar o back-end para as próximas etapas, criando microserviços com cada nova implementação.
