@@ -10,7 +10,7 @@ navbar.item.4=My CV
 profile.h1=Hello!
 profile.h2=I'm
 profile.name=Julián Boetto
-profile.h3=Full-Stack Developer
+profile.h3=Full-Stack developer
 
 ## ABOUT ME
 

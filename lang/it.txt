@@ -1,0 +1,66 @@
+## NAVBAR
+navbar.item.1=Sulla mia persona
+navbar.item.2=Progetti
+navbar.item.3=Contatto
+navbar.item.4=Il mio CV
+
+
+## PROFILE
+profile.h1=Ciao!
+profile.h2=Sono
+profile.name=Julián Boetto
+profile.h3=Sviluppatore web full-stack
+
+## ABOUT ME
+about.me=Sono argentino e attualmente lavoro e vivo in Brasile. Ho studiato sviluppo web full-stack e ho cambiato la mia carriera professionale a Rio de Janeiro. Ho più di 2 anni di esperienza lavorativa nell'ambito della Fintech, dell'e-commerce e del trading. Oltre alla mia passione per la scrittura del codice, suono anche la chitarra elettrica.
+about.resume=Scarica il mio CV
+
+## PROJECTS
+
+# project 1
+project.name.1=Becapital S.A.
+project.status.1=Attualmente
+project.description.1=Azienda brasiliana di investimenti e assicurazioni.
+project.card.1.description.btn.1=Maggiori dettagli
+project.card.1.description.text.1=Il mio primo lavoro consisteva nell'adattare il front-end, il back-end e il database per offrire un nuovo prodotto che non era stato preso in considerazione durante la pianificazione del sito. Questo nuovo prodotto aveva nuove regole di business e per implementarle era necessario controllare tutte le regole già in vigore. Durante il processo sono state effettuate numerose refattorizzazioni al fine di rendere il codice più scalabile. Altri lavori svolti includono la transizione di un servizio di creazione di PDF in un microservizio, la generazione automatizzata di report con creazione di fogli di calcolo Excel, il miglioramento delle prestazioni delle query al database, inviando informazioni pre-elaborate dal back-end, oltre alla creazione di test unitari e documentazione con Swagger, tra altre attività altrettanto rilevanti. Infine, è stata effettuata una transizione a un servizio cloud, ma grazie a tutta la documentazione e ai test, il processo è stato rapido e semplice.
+project.card.1.description.btn.2=Sfide
+project.card.1.description.text.2=Nel mio primo lavoro non avevo esperienza nel lavorare con ReactJS, fino a quel momento avevo lavorato solo con Typescript nel framework Angular. Ho dovuto affrontare rapidamente un front-end in produzione con Redux e molte librerie che non avevo mai utilizzato. Per risolvere questa situazione, ho utilizzato lo strumento di ispezione del browser e ho iniziato a cercare modelli di codice, parole chiave e a consultare la documentazione ufficiale e molte risorse in inglese sul web. Successivamente, sono stato in grado non solo di consegnare le richieste entro i tempi previsti, ma anche di migliorare molti componenti del front-end. Un'altra sfida è stata la creazione del primo microservizio, trovando la migliore opzione sia in termini di tecnologie implementate che di costi per mantenerlo sempre disponibile.
+project.card.1.description.btn.3=Risultati
+project.card.1.description.text.3=Oggi il sito è completamente responsivo, scalabile, con meno librerie da mantenere, con versioni aggiornate dei pacchetti e, cosa più importante, dispone di documentazione per i futuri sviluppatori.
+project.card.1.description.btn.4=Tecnologie
+
+# project 2
+project.name.2=Que buen dato!
+project.status.2=Terminato
+project.description.2=Un sito per comprare e vendere beni o servizi locali.
+project.card.2.description.btn.1=Ulteriori dettagli
+project.card.2.description.text.1=Il mio primo lavoro come freelancer è stato su "Que buen dato!", un marketplace che collega acquirenti e venditori nella regione in cui si trovano. Il sito aveva già una struttura simile sviluppata in Python con Django. Ho utilizzato le strutture originali e tutto ciò che ho trovato interessante, ma ho creato un nuovo design moderno e completamente reattivo per dispositivi mobili utilizzando NextJS. Attualmente, mi trovo nella prima fase, in cui il front-end ha già le principali schermate del profilo pubblico. Sul back-end, sto utilizzando NestJS con Typescript e MongoDB. L'idea è progettare il back-end per le prossime fasi, creando microservizi con ogni nuova implementazione.
+project.card.2.description.btn.2=Sfide
+project.card.2.description.text.2=La principale sfida è stata iniziare ad avere così tante responsabilità insieme. Come sviluppatore che lavorava per un'azienda, non dovevo sempre parlare direttamente con un cliente, a volte c'erano altre persone che si occupavano di ciò, ad esempio. Ora sono direttamente coinvolto con il cliente e non solo devo rispettare la pianificazione e essere produttivo, ma devo anche pianificare e migliorare i processi da solo.
+project.card.2.description.btn.3=Risultati
+project.card.2.description.text.3=Come risultato, questo progetto mi aiuta a ottenere un'altra prospettiva, come leader, come responsabile e come principale responsabile affinché ogni consegna sia migliore della precedente.
+project.card.2.description.btn.4=Tecnologie
+
+# project 3
+project.name.3=Beholder bot
+project.status.3=Attualmente
+project.description.3=Bot multi-coin per fare trading su Binance.
+project.card.3.description.btn.1=Ulteriori dettagli
+project.card.3.description.text.1=Beholder è un progetto personale sviluppato l'anno scorso, basato sul progetto di Luiz Tools. È un bot che automatizza processi di acquisto e vendita di criptovalute tramite Binance Exchange. Ad esempio, dispone di oltre 60 indicatori tecnici che monitorano ogni criptovaluta ogni secondo e possono acquistare, vendere o inviare notifiche tramite Telegram quando la condizione è vera. Inoltre, dispone di diverse funzionalità automatizzate, come la strategia Grid, Trailing stop o la programmazione dei trasferimenti. Il progetto originale è stato creato con NodeJS e ReactJS, ma attualmente sto lavorando con TDD in NestJS fin dall'inizio. Attualmente, dispone di documentazione con Swagger e test end-to-end.
+project.card.3.description.btn.2=Sfide
+project.card.3.description.text.2=La sfida più grande è stata adattarmi a lavorare con TDD fin dall'inizio. Avevo già eseguito test unitari e di integrazione con Jest e Supertest, ma se inizi il progetto con i test in mente, le possibilità di errori durante la modifica del codice diminuiscono drasticamente. E la tranquillità di avere un codice, non importa quanto grande sia, con ogni funzione testata che viene eseguita come previsto, non ha prezzo.
+project.card.3.description.btn.3=Risultati
+project.card.3.description.text.3=Attualmente, il bot dispone di alcune funzionalità pronte, documentate e con test end-to-end (Jest). Essendo un progetto personale, richiederà più tempo rispetto a quanto richiederebbe se potessi dedicarmici di più. Tuttavia, attualmente è il mio principale passatempo. Sono molto soddisfatto dei risultati dei test e dell'architettura di NestJS, che rende il bot facile da mantenere e aggiungere nuove funzionalità senza preoccuparsi di quelle già esistenti. Inoltre, per i test end-to-end, ho creato un ambiente di test con Docker per simulare il scenario più realistico possibile di un CRUD completo per ogni risorsa con il database.
+project.card.3.description.btn.4=Tecnologie
+
+## CONTATTO
+contact.1=Vuoi metterti in contatto con me?
+contact.2=Compila il modulo e sarai contattato al più presto.
+contact.3=Puoi anche trovarmi qui:
+
+
+## FORM (uppercase & ":")
+form.name=NOME:
+form.subject=OGGETTO:
+form.msg=MESSAGGIO:
+form.btn.send=INVIA
