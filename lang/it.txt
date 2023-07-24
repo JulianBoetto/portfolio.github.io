@@ -4,7 +4,6 @@ navbar.item.2=Progetti
 navbar.item.3=Contatto
 navbar.item.4=Il mio CV
 
-
 ## PROFILE
 profile.h1=Ciao!
 profile.h2=Sono

@@ -11,7 +11,7 @@ const nextButtons = document.querySelectorAll(".btn-effect");
 const formInputs = document.querySelectorAll(".formIn");
 const accordions = document.querySelectorAll(".accordion");
 
-let currentScrollPosition = window.pageYOffset;
+let currentScrollPosition = window.scrollY;
 const windowHeight = window.innerHeight;
 const sections = document.querySelectorAll('section');
 
@@ -47,7 +47,7 @@ const formPlaceHolderValues = {
   }
 }};
 
-changeLang(userLang);
+
 function changeLang(userLang) {
   let lang;
   if(regexEs.test(userLang)) {
@@ -79,12 +79,8 @@ function changeLang(userLang) {
       imgsLang[index].style.display = "none";
     }
   })
-  
-  formInputs.forEach((formInput, index) => {    
-    formInput.setAttribute('placeholder', formPlaceHolderValues[lang][formInput.attributes['id'].value])
-    // console.log(formInput.attributes['id'].value, formPlaceHolderValues[lang][formInput.attributes['id'].value])
-  })
 }
+
 
 function scrollToTop() {
   sections[0].scrollIntoView({ behavior: 'smooth' });
@@ -196,3 +192,5 @@ accordions.forEach((accordion) => {
     }
   });
 });
+
+changeLang(userLang);
